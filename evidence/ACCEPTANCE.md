@@ -21,6 +21,7 @@ This records actual runs on **x86_64-linux**, dated 2026-10-22. The complete loc
 | Real browser | Chromium 154.0.8037.97: all 33 chapter pairs switched EN → ZH → EN; section fragments, mobile menu/search/layout passed; no JavaScript errors | [Browser report](acceptance/browser/summary.json), screenshots below |
 | External references | 36 distinct public HTTP(S) URLs returned HTTP 200, following redirects | [URL results](acceptance/external-links.json) |
 | Isolated Nix validation | `nix flake check` exited 0 after a fresh build; `nix build` exited 0 and reused that checked derivation | [Nix result](acceptance/nix-result.json), [check log](acceptance/nix-check.log), [build log](acceptance/nix-build.log) |
+| Remote source publication | Commit `506b8e7` matched remote `main`; its push-triggered full Nix CI passed | [Remote verification](remote-verification.json), [CI run](https://github.com/longlong921/PLAIdris2/actions/runs/39840132740), [build log](acceptance/first-remote-build.log) |
 
 运行示例覆盖算术与二进制、列表、外在与内在类型的递归求值、扩展语言构造、带失败证据的类型判定、类型推导到求值的完整路径、弱按名求值、完整 β 归约下的 Church/Scott 算术，以及 QTT 和宿主总性边界。源码中以 `Refl` 等表达的封闭计算例子也随模块编译接受计算检查。34 个运行场景不是对任意输入定理的替代。
 
@@ -55,6 +56,10 @@ nix develop --command python3 tools/external_links.py
 `flake.lock` fixes nixpkgs at `7c8764b7c7b09b34f632464276218ef9090eaa11`. Observed tools: Idris2 0.8.0, Python 3.13.15, Markdown 3.10.2 and Node 24.21.0. The cloud environment used an isolated Nix-portable/bwrap wrapper; that wrapper is an environment convenience and is not needed on a normal Nix installation. The portable store and all compiler/build caches are excluded from Git.
 
 The [input snapshot](acceptance/input-snapshot.json) records release input hashes, excluding evidence files to avoid self-reference. The single-chapter run predates the final runtime-runner addition; its Adequacy source is unchanged. The full-suite snapshot is authoritative for the final reference source. Logs record checks actually performed, not promised future checks. GitHub's [Actions history](https://github.com/longlong921/PLAIdris2/actions/workflows/check.yml) records the exact remote commit and result of each push-triggered Nix check.
+
+首次远端 CI 成功后，根据实际运行提示，把工作流的 runner 固定为 `ubuntu-24.04`，并将 checkout 固定到采用 Node 24 的 [v7.0.1](https://github.com/actions/checkout/blob/v7.0.1/action.yml) 提交。正文、参考源码和测试没有改变。历史输入快照保留原工作流哈希；[发布记录](remote-verification.json) 明确记录该配置差异。后续提交有自己的完整 CI 记录，不把首次运行冒充后续提交的结果。
+
+After the first successful remote CI, actual runner notices prompted a workflow-only update to `ubuntu-24.04` and the pinned Node 24 checkout release. Prose, reference implementations and tests are unchanged. The historical input snapshot retains the original workflow hash; the publication record states the exact delta. Each follow-up commit has its own full CI record; the first run is not presented as a result for a later SHA.
 
 ## 范围与限制 · Scope and limits
 

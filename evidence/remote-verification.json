@@ -1,0 +1,34 @@
+{
+  "verified_at": "2026-10-22T19:30:53.757592+00:00",
+  "repository": "https://github.com/longlong921/PLAIdris2",
+  "branch": "main",
+  "stage": "initial source publication",
+  "local_commit": "506b8e77140c9773f05b1dcd138025a815458f3e",
+  "remote_commit": "506b8e77140c9773f05b1dcd138025a815458f3e",
+  "remote_sha_match": true,
+  "push_exit_code": 0,
+  "workflow": {
+    "id": 39840132740,
+    "url": "https://github.com/longlong921/PLAIdris2/actions/runs/39840132740",
+    "event": "push",
+    "head_sha": "506b8e77140c9773f05b1dcd138025a815458f3e",
+    "status": "completed",
+    "conclusion": "success",
+    "job_id": 120038662836,
+    "job_conclusion": "success",
+    "watch_exit_code": 0
+  },
+  "follow_up": {
+    "reason": "Successful first CI reported Node 20 action deprecation and migration of ubuntu-latest. Pin the runner to ubuntu-24.04 and checkout to the verified v7.0.1 Node 24 release.",
+    "checkout_commit": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "release_source": "https://github.com/actions/checkout/releases/tag/v7.0.1",
+    "runtime_source": "https://github.com/actions/checkout/blob/v7.0.1/action.yml",
+    "changed_non_evidence_file": ".github/workflows/check.yml",
+    "previous_sha256": "8441b61ae9f098c4f4d08fd94f938a68e9c68616f2467a441211fdb91b9d5684",
+    "new_sha256": "542effc3ac84207279e0ff59f6bd53412e05c9c6f995b42b7d9a8da009c3a536",
+    "book_source_prose_and_tests_changed": false,
+    "validation": "The follow-up commit triggers its own complete Nix check; consult its GitHub check run for the exact final SHA and result."
+  },
+  "public_deployment_performed": false,
+  "pages_settings_changed": false
+}

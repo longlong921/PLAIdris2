@@ -29,3 +29,10 @@
 - The remote remained empty at the prepublication read. The next gate is committing/pushing main, verifying the exact remote SHA and its GitHub Actions run. This is a historical local checkpoint; remote publication results are recorded separately.
 
 No deployment or Pages setting changes are part of delivery. ctp-hs remained clean.
+
+## Publication checkpoint
+
+- Source commit 506b8e77140c9773f05b1dcd138025a815458f3e was pushed to main. A fresh remote read returned exactly the same SHA.
+- Its push-triggered workflow 39840132740 and job 120038662836 completed successfully; the full Nix build took 44 seconds in CI. Actual source, link and runtime check output is archived in acceptance/first-remote-build.log.
+- The successful run reported an obsolete checkout Node runtime and a moving ubuntu-latest label. The follow-up pins checkout v7.0.1 by commit and the runner to ubuntu-24.04, and records the actual publication evidence. Book source, manuscripts and tests are unchanged.
+- The follow-up's exact remote SHA and complete CI result are recorded by its own GitHub Actions run and checked before final handoff. The first successful run is retained as historical evidence, not substituted for that later result.

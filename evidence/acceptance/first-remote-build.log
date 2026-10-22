@@ -1,0 +1,71 @@
+Selected book-build lines from the successful GitHub Actions job 120038662836.
+Source commit: 506b8e77140c9773f05b1dcd138025a815458f3e
+Full run: https://github.com/longlong921/PLAIdris2/actions/runs/39840132740
+ANSI styling, if any, has been removed; package-download noise is omitted.
+
+2026-10-22T19:27:18.7815096Z plaidris2-book> Running phase: unpackPhase
+2026-10-22T19:27:18.7846999Z plaidris2-book> unpacking source archive /nix/store/i7bxailf7f92rvqmcskjb25r9rdndrq6-source
+2026-10-22T19:27:18.7942862Z plaidris2-book> source root is source
+2026-10-22T19:27:18.8023395Z plaidris2-book> Running phase: patchPhase
+2026-10-22T19:27:18.8073672Z plaidris2-book> Running phase: updateAutotoolsGnuConfigScriptsPhase
+2026-10-22T19:27:18.8136675Z plaidris2-book> Running phase: configurePhase
+2026-10-22T19:27:18.8222806Z plaidris2-book> no configure script, doing nothing
+2026-10-22T19:27:18.8241797Z plaidris2-book> Running phase: buildPhase
+2026-10-22T19:27:18.9004300Z plaidris2-book> PASS exact 30-entry upstream mapping; extensions remain separate
+2026-10-22T19:27:18.9435362Z plaidris2-book> PASS paired sections and source inclusions for 33 chapters
+2026-10-22T19:27:18.9515686Z plaidris2-book> PASS no proof holes or escape hatches in 32 reference modules
+2026-10-22T19:27:18.9516351Z plaidris2-book> RUN idris2 --version
+2026-10-22T19:27:19.3287718Z plaidris2-book> RUN idris2 --source-dir src --check src/Main.idr
+2026-10-22T19:27:32.8937636Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Appendix/Substitution.idr
+2026-10-22T19:27:33.4823508Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Extensions/IdrisPrimer.idr
+2026-10-22T19:27:34.0874916Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Extensions/QTT.idr
+2026-10-22T19:27:34.6825864Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Extensions/Trust.idr
+2026-10-22T19:27:35.2346153Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Connectives.idr
+2026-10-22T19:27:35.8099988Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Decidable.idr
+2026-10-22T19:27:36.3979802Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Equality.idr
+2026-10-22T19:27:36.9842527Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Induction.idr
+2026-10-22T19:27:37.5503835Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Isomorphism.idr
+2026-10-22T19:27:38.1156482Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Lists.idr
+2026-10-22T19:27:38.7262561Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Naturals.idr
+2026-10-22T19:27:39.2713794Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Negation.idr
+2026-10-22T19:27:39.8465040Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Quantifiers.idr
+2026-10-22T19:27:40.4396526Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Relations.idr
+2026-10-22T19:27:41.0082120Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/BigStep.idr
+2026-10-22T19:27:41.6121674Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Bisimulation.idr
+2026-10-22T19:27:42.9000250Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/ClosureBounds.idr
+2026-10-22T19:27:43.8402533Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/ClosureCorrespondence.idr
+2026-10-22T19:27:44.6546972Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Confluence.idr
+2026-10-22T19:27:45.8073924Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/DeBruijn.idr
+2026-10-22T19:27:46.4311603Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Inference.idr
+2026-10-22T19:27:47.0438546Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Lambda.idr
+2026-10-22T19:27:47.6385753Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/More.idr
+2026-10-22T19:27:48.1973081Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Properties.idr
+2026-10-22T19:27:48.8007816Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Typed.idr
+2026-10-22T19:27:49.3802596Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Untyped.idr
+2026-10-22T19:27:49.9497786Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/Adequacy.idr
+2026-10-22T19:27:53.8030057Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/Compositional.idr
+2026-10-22T19:27:54.4138998Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/ContextualEquivalence.idr
+2026-10-22T19:27:55.2936021Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/Denotational.idr
+2026-10-22T19:27:55.8878185Z plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/Soundness.idr
+2026-10-22T19:27:56.4954935Z plaidris2-book> RUN idris2 --source-dir src --cg node -o examples src/Main.idr
+2026-10-22T19:27:57.4118801Z plaidris2-book> RUN node build/exec/examples
+2026-10-22T19:27:57.4689769Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/WrongArithmetic.idr
+2026-10-22T19:27:57.8229386Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/FalseLogic.idr
+2026-10-22T19:27:58.1716490Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/MissingCase.idr
+2026-10-22T19:27:58.5305685Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/NonDecreasing.idr
+2026-10-22T19:27:58.8846416Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/BadIndex.idr
+2026-10-22T19:27:59.3187519Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/ErasedRuntime.idr
+2026-10-22T19:27:59.6644755Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/LinearDuplication.idr
+2026-10-22T19:28:00.0227343Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/IllTypedApplication.idr
+2026-10-22T19:28:00.4566252Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/ArrowIsNotBottom.idr
+2026-10-22T19:28:00.8904895Z plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/OmegaDoesNotReturn.idr
+2026-10-22T19:28:01.9510569Z plaidris2-book> Built 69 HTML pages from 33 paired chapters in /build/source/dist
+2026-10-22T19:28:02.4610413Z plaidris2-book> PASS 69 pages; 4151 local links/assets; chapter switches, fragments and source hashes
+2026-10-22T19:28:02.4611476Z plaidris2-book> RUN node tests/site-behavior.cjs
+2026-10-22T19:28:02.4978035Z plaidris2-book> PASS requested checks completed
+2026-10-22T19:28:02.5154078Z plaidris2-book> buildPhase completed in 44 seconds
+2026-10-22T19:28:02.5154664Z plaidris2-book> Running phase: installPhase
+2026-10-22T19:28:02.5236105Z plaidris2-book> Running phase: fixupPhase
+2026-10-22T19:28:02.5325984Z plaidris2-book> shrinking RPATHs of ELF executables and libraries in /nix/store/ik91sszg907ihhxmvdpnlwi551z37mj0-plaidris2-book-0.1.0
+2026-10-22T19:28:02.5439208Z plaidris2-book> checking for references to /build/ in /nix/store/ik91sszg907ihhxmvdpnlwi551z37mj0-plaidris2-book-0.1.0...
+2026-10-22T19:28:02.5644948Z plaidris2-book> patching script interpreter paths in /nix/store/ik91sszg907ihhxmvdpnlwi551z37mj0-plaidris2-book-0.1.0
