@@ -1,0 +1,18 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/IllTypedApplication.idr
+1/1: Building IllTypedApplication (tests/negative/IllTypedApplication.idr)
+Error: While processing right hand side of bad. When unifying:
+    HasType ?gamma RZero TNat
+and:
+    HasType ?gamma ?fun (Arr ?a ?b)
+Mismatch between: TNat and Arr ?a ?b.
+
+IllTypedApplication:5:12--5:17
+ 1 | module IllTypedApplication
+ 2 | import PLFA.Part2.Typed
+ 3 | %default total
+ 4 | bad : HasType [] (RApp RZero RZero) TNat
+ 5 | bad = TApp TZero TZero
+                ^^^^^
+
+
+exit_code=1

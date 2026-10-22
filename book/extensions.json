@@ -1,0 +1,20 @@
+[
+  {
+    "id": "IdrisPrimer",
+    "group": "extensions",
+    "en": "docs/en/IdrisPrimer.md",
+    "zh": "docs/zh/IdrisPrimer.md"
+  },
+  {
+    "id": "QTT",
+    "group": "extensions",
+    "en": "docs/en/QTT.md",
+    "zh": "docs/zh/QTT.md"
+  },
+  {
+    "id": "Trust",
+    "group": "extensions",
+    "en": "docs/en/Trust.md",
+    "zh": "docs/zh/Trust.md"
+  }
+]

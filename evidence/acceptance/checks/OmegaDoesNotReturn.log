@@ -1,0 +1,18 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/OmegaDoesNotReturn.idr
+1/1: Building OmegaDoesNotReturn (tests/negative/OmegaDoesNotReturn.idr)
+Error: While processing right hand side of bad. When unifying:
+    Eval (Lam (Var FZ)) (Lam (Var FZ))
+and:
+    Eval omega identity
+Mismatch between: Lam (Var FZ) and App selfApply selfApply.
+
+OmegaDoesNotReturn:5:7--5:14
+ 1 | module OmegaDoesNotReturn
+ 2 | import PLFA.Part2.BigStep
+ 3 | %default total
+ 4 | bad : Eval (Untyped.omega {n = 0}) Untyped.identity
+ 5 | bad = EvalLam
+           ^^^^^^^
+
+
+exit_code=1

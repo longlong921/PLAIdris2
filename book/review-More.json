@@ -1,0 +1,86 @@
+{
+  "chapter": "More",
+  "sources": [
+    "src/PLFA/Part2/More.idr"
+  ],
+  "upstream": "src/plfa/part2/More.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "MTy / Term",
+      "scope": "Full intrinsic extension with unary naturals, functions/fixpoints, primitive Nat literals/multiplication, let, products/projections/two-binder Split, sums, unit/UnitCase, empty/Absurd, and lists/ListCase."
+    },
+    {
+      "name": "rename / subst / extendRen / extendSub",
+      "scope": "Type-preserving renaming and simultaneous substitution cover every constructor, extending twice under product and list destructuring branches."
+    },
+    {
+      "name": "double / inst2",
+      "scope": "Simultaneous two-variable substitution with order second::first::gamma; product branch binds second/first, list branch tail/head. All further binders weaken replacements correctly."
+    },
+    {
+      "name": "Value / Step",
+      "scope": "Weak strict left-to-right CBV dynamics for all constructs, including value premises on both pair fields and list components, selected sum branches, primitive multiplication, let beta and general recursion."
+    },
+    {
+      "name": "progress / emptyValue",
+      "scope": "Every closed intrinsic term of any extended type is a value or can step; no closed value exists at EmptyT. This does not exclude closed diverging terms at EmptyT."
+    },
+    {
+      "name": "valueNormal",
+      "scope": "Every value in every context and at every extended type has no one-step reduct, covering all extended value constructors."
+    },
+    {
+      "name": "evaluate / runPrimitive / runUnary",
+      "scope": "Total fuelled evaluator producing a finite trace plus value/exhaustion evidence for the entire extended language."
+    },
+    {
+      "name": "cubeTwo / cubeComputed / lengthComputed / emptyLoopStep",
+      "scope": "Actual four-step let-based primitive cube trace, cube result Just 8, recursive length result Just 2, and a closed self-loop at EmptyT."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "1",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "splitOrder"
+      ],
+      "scope": "Product destructuring substitutes three and five in the specified first/second positions."
+    },
+    {
+      "id": "2",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "sumChoice"
+      ],
+      "scope": "Left sum branch selection substitutes the payload seven and ignores the right branch."
+    },
+    {
+      "id": "3",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "listHead"
+      ],
+      "scope": "List cons branch substitutes head/tail and selects the head at index one."
+    }
+  ],
+  "deviations": [
+    "Formalized sums, unit, empty and lists from upstream explanatory sections/exercises in addition to its executable primitive/let/product core.",
+    "The double-binder operation is defined directly as simultaneous substitution. The optional upstream double-subst equation comparing particular sequential substitutions is not supplied or claimed.",
+    "The prose explains translations between projections and pair-pattern matching, but does not claim a general proved equivalence of the two product formulations.",
+    "Fuel accounting uses a finite trace and value/exhaustion evidence rather than an exact gas-indexed length relation."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part2/More.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts, or termination overrides",
+    "evidence": "evidence/typed-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

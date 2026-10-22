@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/plfa/plfa.github.io",
+  "branch": "dev",
+  "commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "commit_date": "2026-09-03T09:33:05Z",
+  "retrieved": "2026-10-22",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "authors": [
+    "Philip Wadler",
+    "Wen Kokke",
+    "Jeremy G. Siek"
+  ],
+  "mapping": "chapters.json"
+}

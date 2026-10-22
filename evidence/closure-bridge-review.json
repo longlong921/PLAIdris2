@@ -1,0 +1,28 @@
+{
+  "reviewer": "denotation chapter agent; ClosureBounds author and independent reader of ClosureCorrespondence",
+  "checked_at": "2026-10-22T18:57:13.323667+00:00",
+  "compiler": "Idris2 0.8.0",
+  "command": [
+    "idris2",
+    "--source-dir",
+    "src",
+    "--check",
+    "src/PLFA/Part2/ClosureCorrespondence.idr"
+  ],
+  "exit_code": 0,
+  "compile_log": "evidence/closure-bridge-review-compile.log",
+  "sources_sha256": {
+    "src/PLFA/Part2/ClosureBounds.idr": "2a0242abaaeb112b5fc9cc53db797d0bb8aeefe0e42e8855a58ad4dc31d7c312",
+    "src/PLFA/Part2/ClosureCorrespondence.idr": "2ea5ceaa6d68cb3046e5303a926adc028a9f4462281fd71bc637e478ced80baf"
+  },
+  "claims_reviewed": [
+    "evalBound constructs an existential finite derivation bound from every Eval derivation; no global fuel bound or termination premise beyond the given derivation is introduced.",
+    "weakenBound preserves exact source and result for arbitrary LTE evidence, and forgetBound reconstructs the same Eval judgment.",
+    "boundedToClos uses fuel descent at application and finite closure/environment structural descent at variable lookup; no termination override is present.",
+    "evalToClos quantifies over every Closure and every closed result term, and constructs a ClosEval result with exact equality between its reification and the original result.",
+    "ClosValue ensures that the obtained function closure is a lambda; lambdaInjective and reifyBeta transport the body evaluation through capture-avoiding closing substitution.",
+    "The theorem does not assume environment entries have already evaluated, and does not reduce closure evaluation to a fixed selection of examples."
+  ],
+  "findings": [],
+  "status": "passed"
+}

@@ -1,0 +1,42 @@
+{
+  "checked_at_utc": "2026-10-22T18:58:37.575467+00:00",
+  "checks": [
+    {
+      "chapter": "Soundness",
+      "bilingual_anchors": 11,
+      "source_includes": 7,
+      "checked_exercise_symbols": [
+        "betaMeaning",
+        "ignoredArgumentMeaning",
+        "underLambdaMeaning"
+      ],
+      "status": "pass"
+    },
+    {
+      "chapter": "Adequacy",
+      "bilingual_anchors": 12,
+      "source_includes": 6,
+      "checked_exercise_symbols": [
+        "constantIgnoresArgument",
+        "equalPreservesConvergence",
+        "bottomIsNotEnough",
+        "omegaHasNoFunction"
+      ],
+      "status": "pass"
+    },
+    {
+      "chapter": "ContextualEquivalence",
+      "bilingual_anchors": 8,
+      "source_includes": 4,
+      "checked_exercise_symbols": [
+        "underBinderReplacement",
+        "reduceReplacement",
+        "contextualReflexive",
+        "contextualSymmetric",
+        "contextualTransitive",
+        "etaNotContextual"
+      ],
+      "status": "pass"
+    }
+  ]
+}

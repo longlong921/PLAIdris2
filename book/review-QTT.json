@@ -1,0 +1,35 @@
+{
+  "chapter": "QTT",
+  "sources": [
+    "src/PLFA/Extensions/QTT.idr"
+  ],
+  "core_claims": [
+    {
+      "name": "countCorrect",
+      "scope": "For any vector xs of length n, counting its spine with erased n returns n."
+    },
+    {
+      "name": "swapOnceTwice",
+      "scope": "For every LinearPair value, two swaps return the same value; the theorem parameter is unrestricted."
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "solution": "countThree"
+    },
+    {
+      "id": 2,
+      "solution": "swapOnceTwice"
+    }
+  ],
+  "upstream": null,
+  "deviations": [
+    "Independent Idris2 extension; outside original PLFA chapter ordering."
+  ],
+  "checked": {
+    "compiler": "Idris2 0.8.0",
+    "status": "passed",
+    "command": "idris2 --source-dir src --check src/PLFA/Extensions/QTT.idr"
+  }
+}

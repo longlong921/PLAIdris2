@@ -1,0 +1,99 @@
+{
+  "chapter": "Untyped",
+  "sources": [
+    "src/PLFA/Part2/Untyped.idr"
+  ],
+  "upstream": "src/plfa/part2/Untyped.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Tm / rename / subst / beta",
+      "scope": "Intrinsically scoped untyped de Bruijn syntax for every natural scope, including open terms. Simultaneous substitution lifts replacement terms under binders to prevent capture. No object-language type or termination restriction."
+    },
+    {
+      "name": "Step / Steps / stepsTrans / stepsLam / stepsLeft / stepsRight",
+      "scope": "Full unrestricted beta contraction with reduction under lambdas and on both application sides; finite reflexive-transitive paths, their concatenation and contextual lifting."
+    },
+    {
+      "name": "FullNeutral / FullNormal / progress",
+      "scope": "Structural full normal forms and a constructive normal-form-or-next-step result for every well-scoped term, including arbitrary open terms. The selected next step follows normal order."
+    },
+    {
+      "name": "fullNormalNoStep / fullNeutralNoStep / noStepIsNormal",
+      "scope": "Structural full normality is equivalent to absence of any full beta step, with no closedness assumption."
+    },
+    {
+      "name": "normalize / NormalizeResult",
+      "scope": "Total fuel-bounded full normal-order evaluator. Every outcome contains a Steps trace. Exhaustion proves trace length equals fuel; successful normalization proves trace length is strictly less than fuel and carries a FullNormal endpoint certificate. No conclusion of divergence follows from exhaustion."
+    },
+    {
+      "name": "church / churchAdd / churchNormal / churchTwoPlusTwo / churchTwoPlusTwoFinishes",
+      "scope": "Church numerals at every natural number, proof all are full normal forms, addition encoding, and checked normalization of two plus two to Church four with successful completion."
+    },
+    {
+      "name": "scott / scottCase / fixpoint / scottAdd / scottMultiply",
+      "scope": "Scott natural-number/case and genuine untyped self-application fixpoint encodings; recursive Scott addition and multiplication. The encodings are finite syntax, not total object-level evaluators."
+    },
+    {
+      "name": "scottTwoPlusTwo / scottTwoTimesTwo / scottArithmeticFinishes",
+      "scope": "Both Scott arithmetic expressions normalize to the same term as Scott four, and separate checked completion flags rule out merely comparing exhausted residuals."
+    },
+    {
+      "name": "captureAvoidance / underBinder / omegaLoops",
+      "scope": "Checked capture avoidance, full reduction beneath a lambda, and a beta self-loop for Omega. The self-loop is not by itself used as a proof that every strategy diverges."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Untyped-1",
+      "solution_symbol": [
+        "captureAvoidance"
+      ]
+    },
+    {
+      "id": "Untyped-2",
+      "solution_symbol": [
+        "underBinder"
+      ]
+    },
+    {
+      "id": "Untyped-3",
+      "solution_symbol": [
+        "omegaLoops"
+      ]
+    },
+    {
+      "id": "Untyped-4",
+      "solution_symbol": [
+        "churchTwoPlusTwo",
+        "churchTwoPlusTwoFinishes",
+        "scottTwoPlusTwo",
+        "scottTwoTimesTwo",
+        "scottArithmeticFinishes"
+      ]
+    }
+  ],
+  "deviations": [
+    "Scopes use Nat and Fin instead of repeated singleton-type contexts; unrestricted untyped terms and full beta reduction are retained.",
+    "Structural full normal-form predicates are named FullNeutral/FullNormal to distinguish them from weak head predicates. The full normalizer remains here; the separate weak evaluator is in BigStep.",
+    "Church numerals use a total syntax-generating function at arbitrary Nat. Scott arithmetic and fixpoint examples are retained, including a checked multiplication solution. Exercise numbering and presentation are adapted.",
+    "General normal-order standardisation is explained but not formalized, matching the upstream chapter: no theorem claiming termination of every normalizable term under normalize is exported."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 from the pinned Nix environment",
+    "commands": [
+      ".cache/run idris2 --source-dir src --check src/PLFA/Part2/Untyped.idr"
+    ],
+    "result": "pass; all commands exit_code=0",
+    "evidence": "evidence/untyped-owner-check.json",
+    "logs": [
+      "evidence/untyped-Untyped.log"
+    ],
+    "totality": "%default total; complete coverage and termination checking; no holes, proof escapes, postulates or unchecked theorem fields",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

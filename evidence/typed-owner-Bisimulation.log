@@ -1,0 +1,4 @@
+$ idris2 --source-dir src --check src/PLFA/Part2/Bisimulation.idr
+2/2: Building PLFA.Part2.Bisimulation (src/PLFA/Part2/Bisimulation.idr)
+
+exit_code=0

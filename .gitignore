@@ -1,0 +1,7 @@
+/.cache/
+/build/
+/dist/
+/result
+__pycache__/
+*.ttc
+*.ttm

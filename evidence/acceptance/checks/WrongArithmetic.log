@@ -1,0 +1,17 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/WrongArithmetic.idr
+1/1: Building WrongArithmetic (tests/negative/WrongArithmetic.idr)
+Error: While processing right hand side of bad. When unifying:
+    3 = 3
+and:
+    the Nat 2 = 3
+Mismatch between: S (assert_total (integerToNat 0)) and 0.
+
+WrongArithmetic:4:7--4:11
+ 1 | module WrongArithmetic
+ 2 | %default total
+ 3 | bad : (the Nat 2) = 3
+ 4 | bad = Refl
+           ^^^^
+
+
+exit_code=1

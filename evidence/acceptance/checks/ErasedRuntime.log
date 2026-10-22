@@ -1,0 +1,13 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/ErasedRuntime.idr
+1/1: Building ErasedRuntime (tests/negative/ErasedRuntime.idr)
+Error: While processing right hand side of bad. n is not accessible in this context.
+
+ErasedRuntime:4:9--4:10
+ 1 | module ErasedRuntime
+ 2 | %default total
+ 3 | bad : (0 n : Nat) -> Nat
+ 4 | bad n = n
+             ^
+
+
+exit_code=1

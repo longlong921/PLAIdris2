@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-10-22T18:57:10.780990+00:00",
+  "chapters": [
+    "Denotational",
+    "Compositional"
+  ],
+  "checks": [
+    {
+      "name": "compiler",
+      "command": [
+        "idris2",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "evidence/denotation-owner-compiler.log"
+    },
+    {
+      "name": "Denotational",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part3/Denotational.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/denotation-owner-Denotational.log"
+    },
+    {
+      "name": "Compositional",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part3/Compositional.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/denotation-owner-Compositional.log"
+    },
+    {
+      "name": "bilingual_content_and_source_audit",
+      "result": "PASS paired sections and source inclusions for 2 chapters\nPASS no proof holes or escape hatches in 2 reference modules"
+    }
+  ],
+  "sha256": {
+    "src/PLFA/Part3/Denotational.idr": "adc979e27e95e41c96dfc4c46c54025aa6da5e156c4567b3e7123609644c9dc2",
+    "src/PLFA/Part3/Compositional.idr": "0ee310c284871c6dba952555b34849f236ed489028c55acc1431a6ec864351f3",
+    "docs/en/Denotational.md": "888e5ad7e10a3e9e145495ad4888db156ef3a0aa074757a441cb0312611cd6bb",
+    "docs/en/Compositional.md": "931c32a820ba15e06de205d4537aa457f3da36379e7fff88f29b1a24a682fb87",
+    "docs/zh/Denotational.md": "73ebefa7048433d1c9745a27ee77119c243dd7c40b5132c797638dad12aba6ba",
+    "docs/zh/Compositional.md": "3698bfbbc18679576bc3dd637e111f9b95ab7d126e497f67880eabcf758bc5ba"
+  },
+  "status": "passed"
+}

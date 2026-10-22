@@ -1,0 +1,19 @@
+{
+  "verified_at": "2026-10-22T19:25:04.357832+00:00",
+  "system": "x86_64-linux",
+  "nix_flake_check": {
+    "exit_code": 0,
+    "fresh_build": true,
+    "build_phase_seconds": 37,
+    "log": "nix-check.log"
+  },
+  "nix_build": {
+    "exit_code": 0,
+    "reused_checked_derivation": true,
+    "log": "nix-build.log"
+  },
+  "derivation": "/nix/store/602559nk87p5y1qxqpsghcfk4xbpksfs-plaidris2-book-0.1.0.drv",
+  "output": "/nix/store/84bqn4irsigflgdvzw7nmay97s7xfhpa-plaidris2-book-0.1.0",
+  "other_systems_tested": false,
+  "public_deployment_performed": false
+}

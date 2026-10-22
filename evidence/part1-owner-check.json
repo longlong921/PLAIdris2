@@ -1,0 +1,202 @@
+{
+  "checked_at": "2026-10-22T19:09:00.637352+00:00",
+  "compiler": "Idris 2, version 0.8.0",
+  "result": "passed",
+  "chapters": [
+    {
+      "chapter": "Naturals",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Naturals.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Naturals.idr": "0b8f68ba902e0e8f73991e761d1dd03c26d08035acb6ffd3c93c2d713b2c4dc3",
+        "docs/en/Naturals.md": "16e934086e3092d768cc3977bff9aa7750629659187b733b30328b4efd18e4cf",
+        "docs/zh/Naturals.md": "a05d734db9d29ecb6a862bc2ff75341ee3cee77eb3498069159d30ac8d35db81"
+      }
+    },
+    {
+      "chapter": "Induction",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Induction.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Induction.idr": "ac04357373ed8b1fd6b69f37f64e470e14b96efa3b0a94bdca529347ce44a116",
+        "docs/en/Induction.md": "368483041bf41a4a4fe03eaf19a3256ff196afe23b35ddb81dac87b9372ce036",
+        "docs/zh/Induction.md": "f683237d2514243a30e8449e99e345ffa16a642e9e68153a530f89dbfb8c7280"
+      }
+    },
+    {
+      "chapter": "Relations",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Relations.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Relations.idr": "6195a04f7b9adffb46d41c73b4c5c9524c0e4e0aaf71a9022e18f5985a279745",
+        "docs/en/Relations.md": "823de39a515743a295254d028492e52050a90a67e0cc1af2650c194ad8bef583",
+        "docs/zh/Relations.md": "ffc2e51d08bc720b931f9ca49f033908d7aea1a9dcf364708210fc5807c78be7"
+      }
+    },
+    {
+      "chapter": "Equality",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Equality.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Equality.idr": "85f7dd899051841d119ea43e267a1961c539cc2e899f6d183bee125aad6247ab",
+        "docs/en/Equality.md": "548d889c603e3ad36d6250c013e5625f3767286e785622be9bede01d56b32cc0",
+        "docs/zh/Equality.md": "59114a8bda073d55ec04e9e6a04c5cadae74bd92be52c8fbdb090303e9f0310c"
+      }
+    },
+    {
+      "chapter": "Isomorphism",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Isomorphism.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Isomorphism.idr": "9b6ecc6ddb8599d12d99f9cc8b19eb7dc5f136dd37964c41b32d460276d71cb4",
+        "docs/en/Isomorphism.md": "badf569787520d9ce76a9adec3187c71ac93b7298ea2d3f6a493ee27b318aa0c",
+        "docs/zh/Isomorphism.md": "ff5b9b1cf9989324ff0b96ab5224e779a0deb5ad00d4b80fe5aa93b9e329d9da"
+      }
+    },
+    {
+      "chapter": "Connectives",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Connectives.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Connectives.idr": "a5a3ed525d3e662b4878618365174a3f4b120fb57a1990fa1492eb32412f80ed",
+        "docs/en/Connectives.md": "df1aeea94cecc945c8075ae493e31a4c259599d4c8cbceed0c12c575c5fe5b96",
+        "docs/zh/Connectives.md": "db5991a38f89569161f1b06c7c4831dc284a35ba4e3f26aff10befac828c9c7b"
+      }
+    },
+    {
+      "chapter": "Negation",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Negation.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Negation.idr": "6b7341a2a1ff23fe864523f1c3a362f95c5eafffb4b34583ef0d37bb512b1649",
+        "docs/en/Negation.md": "1f19744ce08912c4af76e457a648a74219bd924a8bd36a7a59a65343cb4ace23",
+        "docs/zh/Negation.md": "ab3e88098761eb484811e31879b44bfc25446c05c0fb3f80839587f6fd723952"
+      }
+    },
+    {
+      "chapter": "Quantifiers",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Quantifiers.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Quantifiers.idr": "db3a0c993e56a06a5fa2762d30744dd3d450ef21e8b0060a94d48e6d8019bb21",
+        "docs/en/Quantifiers.md": "36b85d08d1c486b22c246e7402019a9abd9b65ceb7ff5118be1692ac2d451017",
+        "docs/zh/Quantifiers.md": "ced2a471dd1bc9ef3774148df7972489007c64abdc4992f816efe7ee1a8f86a7"
+      }
+    },
+    {
+      "chapter": "Decidable",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Decidable.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Decidable.idr": "ed331a1655de4b2e29b29b14f68a45911f75c8226110f49afe0dbb6f7e25b8f4",
+        "docs/en/Decidable.md": "e51113e3e4a5c6677530e987b7c84eaae0de1ba62de61994b3ba792f821c1099",
+        "docs/zh/Decidable.md": "76b675cbcd651f6fea4165aa5357e7f3e2a228a056bbc84c6c0c44fa0c6817d8"
+      }
+    },
+    {
+      "chapter": "Lists",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part1/Lists.idr"
+      ],
+      "exit_code": 0,
+      "anchors_includes_exercises": "matched",
+      "solution_symbols": "all present",
+      "local_links": "valid",
+      "hashes": {
+        "src/PLFA/Part1/Lists.idr": "e4efa4c25435003d94d0918c096bbea5a4e86a4a80daa71e671c6fe0084bfabd",
+        "docs/en/Lists.md": "24aa6832d73a1d5e1ac85aae7d2e62ec42548c67940b300ade11caad1473239d",
+        "docs/zh/Lists.md": "9e04f240019884b698bac81f2a7a890c73e32e9584b3eedfc9e764a5bbc8a572"
+      }
+    }
+  ],
+  "source_audit": "%default total; no forbidden proof escapes",
+  "independent_review": "Recorded separately by root/review; this file reports author checks only",
+  "runtime_checks": "Coordinated by primary editor; not duplicated here",
+  "final_editorial_check_at": "2026-10-22T19:11:09.469180+00:00",
+  "host_boundary_correction": "Equality English/Chinese and review-Equality explicitly record Idris2 0.8.0 Type : Type from the versioned official FAQ and link Trust; no predicative hierarchy is claimed. Part1 wording searched for universe claims."
+}

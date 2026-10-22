@@ -1,0 +1,94 @@
+{
+  "chapter": "Properties",
+  "sources": [
+    "src/PLFA/Part2/Typed.idr",
+    "src/PLFA/Part2/Lambda.idr",
+    "src/PLFA/Part2/Properties.idr"
+  ],
+  "upstream": "src/plfa/part2/Properties.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "renameTyping / liftRenType",
+      "scope": "For arbitrary source and target contexts, renaming preserves external typing whenever corresponding variable lookups have equal types; binder lifting is proved."
+    },
+    {
+      "name": "substTyping / liftSubType / instantiateTyping",
+      "scope": "For arbitrary contexts and all typed replacements, simultaneous substitution preserves typing. Single substitution accepts open, non-value arguments; no closedness or value assumption is hidden."
+    },
+    {
+      "name": "preservation / preservationMany",
+      "scope": "Any one-step or finite multi-step weak CBV reduction of an externally well-typed raw term preserves its type in the same arbitrary context, including case and fixpoint unfolding."
+    },
+    {
+      "name": "progress",
+      "scope": "Every closed Raw 0 term with HasType [] t a is a value or has an actual next term with a Step derivation. No progress claim is made for open variables."
+    },
+    {
+      "name": "valueNormal / normalTypedIsValue / safety",
+      "scope": "Values at any scope cannot step. Closed well-typed normal terms are values; after any supplied finite execution of a closed well-typed term, a normal endpoint is a value."
+    },
+    {
+      "name": "deterministic",
+      "scope": "Any two one-step reductions of the same Raw n term have equal targets, at every scope and without a typing hypothesis."
+    },
+    {
+      "name": "evaluate / evaluateNatural",
+      "scope": "Total fuelled evaluator for closed externally typed terms, returning an actual endpoint, finite trace and either a value proof or an exhaustion marker. Exhaustion is not a divergence certificate."
+    },
+    {
+      "name": "additionComputed / multiplicationComputed / loopExhausts",
+      "scope": "Concrete proof-producing evaluations of 2+2 to Just 4, 3*2 to Just 6, and ten fuel inspections of the self-loop to Nothing."
+    },
+    {
+      "name": "expansionStep / expansionUntypable",
+      "scope": "Counterexample to subject expansion: an untypable closed natural case with an ignored ill-typed successor branch steps to zero."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "1",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "loopType",
+        "loopStep"
+      ],
+      "scope": "A term typable at every simple type that takes a self-step through general recursion."
+    },
+    {
+      "id": "2",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "nestedIdentityType"
+      ],
+      "scope": "Transport typing through the complete nested-identity trace using preservationMany."
+    },
+    {
+      "id": "3",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "stuckNormal",
+        "stuckNotValue"
+      ],
+      "scope": "A closed normal raw term that is not a value; no typing derivation exists."
+    }
+  ],
+  "deviations": [
+    "Typed simultaneous substitution replaces named-variable extension, weakening, drop and swap bookkeeping; the actual preservation and closed-progress scopes are retained.",
+    "Progress takes the raw term explicitly so that the next term can be returned at runtime despite erased term indices in typing derivations.",
+    "The gas accounting is a plain Nat recursion with a trace and finish reason; no exact indexed gas-consumption equality is claimed.",
+    "Canonical-form arguments are implemented by appProgress and caseProgress helpers rather than a separate Canonical record or an isomorphism exercise."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part2/Properties.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts, or termination overrides",
+    "evidence": "evidence/typed-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

@@ -1,0 +1,77 @@
+{
+  "chapter": "Equality",
+  "sources": [
+    "src/PLFA/Part1/Equality.idr"
+  ],
+  "upstream": "src/plfa/part1/Equality.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "eqSym / eqTrans / eqCong / eqCong2 / applicationCong / transport",
+      "scope": "General propositional equality symmetry, transitivity, one- and two-argument congruence, application congruence from equality of functions, and transport in arbitrary type families."
+    },
+    {
+      "name": "evenComm / evenCommRewrite / calculation / leChain",
+      "scope": "Evenness transfers across addition commutativity; substitution and rewrite implementations; an arbitrary-natural equality chain; a transitivity chain for LE."
+    },
+    {
+      "name": "Leibniz / leibnizRefl / leibnizTrans / equalityToLeibniz / leibnizToEquality / leibnizSym",
+      "scope": "Leibniz equality as transfer through every admissible type family, with equivalence in both directions to Idris equality and constructive reflexivity, transitivity, symmetry."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "E.1",
+      "solution_symbol": [
+        "eqSym",
+        "eqTrans",
+        "eqCong",
+        "eqCong2"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "E.2",
+      "solution_symbol": [
+        "calculation",
+        "leChain"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "E.3",
+      "solution_symbol": [
+        "evenComm",
+        "evenCommRewrite"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "E.4",
+      "solution_symbol": [
+        "equalityToLeibniz",
+        "leibnizToEquality",
+        "leibnizSym"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "Uses built-in Idris equality so rewrite integrates with the checker.",
+    "Idris2 0.8.0 implements Type : Type, as documented in the pinned official FAQ. Agda's predicative universe hierarchy and explicit universe-polymorphic API are not reproduced; checked proof programs remain subject to the host limitation explained in Trust.",
+    "Named step/finish/leChain combinators replace the Agda equational-reasoning DSL."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Equality.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer",
+    "host_boundary": "Idris2 0.8.0 Type : Type; compiler acceptance is not a consistency proof; see docs/en/Trust.md#theorems and its versioned FAQ source."
+  },
+  "remaining_proof_work": []
+}

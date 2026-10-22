@@ -1,0 +1,15 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/MissingCase.idr
+1/1: Building MissingCase (tests/negative/MissingCase.idr)
+Error: bad is not covering.
+
+MissingCase:3:1--3:19
+ 1 | module MissingCase
+ 2 | %default total
+ 3 | bad : Bool -> Bool
+     ^^^^^^^^^^^^^^^^^^
+
+Missing cases:
+    bad False
+
+
+exit_code=1

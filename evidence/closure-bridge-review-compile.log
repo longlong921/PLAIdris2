@@ -1,0 +1,5 @@
+$ idris2 --source-dir src --check src/PLFA/Part2/ClosureCorrespondence.idr
+4/5: Building PLFA.Part2.ClosureBounds (src/PLFA/Part2/ClosureBounds.idr)
+5/5: Building PLFA.Part2.ClosureCorrespondence (src/PLFA/Part2/ClosureCorrespondence.idr)
+
+exit_code=0

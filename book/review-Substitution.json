@@ -1,0 +1,77 @@
+{
+  "chapter": "Substitution",
+  "sources": [
+    "src/PLFA/Appendix/Substitution.idr"
+  ],
+  "upstream": "src/plfa/part2/Substitution.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "renameExt / substExt / liftRenExt / liftSubExt",
+      "scope": "Pointwise equality of arbitrary maps suffices for equality of renamed/substituted terms in every scope; no function extensionality assumed."
+    },
+    {
+      "name": "renameId / renameComp",
+      "scope": "Renaming identity and arbitrary renaming composition for all scoped terms."
+    },
+    {
+      "name": "substRename / renameSubst",
+      "scope": "Both mixed renaming/substitution composition laws, including the lifting and weakening equations needed under binders."
+    },
+    {
+      "name": "substId / substComp",
+      "scope": "Simultaneous substitution identity and arbitrary substitution composition for all scoped terms."
+    },
+    {
+      "name": "cancelShift / unusedBinder",
+      "scope": "Substituting any argument for a freshly added unused slot after weakening returns the original arbitrary open term."
+    },
+    {
+      "name": "renameBeta / substBeta",
+      "scope": "Renaming and simultaneous substitution commute with a beta body/argument substitution for arbitrary maps, bodies and arguments."
+    },
+    {
+      "name": "cons / betaSubst",
+      "scope": "Substitute an environment beneath a binder, then supply an arbitrary target-scope argument: the result equals one substitution with the explicitly extended environment."
+    },
+    {
+      "name": "renamingAsSubstitution",
+      "scope": "Every renaming is exactly substitution by the corresponding variable terms, proved from identity and mixed composition."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Substitution-1",
+      "solution_symbol": [
+        "renamingAsSubstitution"
+      ]
+    },
+    {
+      "id": "Substitution-2",
+      "solution_symbol": [
+        "unusedBinder"
+      ]
+    }
+  ],
+  "deviations": [
+    "The upstream Part2 chapter is organized as this book's appendix and module PLFA.Appendix.Substitution.",
+    "Fin-scoped, pointwise map laws replace global function equalities, avoiding a function-extensionality axiom while retaining arbitrary-map substitution and beta interaction results."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 from the pinned Nix environment",
+    "commands": [
+      ".cache/run idris2 --source-dir src --check src/PLFA/Appendix/Substitution.idr"
+    ],
+    "result": "pass; all commands exit_code=0",
+    "evidence": "evidence/untyped-owner-check.json",
+    "logs": [
+      "evidence/untyped-Substitution.log"
+    ],
+    "totality": "%default total; complete coverage and termination checking; no holes, proof escapes, postulates or unchecked theorem fields",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

@@ -1,0 +1,38 @@
+$ node build/exec/examples
+PASS natural addition
+PASS natural multiplication
+PASS natural exponentiation
+PASS truncated subtraction
+PASS binary round trips 0..64
+PASS canonical binary decisions 0..64
+PASS order reflection 0..12 squared
+PASS safe subtraction
+PASS append
+PASS reverse algorithms agree
+PASS fold sum
+PASS fold product
+PASS extrinsic CBV recursive addition
+PASS extrinsic CBV recursive multiplication
+PASS typed general recursion exhausts finite fuel
+PASS intrinsic CBV recursive addition
+PASS intrinsic CBV recursive multiplication
+PASS let and primitive cube
+PASS object-language recursive list length
+PASS bidirectional inference accepts addition
+PASS inference to intrinsic evaluation
+PASS bidirectional inference rejects zero application
+PASS bidirectional inference rejects false annotation
+PASS CBN identity
+PASS CBN ignores divergent unused argument
+PASS Omega exhausts finite CBN fuel
+PASS full normalization enters lambda
+PASS full normalization Church addition
+PASS full normalization recursive Scott addition
+PASS full normalization recursive Scott multiplication
+PASS Omega exhausts finite full-normalization fuel
+PASS Idris primer vector map
+PASS QTT erased index, counted spine
+PASS host totality does not halt object machine
+ALL EXAMPLES PASSED
+
+exit_code=0

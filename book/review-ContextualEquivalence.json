@@ -1,0 +1,36 @@
+{
+  "chapter": "ContextualEquivalence",
+  "sources": ["src/PLFA/Part3/ContextualEquivalence.idr"],
+  "upstream": "src/plfa/part3/ContextualEquivalence.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {"name": "ContextuallyEquivalent / BetaContextuallyEquivalent", "scope": "For arbitrary scoped terms, quantify every well-scoped single-hole closing Ctx n 0. The two definitions observe respectively existence of substitution-based weak call-by-name lambda evaluation and existence of full beta reduction to a lambda."},
+    {"name": "denotEqualConverges / contextualEquivalence", "scope": "Pointwise semantic equality of arbitrary open terms implies preservation and reflection of closed weak call-by-name convergence after plugging into every closing context. The proof uses established compositionality, soundness, and adequacy rather than a supplied adequacy field."},
+    {"name": "denotEqualTerminates / betaContextualEquivalence", "scope": "Semantic equality implies the upstream contextual-equivalence observation stated with arbitrary full beta paths to some lambda. The result quantifies all closing contexts and adds no typing or normalization hypothesis."},
+    {"name": "reduceReplacement / betaReplacement / underBinderReplacement", "scope": "Any finite full beta reduction, including contraction under a lambda, yields contextual equivalence under all closing contexts. Open beta redexes are supported by scope-indexed contexts."},
+    {"name": "etaNotContextual", "scope": "Omega is not contextually equivalent to lambda x. Omega x for weak-head convergence; the empty context separates them, using EvalLam and the proved impossibility of evaluating Omega."}
+  ],
+  "exercises": [
+    {"id": "C1", "solution_symbol": ["underBinderReplacement", "reduceReplacement"], "scope": "Replace a beta redex beneath a lambda and generalize to every finite full beta path."},
+    {"id": "C2", "solution_symbol": ["contextualReflexive", "contextualSymmetric", "contextualTransitive"], "scope": "Prove all equivalence-relation laws by pointwise transport of convergence evidence at each context."},
+    {"id": "C3", "solution_symbol": "etaNotContextual", "scope": "Refute unrestricted eta replacement by distinguishing Omega from its lambda eta expansion with the hole context."}
+  ],
+  "deviations": [
+    "The upstream full-beta observation is retained as BetaContextuallyEquivalent; an additional equivalent weak call-by-name observation is exposed as ContextuallyEquivalent.",
+    "Explicit evidence-transport functions replace Agda iff notation; no function extensionality is needed.",
+    "The eta counterexample and equivalence-relation exercises are additional checked material. No converse from contextual equivalence to semantic equality, or full abstraction theorem, is claimed."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 from the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part3/ContextualEquivalence.idr",
+    "result": "pass; exit_code=0, including etaNotContextual",
+    "evidence": "evidence/semantics-owner-check.json",
+    "log": "evidence/semantics-ContextualEquivalence.log",
+    "totality": "%default total; complete coverage and termination checking; no holes or proof escapes",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

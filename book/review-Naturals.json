@@ -1,0 +1,86 @@
+{
+  "chapter": "Naturals",
+  "sources": [
+    "src/PLFA/Part1/Naturals.idr"
+  ],
+  "upstream": "src/plfa/part1/Naturals.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "add / mul / power / monus",
+      "scope": "Total structurally recursive natural addition, multiplication, exponentiation (including zero exponent), and truncated subtraction on all Nat inputs."
+    },
+    {
+      "name": "seven / addExample / mulExample / powerExample / monusExample",
+      "scope": "Closed constructor and arithmetic equalities: seven; 3+4=7; 3*4=12; 3^4=81; 3 monus 5=0 and 5 monus 3=2. Universal laws are explicitly deferred to Induction."
+    },
+    {
+      "name": "Bin / inc / toBin / fromBin / normalize",
+      "scope": "Unbounded raw binary bitstrings permitting leading zeros; total carry increment, conversion in both directions, and normalization through Nat. toBin zero is the single zero."
+    },
+    {
+      "name": "binaryExamples / binaryValues / carryExample",
+      "scope": "Checked conversion in each direction on zero through four, and the carry from eleven to twelve."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "N.1",
+      "solution_symbol": [
+        "seven"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "N.2",
+      "solution_symbol": [
+        "addExample",
+        "mulExample"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "N.3",
+      "solution_symbol": [
+        "power",
+        "powerExample"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "N.4",
+      "solution_symbol": [
+        "monusExample"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "N.5",
+      "solution_symbol": [
+        "inc",
+        "toBin",
+        "fromBin",
+        "binaryExamples",
+        "binaryValues",
+        "carryExample"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "Uses Idris built-in inductive Nat and numeral elaboration instead of redefining Agda naturals and BUILTIN pragmas. All tutorial arithmetic is defined explicitly.",
+    "Agda-specific editor keystrokes and historical narrative are condensed into explanations of constructors, finite values, totality, and a completed-code checking workflow."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Naturals.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}

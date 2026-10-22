@@ -1,0 +1,108 @@
+{
+  "checked_at_utc": "2026-10-22T18:57:39.276299+00:00",
+  "compiler": "Idris 2, version 0.8.0",
+  "checks": [
+    {
+      "chapter": "Soundness",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part3/Soundness.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/semantics-Soundness.log",
+      "source_sha256": "8f77a02951f633b25e54f5d6dd4eb9c6d6c63fcb6a5f1c37c0023d900db2c470",
+      "bilingual_parity": true,
+      "anchors": [
+        "soundness",
+        "motivation",
+        "model",
+        "examples",
+        "theorems",
+        "preservation",
+        "finite-demand",
+        "reflection",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "includes": [
+        "src/PLFA/Part3/Soundness.idr#substitution-preservation",
+        "src/PLFA/Part3/Soundness.idr#preservation",
+        "src/PLFA/Part3/Soundness.idr#renaming-reflection",
+        "src/PLFA/Part3/Soundness.idr#finite-demand",
+        "src/PLFA/Part3/Soundness.idr#reflection",
+        "src/PLFA/Part3/Soundness.idr#soundness",
+        "src/PLFA/Part3/Soundness.idr#exercises"
+      ]
+    },
+    {
+      "chapter": "Adequacy",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part3/Adequacy.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/semantics-Adequacy.log",
+      "source_sha256": "798b68b7476cee0845b645ee668d256e1531592729de7f187a2bd089adf6e7f1",
+      "bilingual_parity": true,
+      "anchors": [
+        "adequacy",
+        "motivation",
+        "model",
+        "examples",
+        "theorems",
+        "logical-relation",
+        "fundamental",
+        "observable-adequacy",
+        "closure-adequacy",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "includes": [
+        "src/PLFA/Part3/Adequacy.idr#observation",
+        "src/PLFA/Part3/Adequacy.idr#logical-relation",
+        "src/PLFA/Part3/Adequacy.idr#fundamental",
+        "src/PLFA/Part3/Adequacy.idr#adequacy",
+        "src/PLFA/Part3/Adequacy.idr#closure-adequacy",
+        "src/PLFA/Part3/Adequacy.idr#exercises"
+      ]
+    },
+    {
+      "chapter": "ContextualEquivalence",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part3/ContextualEquivalence.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/semantics-ContextualEquivalence.log",
+      "source_sha256": "57d39c19e6824765bde100317def886d9865bbd84ba7cb3e5fe8235208c9a7ff",
+      "bilingual_parity": true,
+      "anchors": [
+        "contextual-equivalence",
+        "motivation",
+        "model",
+        "examples",
+        "theorems",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "includes": [
+        "src/PLFA/Part3/ContextualEquivalence.idr#observations",
+        "src/PLFA/Part3/ContextualEquivalence.idr#examples",
+        "src/PLFA/Part3/ContextualEquivalence.idr#replacement",
+        "src/PLFA/Part3/ContextualEquivalence.idr#exercises"
+      ]
+    }
+  ]
+}

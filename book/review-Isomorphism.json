@@ -1,0 +1,94 @@
+{
+  "chapter": "Isomorphism",
+  "sources": [
+    "src/PLFA/Part1/Isomorphism.idr"
+  ],
+  "upstream": "src/plfa/part1/Isomorphism.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "sameApplications",
+      "scope": "For every pair of naturals, the right-recursive and left-recursive additions give propositionally equal outputs; whole-function equality is not claimed."
+    },
+    {
+      "name": "Iso / isoRefl / isoSym / isoTrans",
+      "scope": "Isomorphism of arbitrary types via two maps and both pointwise propositional inverse laws, with reflexivity, symmetry and composition."
+    },
+    {
+      "name": "Embedding / embedRefl / embedTrans / isoToEmbedding",
+      "scope": "Retraction-based embeddings of arbitrary types; identity, composition, and forgetting an isomorphism right-inverse law."
+    },
+    {
+      "name": "embeddingAntisym",
+      "scope": "Opposed embeddings form an Iso using the first maps when both map/recovery pairs agree pointwise; compatibility hypotheses are explicit."
+    },
+    {
+      "name": "binaryEmbedding",
+      "scope": "Embedding of all naturals into unrestricted raw binary strings; only the fromTo inverse is asserted."
+    },
+    {
+      "name": "Iff / iffRefl / iffSym / iffTrans",
+      "scope": "Logical equivalence consists of two implications with no inverse laws; equivalence operations are constructed."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "S.1",
+      "solution_symbol": [
+        "isoRefl",
+        "isoSym",
+        "isoTrans"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "S.2",
+      "solution_symbol": [
+        "isoToEmbedding",
+        "embedTrans"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "S.3",
+      "solution_symbol": [
+        "embeddingAntisym"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "S.4",
+      "solution_symbol": [
+        "binaryEmbedding"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "S.5",
+      "solution_symbol": [
+        "Iff",
+        "iffRefl",
+        "iffSym",
+        "iffTrans"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "The upstream postulated function extensionality and consequent whole-function addition equality are not assumed. sameApplications preserves the universal pointwise mathematical law.",
+    "Embedding map compatibility is pointwise rather than equality of whole functions.",
+    "The duplicate datatype presentation and equational DSL are consolidated into named record operations."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Isomorphism.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}

@@ -1,0 +1,25 @@
+Programming Language Foundations in Idris2 (PLAIdris2)
+
+An independent adaptation of Programming Language Foundations in Agda (PLFA)
+by Philip Wadler, Wen Kokke and Jeremy G. Siek.
+Original work: https://plfa.github.io/
+Source: https://github.com/plfa/plfa.github.io
+Frozen source commit: 1c39b1e82caa4283274e64ba58c3bc3c9ab781eb
+Retrieved: 2026-10-22
+
+PLFA is licensed under Creative Commons Attribution 4.0 International.
+The full license is retained in LICENSE:
+https://creativecommons.org/licenses/by/4.0/
+
+The adaptation and its original source, prose, tests and site assets are
+distributed under the same CC BY 4.0 license. Changes include independently
+written bilingual explanations, implementations and proofs in Idris2,
+documented representation choices, additional Idris2-specific chapters,
+source extraction, a static reading site and reproducible validation tools.
+
+This work is not an official PLFA edition. No endorsement by the original
+authors is implied. Chapter review records identify mathematical and
+representational differences; all original PLFA chapter positions are retained.
+
+The dependencies provided by Nix retain their own licenses. This repository
+does not redistribute the Nix package store or proprietary font files.

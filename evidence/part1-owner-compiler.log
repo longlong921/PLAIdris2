@@ -1,0 +1,39 @@
+$ idris2 --source-dir src --check src/PLFA/Part1/Naturals.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Induction.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Relations.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Equality.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Isomorphism.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Connectives.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Negation.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Quantifiers.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Decidable.idr
+
+exit_code=0
+
+$ idris2 --source-dir src --check src/PLFA/Part1/Lists.idr
+
+exit_code=0

@@ -1,0 +1,3 @@
+$ idris2 --source-dir src --check src/PLFA/Part2/ClosureBounds.idr
+
+exit_code=0

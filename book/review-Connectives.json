@@ -1,0 +1,98 @@
+{
+  "chapter": "Connectives",
+  "sources": [
+    "src/PLFA/Part1/Connectives.idr"
+  ],
+  "upstream": "src/plfa/part1/Connectives.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "productComm / productAssoc / iffProduct / unitLeft / unitRight",
+      "scope": "Full intensional Iso records for product commutation/association, two implications versus a pair of functions, and unit identities, with both inverse laws."
+    },
+    {
+      "name": "sumEta / sumUnique / sumComm / sumAssoc / emptyLeft / emptyRight",
+      "scope": "Sum eta and pointwise elimination uniqueness; full Iso records for sum commutation/association and empty identities."
+    },
+    {
+      "name": "currying / curryRound / uncurryRound",
+      "scope": "Logical equivalence of curried and pair-consuming functions, with both round trips proved at every argument; no whole-function equality assumption."
+    },
+    {
+      "name": "functionSum / functionSumRound / functionSumHandlers / functionProduct / functionProductRound / functionProductHandlers",
+      "scope": "Both function-space distributions have two conversion maps and pointwise recovery for original functions and reconstructed handlers, without function extensionality."
+    },
+    {
+      "name": "productSum / sumProduct",
+      "scope": "Full Iso for product distributing over sum; only a retraction Embedding for sum-over-product with a repeated alternative, reflecting extra target values."
+    },
+    {
+      "name": "weakDistribution / disjunctToConjunct / noGeneralConverse",
+      "scope": "Weak distribution and disjunct-of-conjunct implication; checked counterexample refuting a general converse instantiated at unit/empty types."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "C.1",
+      "solution_symbol": [
+        "productComm",
+        "productAssoc",
+        "unitLeft",
+        "unitRight"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "C.2",
+      "solution_symbol": [
+        "sumComm",
+        "sumAssoc",
+        "emptyLeft",
+        "emptyRight"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "C.3",
+      "solution_symbol": [
+        "currying",
+        "curryRound",
+        "uncurryRound"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "C.4",
+      "solution_symbol": [
+        "productSum",
+        "weakDistribution"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "C.5",
+      "solution_symbol": [
+        "disjunctToConjunct",
+        "noGeneralConverse"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "Uses Idris pair, unit, Either and Void instead of redeclaring duplicate connective datatypes.",
+    "The three upstream function-space Iso results are expressed as Iff plus explicit pointwise inverse laws; the extensionality-dependent whole-function equality upgrades are not claimed.",
+    "Finite cardinality examples are explained in prose rather than encoded as standalone enumeration functions."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Connectives.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}

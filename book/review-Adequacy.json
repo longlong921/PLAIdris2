@@ -1,0 +1,39 @@
+{
+  "chapter": "Adequacy",
+  "sources": ["src/PLFA/Part3/Adequacy.idr"],
+  "upstream": "src/plfa/part3/Adequacy.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {"name": "Realizes / realizesExpansion / realizesDown", "scope": "A logical relation on all finite information values and all closed untyped terms. Bottom imposes no convergence requirement; arrows carry a lambda evaluation and behavior for every realizing argument; joins pair evidence. Downward closure is proved for the complete Info relation, including contravariant arrows, transitivity, and IDist. IDist uses proved evaluation determinism to align result lambdas."},
+    {"name": "fundamental / closedFundamental", "scope": "For every scoped semantic derivation and every substitution of closed terms realizing the semantic environment pointwise, the substituted term realizes the denoted value. The theorem follows the Denote derivation and uses checked substitution algebra in the lambda case. The closed corollary requires no environment assumptions."},
+    {"name": "functionConverges / adequacy", "scope": "Every closed term with any Arrow approximation in the empty environment has a finite substitution-based weak call-by-name Eval derivation to some lambda. Consequently semantic equality with any closed lambda implies this observation. No object-language normalization or total evaluation is assumed."},
+    {"name": "observableAdequacy", "scope": "For every closed untyped term, existence of some finite Arrow denotation is equivalent to existence of a weak call-by-name lambda evaluation. The reverse direction constructs Arrow Bottom Bottom using Soundness."},
+    {"name": "reducesConverges / cbnBetaEquivalent", "scope": "For every closed term, existence of a full beta sequence to some lambda is equivalent to substitution-based weak call-by-name convergence to some lambda. This does not assert that every full beta strategy terminates or that returned bodies are syntactically identical."},
+    {"name": "omegaHasNoFunction", "scope": "Omega has no Arrow denotation at any input/output approximations, proved from adequacy and BigStep.omegaNoEval; its Bottom denotation is separately constructed."},
+    {"name": "convergenceToClosure / closureToConvergence", "scope": "Constructive two-way conversion between substitution-based closed convergence and actual ClosEval from the closed term and Empty environment. ClosureConverges explicitly contains ClosureValue evidence that the result closure contains a lambda. The conversions use proved evaluator correspondences, not an assumed bridge."},
+    {"name": "functionClosureConverges / closureAdequacy / reduceToClosure", "scope": "Finite Arrow denotation, semantic equality with a lambda, or any full beta path to a lambda respectively construct actual closure call-by-name convergence. This restores the upstream closure-valued operational conclusion."},
+    {"name": "closureBetaEquivalent / closureObservableAdequacy", "scope": "For every closed untyped term, closure call-by-name convergence is equivalent both to existence of a full beta path to some lambda and to existence of some finite Arrow denotation. Closure bridge proof bounds are extracted from supplied finite derivations, not fixed theorem restrictions."}
+  ],
+  "exercises": [
+    {"id": "A1", "solution_symbol": "constantIgnoresArgument", "scope": "Construct convergence for an arbitrary ignored closed argument via a finite function denotation."},
+    {"id": "A2", "solution_symbol": "equalPreservesConvergence", "scope": "Semantic equality transports convergence of closed programs without asserting syntactic equality of result lambdas."},
+    {"id": "A3", "solution_symbol": ["bottomIsNotEnough", "omegaHasNoFunction"], "scope": "Construct the Bottom denotation of Omega and refute all its Arrow denotations."}
+  ],
+  "deviations": [
+    "The main logical relation is on closed substituted terms rather than upstream closures; every arrow directly includes its weak lambda evaluation witness. This avoids the auxiliary above-function decision procedure without changing the finite information order or the convergence observation.",
+    "The main logical relation first constructs substitution-based Eval evidence, then the proved bidirectional reification bridges from BigStep and ClosureCorrespondence produce actual ClosEval witnesses. closureAdequacy and closureBetaEquivalent retain the upstream closure conclusions, with an indexed ClosureValue witness replacing the explicit Agda existential context/body/environment tuple."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 from the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part3/Adequacy.idr",
+    "result": "pass; exit_code=0, including all closure-valued corollaries",
+    "evidence": "evidence/semantics-owner-check.json",
+    "log": "evidence/semantics-Adequacy.log",
+    "totality": "%default total; complete coverage and termination checking; no holes or proof escapes",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

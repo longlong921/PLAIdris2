@@ -1,0 +1,159 @@
+{
+  "status": "passed",
+  "reference_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "checked_on": "2026-10-22",
+  "chapters": [
+    {
+      "chapter": "Dedication",
+      "source": "src/plfa/frontmatter/Dedication.md",
+      "sha256": "aa33e30676ecf74590efb2a44b78db5012e16eedf187719398b05724e0bdd335"
+    },
+    {
+      "chapter": "Preface",
+      "source": "src/plfa/frontmatter/Preface.md",
+      "sha256": "39747c2e0d9994d66fee0a44c3ac8388fa01c98b2119afdfb15e0efce4ee608a"
+    },
+    {
+      "chapter": "GettingStarted",
+      "source": "README.md",
+      "sha256": "394d5f4171bdce411c91c61a7d64235338a4735ecf4405c1b6a6fa1ebb898471"
+    },
+    {
+      "chapter": "Naturals",
+      "source": "src/plfa/part1/Naturals.lagda.md",
+      "sha256": "12b175cadf0f7c5b6639f5d5596b08e4134424a84af5fb460ebcecccab272aa7"
+    },
+    {
+      "chapter": "Induction",
+      "source": "src/plfa/part1/Induction.lagda.md",
+      "sha256": "8f6fd4c33c5c2acddcca9dd7afa5099f1a57a962ce5e5c8bb8931123bf70fd1f"
+    },
+    {
+      "chapter": "Relations",
+      "source": "src/plfa/part1/Relations.lagda.md",
+      "sha256": "55e0bbc20e9c2b53bdf448f05e961d25b6277544286b8287125cfabaabb16a07"
+    },
+    {
+      "chapter": "Equality",
+      "source": "src/plfa/part1/Equality.lagda.md",
+      "sha256": "12e0d1c9c62550296e7ca6e633f1a9f2ebd3572830deac9f5799164e416305a9"
+    },
+    {
+      "chapter": "Isomorphism",
+      "source": "src/plfa/part1/Isomorphism.lagda.md",
+      "sha256": "887a8c5c9ac7b19deeeff6b325575bc10c555eba303a96e54eafbb7bcb8e1021"
+    },
+    {
+      "chapter": "Connectives",
+      "source": "src/plfa/part1/Connectives.lagda.md",
+      "sha256": "4f9ef29f0e2c2097fba63325b442f4316fd3c2599ac44b67f1c5b15485930603"
+    },
+    {
+      "chapter": "Negation",
+      "source": "src/plfa/part1/Negation.lagda.md",
+      "sha256": "614596ea5e29be902593c2faa241217191179c25ffb601704b2a20fc65c15b64"
+    },
+    {
+      "chapter": "Quantifiers",
+      "source": "src/plfa/part1/Quantifiers.lagda.md",
+      "sha256": "32363c3f975eddb5eb5b2ef6a08cc7c082c54873584846b6ebf5e892ad388d3a"
+    },
+    {
+      "chapter": "Decidable",
+      "source": "src/plfa/part1/Decidable.lagda.md",
+      "sha256": "f442aeaa2102f248acaa706b20922d9db09726ab64a531ec4404a8e62e260f5e"
+    },
+    {
+      "chapter": "Lists",
+      "source": "src/plfa/part1/Lists.lagda.md",
+      "sha256": "540529cd8bca1c5b36f7204b5416769802650f326f83dc032ebfd21c91bb4049"
+    },
+    {
+      "chapter": "Lambda",
+      "source": "src/plfa/part2/Lambda.lagda.md",
+      "sha256": "e149bddf3b9779a93f74f2807feff4ff092ffa5a596fe1087d7c3e28404fe11b"
+    },
+    {
+      "chapter": "Properties",
+      "source": "src/plfa/part2/Properties.lagda.md",
+      "sha256": "71266a3c68af5761cf33ff8bc55bf81404d4b05cfc81f4441ce48635617f960c"
+    },
+    {
+      "chapter": "DeBruijn",
+      "source": "src/plfa/part2/DeBruijn.lagda.md",
+      "sha256": "f4074cacf8f91d9a47d911f7f5ef18733722fb23dbe49da0088bc493efa1d8ab"
+    },
+    {
+      "chapter": "More",
+      "source": "src/plfa/part2/More.lagda.md",
+      "sha256": "d9171cb36c58118ab51b3c67aaa74f323ab9208b9ffa5b08e67f8af9b2beaf3d"
+    },
+    {
+      "chapter": "Bisimulation",
+      "source": "src/plfa/part2/Bisimulation.lagda.md",
+      "sha256": "8ee41ee7fd2171a8228fb9214458bd7ef810ec6b5243ab3f0f3b94dd36a06cbd"
+    },
+    {
+      "chapter": "Inference",
+      "source": "src/plfa/part2/Inference.lagda.md",
+      "sha256": "4694d370ab2df2928c286607d98b1c7ad0d3dd9879c09b47ae1798c5de86d220"
+    },
+    {
+      "chapter": "Untyped",
+      "source": "src/plfa/part2/Untyped.lagda.md",
+      "sha256": "da1ca17191a331f6714987e2d84b97789a863bf82db1534646e08813ddbbd68d"
+    },
+    {
+      "chapter": "Confluence",
+      "source": "src/plfa/part2/Confluence.lagda.md",
+      "sha256": "92d06463a5d88c58f9e2ce5db09fa400a74e4b004c5fd64b76c499590160761d"
+    },
+    {
+      "chapter": "BigStep",
+      "source": "src/plfa/part2/BigStep.lagda.md",
+      "sha256": "bf4aaefec57250b15a4974f8df2a80e1e21e8a17efb5956d25e433d9213d85c8"
+    },
+    {
+      "chapter": "Denotational",
+      "source": "src/plfa/part3/Denotational.lagda.md",
+      "sha256": "6d0f7703e83a1456eae562e849e273f24566a28633b428bae963dc52b9528667"
+    },
+    {
+      "chapter": "Compositional",
+      "source": "src/plfa/part3/Compositional.lagda.md",
+      "sha256": "0f96b1364ee83cf896128e35a0f25a268f69260450e1844d748c3c16addd6d44"
+    },
+    {
+      "chapter": "Soundness",
+      "source": "src/plfa/part3/Soundness.lagda.md",
+      "sha256": "6f8ade454def6de86cb2b5cdebee155d1ce1738f8be61046f6a31352f734ebcd"
+    },
+    {
+      "chapter": "Adequacy",
+      "source": "src/plfa/part3/Adequacy.lagda.md",
+      "sha256": "711a4bae8eb4733889d2c935c59f23faa3ad1b731fd969d74db95f0ea38ce7d1"
+    },
+    {
+      "chapter": "ContextualEquivalence",
+      "source": "src/plfa/part3/ContextualEquivalence.lagda.md",
+      "sha256": "889de9ab15aa78cd8ea3bccd29ca5a96228f0e8db467fde7cb533719bc2e469c"
+    },
+    {
+      "chapter": "Substitution",
+      "source": "src/plfa/part2/Substitution.lagda.md",
+      "sha256": "df3b8ba757a833dd3218e11dc6c206088e203db40ee88839797d108d3ed76a8b"
+    },
+    {
+      "chapter": "Acknowledgements",
+      "source": "src/plfa/backmatter/Acknowledgements.md",
+      "sha256": "b364f125c60e518ed25d015e144b14f55d2a3a7141d569cd6405731f82fda79f"
+    },
+    {
+      "chapter": "Fonts",
+      "source": "src/plfa/backmatter/Fonts.lagda.md",
+      "sha256": "7dbf038da78460f2532cff557c75e1ba3dc08a8a91048ded5d6c8cefa4b64dd6"
+    }
+  ],
+  "license_verbatim": true,
+  "license_sha256": "da9fb46a056c588ce610d03bc5f560cf82e1ab903ecc412e98edc5eabd9be92c"
+}

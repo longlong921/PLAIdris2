@@ -1,0 +1,42 @@
+[
+  {
+    "file": "tests/negative/WrongArithmetic.idr",
+    "diagnostic": "Mismatch|Can't solve constraint|Can't unify"
+  },
+  {
+    "file": "tests/negative/FalseLogic.idr",
+    "diagnostic": "Mismatch|Can't solve constraint|Can't unify"
+  },
+  {
+    "file": "tests/negative/MissingCase.idr",
+    "diagnostic": "not covering|Missing cases"
+  },
+  {
+    "file": "tests/negative/NonDecreasing.idr",
+    "diagnostic": "not total|possibly not terminating"
+  },
+  {
+    "file": "tests/negative/BadIndex.idr",
+    "diagnostic": "Mismatch|Can't solve constraint|Can't unify"
+  },
+  {
+    "file": "tests/negative/ErasedRuntime.idr",
+    "diagnostic": "is not accessible in this context"
+  },
+  {
+    "file": "tests/negative/LinearDuplication.idr",
+    "diagnostic": "Trying to use linear name|There are 2 uses"
+  },
+  {
+    "file": "tests/negative/IllTypedApplication.idr",
+    "diagnostic": "Mismatch|Can't solve constraint|Can't unify"
+  },
+  {
+    "file": "tests/negative/ArrowIsNotBottom.idr",
+    "diagnostic": "Mismatch|Can't solve constraint|Can't unify"
+  },
+  {
+    "file": "tests/negative/OmegaDoesNotReturn.idr",
+    "diagnostic": "Mismatch|Can't solve constraint|Can't unify"
+  }
+]

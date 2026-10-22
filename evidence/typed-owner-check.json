@@ -1,0 +1,310 @@
+{
+  "owner": "Part2 typed chapters",
+  "started": "2026-10-22T19:18:50.011595+00:00",
+  "finished": "2026-10-22T19:18:54.707321+00:00",
+  "compiler": "Idris 2, version 0.8.0",
+  "status": "passed",
+  "modules": [
+    {
+      "source": "src/PLFA/Part2/Typed.idr",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part2/Typed.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/typed-owner-Typed.log",
+      "sha256": "f1680ebf72cf28888d41efd40d8508df1fe3d312bcbcbb2ffa1f4ca3705230ff"
+    },
+    {
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part2/Lambda.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/typed-owner-Lambda.log",
+      "sha256": "397c574bd63581d2af6b0619d8119afcb35ed4faab81de412d77d18d212c09d0"
+    },
+    {
+      "source": "src/PLFA/Part2/Properties.idr",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part2/Properties.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/typed-owner-Properties.log",
+      "sha256": "d8552486dec5847f9bf75de273e7bd0ad7ea6aa7cc6c41c037dd597bb38536cc"
+    },
+    {
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part2/DeBruijn.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/typed-owner-DeBruijn.log",
+      "sha256": "36ab7d9235fa04ee26962fed8b7aef1f9fdcd7605e8c8958f52cced426ad3834"
+    },
+    {
+      "source": "src/PLFA/Part2/More.idr",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part2/More.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/typed-owner-More.log",
+      "sha256": "a1d496835cecead52a73f978a36b5d506970717a6f92d064d69f48331995b12b"
+    },
+    {
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part2/Bisimulation.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/typed-owner-Bisimulation.log",
+      "sha256": "eecd4d7dc04fa8468afa12dc8e0bae219a74b0486cd17b7ceef7bd84c17b98b9"
+    },
+    {
+      "source": "src/PLFA/Part2/Inference.idr",
+      "command": [
+        "idris2",
+        "--source-dir",
+        "src",
+        "--check",
+        "src/PLFA/Part2/Inference.idr"
+      ],
+      "exit_code": 0,
+      "log": "evidence/typed-owner-Inference.log",
+      "sha256": "821504300f91723ec1bed71921af014d9b0d02bcedaf18d9206f8278539a7a5d"
+    }
+  ],
+  "bilingual_chapters": [
+    {
+      "chapter": "Lambda",
+      "anchors": [
+        "lambda",
+        "motivation",
+        "model",
+        "binding",
+        "substitution",
+        "typing",
+        "reduction",
+        "examples",
+        "theorems",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_inclusions": [
+        "src/PLFA/Part2/Typed.idr#types",
+        "src/PLFA/Part2/Typed.idr#maps",
+        "src/PLFA/Part2/Typed.idr#typing",
+        "src/PLFA/Part2/Lambda.idr#dynamics",
+        "src/PLFA/Part2/Lambda.idr#examples",
+        "src/PLFA/Part2/Lambda.idr#multiplication",
+        "src/PLFA/Part2/Lambda.idr#solutions"
+      ],
+      "en_sha256": "d7bcb048682a0ca25a22355a6fc3f00e5937714e51d44933af39fa8a523f5ffd",
+      "zh_sha256": "a4e53561b20fe270cb01d027e6b0ea1666f80d2d67b623b806322c3f0c5023e6",
+      "en_words": 1405,
+      "zh_characters": 4229
+    },
+    {
+      "chapter": "Properties",
+      "anchors": [
+        "properties",
+        "motivation",
+        "model",
+        "structural",
+        "examples",
+        "theorems",
+        "preservation",
+        "progress",
+        "determinism",
+        "evaluator",
+        "computations",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_inclusions": [
+        "src/PLFA/Part2/Properties.idr#structural",
+        "src/PLFA/Part2/Properties.idr#expansion",
+        "src/PLFA/Part2/Properties.idr#preservation",
+        "src/PLFA/Part2/Properties.idr#progress",
+        "src/PLFA/Part2/Properties.idr#determinism",
+        "src/PLFA/Part2/Properties.idr#evaluator",
+        "src/PLFA/Part2/Properties.idr#computations",
+        "src/PLFA/Part2/Properties.idr#solutions"
+      ],
+      "en_sha256": "c445d6decac66aa26dbbdc2422b4a36e62e9c0f38bb782d992790de4f4cda7f6",
+      "zh_sha256": "96095dc15cea45bbcb5ee5207c671c0bfee3ddc07583521c3cec54d3c3b446a2",
+      "en_words": 1308,
+      "zh_characters": 4168
+    },
+    {
+      "chapter": "DeBruijn",
+      "anchors": [
+        "debruijn",
+        "motivation",
+        "model",
+        "intrinsic",
+        "renaming",
+        "substitution",
+        "examples",
+        "theorems",
+        "dynamics",
+        "correspondence",
+        "computations",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_inclusions": [
+        "src/PLFA/Part2/DeBruijn.idr#intrinsic",
+        "src/PLFA/Part2/DeBruijn.idr#renaming",
+        "src/PLFA/Part2/DeBruijn.idr#substitution",
+        "src/PLFA/Part2/DeBruijn.idr#examples",
+        "src/PLFA/Part2/DeBruijn.idr#dynamics",
+        "src/PLFA/Part2/DeBruijn.idr#correspondence",
+        "src/PLFA/Part2/DeBruijn.idr#erasure",
+        "src/PLFA/Part2/DeBruijn.idr#computations",
+        "src/PLFA/Part2/DeBruijn.idr#solutions"
+      ],
+      "en_sha256": "4d3ecb27d43f168f6c0461ea383067cf0b18f7bd84c62731e67a7e8b35a1ed33",
+      "zh_sha256": "095727161b70612ce37e61fe3cc9030c4582314dfe2f45e182397a79f37513c5",
+      "en_words": 1331,
+      "zh_characters": 4087
+    },
+    {
+      "chapter": "More",
+      "anchors": [
+        "more",
+        "motivation",
+        "model",
+        "constructs",
+        "substitution",
+        "dynamics",
+        "examples",
+        "theorems",
+        "progress",
+        "normality",
+        "evaluation",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_inclusions": [
+        "src/PLFA/Part2/More.idr#syntax",
+        "src/PLFA/Part2/More.idr#structural",
+        "src/PLFA/Part2/More.idr#dynamics",
+        "src/PLFA/Part2/More.idr#examples",
+        "src/PLFA/Part2/More.idr#computations",
+        "src/PLFA/Part2/More.idr#progress",
+        "src/PLFA/Part2/More.idr#value-normal",
+        "src/PLFA/Part2/More.idr#empty-loop",
+        "src/PLFA/Part2/More.idr#evaluation",
+        "src/PLFA/Part2/More.idr#solutions"
+      ],
+      "en_sha256": "dc874b11e4394973f7ea10cd5529fcd99045d353fb5c965dcf855db9cef9cd04",
+      "zh_sha256": "29f5b1c0df053bd7dde58d918b144872083e1047ed33df29dd2407e6d80cf342",
+      "en_words": 1480,
+      "zh_characters": 4267
+    },
+    {
+      "chapter": "Bisimulation",
+      "anchors": [
+        "bisimulation",
+        "motivation",
+        "model",
+        "relation",
+        "examples",
+        "theorems",
+        "compatibility",
+        "forward",
+        "backward",
+        "traces",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_inclusions": [
+        "src/PLFA/Part2/Bisimulation.idr#relation",
+        "src/PLFA/Part2/Bisimulation.idr#examples",
+        "src/PLFA/Part2/Bisimulation.idr#compatibility",
+        "src/PLFA/Part2/Bisimulation.idr#forward",
+        "src/PLFA/Part2/Bisimulation.idr#backward",
+        "src/PLFA/Part2/Bisimulation.idr#traces",
+        "src/PLFA/Part2/Bisimulation.idr#graph",
+        "src/PLFA/Part2/Bisimulation.idr#solutions"
+      ],
+      "en_sha256": "1638c0fa1d5e55bdf6797c0771a44f581d22aaaa1360c07ec80e776688d8c382",
+      "zh_sha256": "5a4b2e565dff7c1419f11120e160d3baab1ce294f428792de381531e4a4fce8f",
+      "en_words": 1310,
+      "zh_characters": 3981
+    },
+    {
+      "chapter": "Inference",
+      "anchors": [
+        "inference",
+        "motivation",
+        "model",
+        "syntax",
+        "judgements",
+        "examples",
+        "theorems",
+        "uniqueness",
+        "decision",
+        "soundness",
+        "completeness",
+        "execution",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_inclusions": [
+        "src/PLFA/Part2/Inference.idr#syntax",
+        "src/PLFA/Part2/Inference.idr#judgements",
+        "src/PLFA/Part2/Inference.idr#examples",
+        "src/PLFA/Part2/Inference.idr#equality",
+        "src/PLFA/Part2/Inference.idr#decision",
+        "src/PLFA/Part2/Inference.idr#soundness",
+        "src/PLFA/Part2/Inference.idr#completeness",
+        "src/PLFA/Part2/Inference.idr#execution",
+        "src/PLFA/Part2/Inference.idr#solutions"
+      ],
+      "en_sha256": "41ce396661cd4e69e03ceb4156fb4873a937d33a3be4c85f026f77481e848e52",
+      "zh_sha256": "05b22e419f407b15bd3251b457b3b0c4014d1d9561a8348ae15cb857ee02b5da",
+      "en_words": 1515,
+      "zh_characters": 4672
+    }
+  ],
+  "checks": [
+    "exact upstream mapping",
+    "paired anchors and source inclusions",
+    "included regions exist",
+    "review claims and exercise metadata present",
+    "source audit: total, no holes or escapes",
+    "all seven modules accepted by pinned Idris2 0.8.0"
+  ],
+  "scope_note": "Compilation checks total definitions and proof terms; it is not a proof of host compiler soundness. Full site/runtime/negative tests and independent mathematical acceptance are owned by the primary editor."
+}

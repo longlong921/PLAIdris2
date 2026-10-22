@@ -1,0 +1,13 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/LinearDuplication.idr
+1/1: Building LinearDuplication (tests/negative/LinearDuplication.idr)
+Error: While processing right hand side of bad. Trying to use linear name x in non-linear context.
+
+LinearDuplication:4:13--4:14
+ 1 | module LinearDuplication
+ 2 | %default total
+ 3 | bad : (1 x : a) -> (a, a)
+ 4 | bad x = (x, x)
+                 ^
+
+
+exit_code=1

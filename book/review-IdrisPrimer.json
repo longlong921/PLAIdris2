@@ -1,0 +1,39 @@
+{
+  "chapter": "IdrisPrimer",
+  "sources": [
+    "src/PLFA/Extensions/IdrisPrimer.idr"
+  ],
+  "core_claims": [
+    {
+      "name": "mapIdentity",
+      "scope": "For every vector, mapping identity preserves the vector."
+    },
+    {
+      "name": "mapCompose",
+      "scope": "For arbitrary types, functions and length, two maps equal one composed map."
+    },
+    {
+      "name": "swapTwice",
+      "scope": "Swapping an arbitrary pair twice is identity."
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "solution": "mapCompose"
+    },
+    {
+      "id": 2,
+      "solution": "twiceSuccessor"
+    }
+  ],
+  "upstream": null,
+  "deviations": [
+    "Independent Idris2 extension; outside original PLFA chapter ordering."
+  ],
+  "checked": {
+    "compiler": "Idris2 0.8.0",
+    "status": "passed",
+    "command": "idris2 --source-dir src --check src/PLFA/Extensions/IdrisPrimer.idr"
+  }
+}

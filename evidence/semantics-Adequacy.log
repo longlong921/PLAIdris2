@@ -1,0 +1,4 @@
+$ idris2 --source-dir src --check src/PLFA/Part3/Adequacy.idr
+9/9: Building PLFA.Part3.Adequacy (src/PLFA/Part3/Adequacy.idr)
+
+exit_code=0

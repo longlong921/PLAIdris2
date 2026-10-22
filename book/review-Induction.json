@@ -1,0 +1,104 @@
+{
+  "chapter": "Induction",
+  "sources": [
+    "src/PLFA/Part1/Induction.idr"
+  ],
+  "upstream": "src/plfa/part1/Induction.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "addAssoc / addZeroRight / addSuccRight / addComm / addSwap / addRearrange",
+      "scope": "Universal addition associativity, right identity, successor movement, commutativity, three-term exchange and four-term regrouping on arbitrary naturals."
+    },
+    {
+      "name": "mulZeroRight / mulSuccRight / mulComm / mulDistrib / mulDistribRight / mulAssoc / mulOneRight / mulSwap",
+      "scope": "Universal multiplication zero, successor, commutativity, both distributivity laws, associativity, unit, and exchange laws."
+    },
+    {
+      "name": "powerAdd / powerMul / powerProduct",
+      "scope": "For all m,n,p: m^(n+p)=m^n*m^p; m^(n*p)=(m^n)^p; (m*n)^p=m^p*n^p, with the defined natural exponentiation."
+    },
+    {
+      "name": "zeroMonus / monusAdd",
+      "scope": "For every n, zero monus n is zero; for every m,n,p, (m monus n) monus p = m monus (n+p)."
+    },
+    {
+      "name": "fromInc / fromTo",
+      "scope": "For every raw bitstring b, decoding inc b gives successor of decoding b; for every natural n, decoding its encoding gives n."
+    },
+    {
+      "name": "notRawRoundTrip / normalizeValue / normalizeIdempotent",
+      "scope": "Refutes the unrestricted reverse round trip at Empty; proves value preservation and idempotence of normalization for all raw bitstrings."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "I.1",
+      "solution_symbol": [
+        "addSwap",
+        "addRearrange"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "I.2",
+      "solution_symbol": [
+        "mulDistrib",
+        "mulDistribRight"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "I.3",
+      "solution_symbol": [
+        "mulAssoc",
+        "mulComm",
+        "mulSuccRight"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "I.4",
+      "solution_symbol": [
+        "zeroMonus",
+        "monusAdd"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "I.5",
+      "solution_symbol": [
+        "powerAdd",
+        "powerMul",
+        "powerProduct"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "I.6",
+      "solution_symbol": [
+        "fromInc",
+        "fromTo",
+        "notRawRoundTrip",
+        "normalizeIdempotent"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "Uses named operators and explicit equality composition/congruence, with rewrite where useful, rather than reproducing each Agda mixfix proof variant.",
+    "Finite unrollings of associativity are explained as specializations of the full inductive theorem rather than maintained as duplicate proof definitions."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Induction.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}

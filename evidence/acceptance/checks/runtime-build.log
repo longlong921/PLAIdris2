@@ -1,0 +1,3 @@
+$ idris2 --source-dir src --cg node -o examples src/Main.idr
+
+exit_code=0

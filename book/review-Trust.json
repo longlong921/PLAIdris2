@@ -1,0 +1,39 @@
+{
+  "chapter": "Trust",
+  "sources": [
+    "src/PLFA/Extensions/Trust.idr"
+  ],
+  "core_claims": [
+    {
+      "name": "spinExhausts",
+      "scope": "For each finite budget, runFor on Spin returns OutOfFuel."
+    },
+    {
+      "name": "noHaltStep",
+      "scope": "No Transition starts at Halt."
+    },
+    {
+      "name": "traceStaysSpin",
+      "scope": "Every finite trace from Spin ends at Spin."
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "solution": "noHaltStep"
+    },
+    {
+      "id": 2,
+      "solution": "traceStaysSpin"
+    }
+  ],
+  "upstream": null,
+  "deviations": [
+    "Independent Idris2 extension; outside original PLFA chapter ordering."
+  ],
+  "checked": {
+    "compiler": "Idris2 0.8.0",
+    "status": "passed",
+    "command": "idris2 --source-dir src --check src/PLFA/Extensions/Trust.idr"
+  }
+}

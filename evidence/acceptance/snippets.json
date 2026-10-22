@@ -1,0 +1,2378 @@
+{
+  "en/Dedication": [],
+  "en/Preface": [],
+  "en/GettingStarted": [],
+  "en/Naturals": [
+    {
+      "spec": "src/PLFA/Part1/Naturals.idr#arithmetic",
+      "source": "src/PLFA/Part1/Naturals.idr",
+      "start_line": 6,
+      "end_line": 25,
+      "sha256": "88da7837c47fe656f1ea0115c5c509e08439aa978b28648eaed2740511d3049c"
+    },
+    {
+      "spec": "src/PLFA/Part1/Naturals.idr#examples",
+      "source": "src/PLFA/Part1/Naturals.idr",
+      "start_line": 29,
+      "end_line": 47,
+      "sha256": "deba3157c2893f36c65156e493fd9d7d903cb0b87c20b58b653a8bcdb2661f9a"
+    },
+    {
+      "spec": "src/PLFA/Part1/Naturals.idr#binary",
+      "source": "src/PLFA/Part1/Naturals.idr",
+      "start_line": 51,
+      "end_line": 90,
+      "sha256": "40c1435a1104526982e78b776c47ec1579a4594f620965f3ac2b92afe7e28657"
+    }
+  ],
+  "en/Induction": [
+    {
+      "spec": "src/PLFA/Part1/Induction.idr#addition",
+      "source": "src/PLFA/Part1/Induction.idr",
+      "start_line": 8,
+      "end_line": 37,
+      "sha256": "2e4879e1d8842c53998e1b061fcb5803a81ff27486ce5a758c19bb71f866d8b2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Induction.idr#multiplication",
+      "source": "src/PLFA/Part1/Induction.idr",
+      "start_line": 41,
+      "end_line": 83,
+      "sha256": "ebd0534efd2381a5d8e51bd5ec8eeb3407414687ce0219f58ea0758bd8216f26"
+    },
+    {
+      "spec": "src/PLFA/Part1/Induction.idr#powers-monus",
+      "source": "src/PLFA/Part1/Induction.idr",
+      "start_line": 87,
+      "end_line": 117,
+      "sha256": "5e6519583e9e28f30873d16dbc3ea2929e583706edc6c5f2a08ae2bc4841b4e8"
+    },
+    {
+      "spec": "src/PLFA/Part1/Induction.idr#binary-laws",
+      "source": "src/PLFA/Part1/Induction.idr",
+      "start_line": 121,
+      "end_line": 146,
+      "sha256": "3d090fc0ea3c79357148fb3b2cde120cf0fe675f59ae06e1cce84637c19d9dde"
+    }
+  ],
+  "en/Relations": [
+    {
+      "spec": "src/PLFA/Part1/Relations.idr#order",
+      "source": "src/PLFA/Part1/Relations.idr",
+      "start_line": 8,
+      "end_line": 107,
+      "sha256": "75d75314e238f6ac613ec3c6fc8febf5558556e4fc59a04fad89d460420da33d"
+    },
+    {
+      "spec": "src/PLFA/Part1/Relations.idr#parity",
+      "source": "src/PLFA/Part1/Relations.idr",
+      "start_line": 111,
+      "end_line": 143,
+      "sha256": "25450c30dea68b74f2cd7623846457054239bfcd0bce4b359d64d8fc3ca40793"
+    },
+    {
+      "spec": "src/PLFA/Part1/Relations.idr#canonical",
+      "source": "src/PLFA/Part1/Relations.idr",
+      "start_line": 147,
+      "end_line": 215,
+      "sha256": "b1fb08d85b708a925fd8f482085152f6eb3ca805bf54a4f8a462fce75d7d8250"
+    }
+  ],
+  "en/Equality": [
+    {
+      "spec": "src/PLFA/Part1/Equality.idr#equality",
+      "source": "src/PLFA/Part1/Equality.idr",
+      "start_line": 8,
+      "end_line": 30,
+      "sha256": "e600068653f56cb8c068dbb54c2d3b719b565930b2de1051b0b06af3276704ae"
+    },
+    {
+      "spec": "src/PLFA/Part1/Equality.idr#reasoning",
+      "source": "src/PLFA/Part1/Equality.idr",
+      "start_line": 34,
+      "end_line": 58,
+      "sha256": "7c8b8f43a986f1c722b736bc549c53c50fb7f3077f4c8e0f13417b35279aa176"
+    },
+    {
+      "spec": "src/PLFA/Part1/Equality.idr#leibniz",
+      "source": "src/PLFA/Part1/Equality.idr",
+      "start_line": 62,
+      "end_line": 84,
+      "sha256": "f97f15f4b3be201c7d8a0567e5b46922fc5387dbb0229b6e6342d812539c67a5"
+    }
+  ],
+  "en/Isomorphism": [
+    {
+      "spec": "src/PLFA/Part1/Isomorphism.idr#maps",
+      "source": "src/PLFA/Part1/Isomorphism.idr",
+      "start_line": 8,
+      "end_line": 24,
+      "sha256": "c54326c018619632ccb9a4ec9726d7eaeabbde69f6a4417682a5780a1cbaf7d2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Isomorphism.idr#isomorphism",
+      "source": "src/PLFA/Part1/Isomorphism.idr",
+      "start_line": 28,
+      "end_line": 48,
+      "sha256": "3f37d8de1637d172932af5bbc7921b99e2598ade2284dc157f541745223930c6"
+    },
+    {
+      "spec": "src/PLFA/Part1/Isomorphism.idr#embedding",
+      "source": "src/PLFA/Part1/Isomorphism.idr",
+      "start_line": 52,
+      "end_line": 98,
+      "sha256": "b0695d504c2118d6c4a0bd774f1af0a92358250b2c2b70f9bf143a29eceeaf19"
+    }
+  ],
+  "en/Connectives": [
+    {
+      "spec": "src/PLFA/Part1/Connectives.idr#products",
+      "source": "src/PLFA/Part1/Connectives.idr",
+      "start_line": 8,
+      "end_line": 34,
+      "sha256": "7a83fd80d49443a1af3ba532914746feb4b5c1274dcec8d61888666382fb720c"
+    },
+    {
+      "spec": "src/PLFA/Part1/Connectives.idr#sums",
+      "source": "src/PLFA/Part1/Connectives.idr",
+      "start_line": 38,
+      "end_line": 101,
+      "sha256": "06c92942407e68e40c41dbb5ad16ef9f13c1b0479579156074d2897cc8cc790e"
+    },
+    {
+      "spec": "src/PLFA/Part1/Connectives.idr#functions",
+      "source": "src/PLFA/Part1/Connectives.idr",
+      "start_line": 105,
+      "end_line": 154,
+      "sha256": "a83083b1ff4eadb0b4563fefa18a07231aa5f477b97436fa86ed2cd4cba11eff"
+    },
+    {
+      "spec": "src/PLFA/Part1/Connectives.idr#distribution",
+      "source": "src/PLFA/Part1/Connectives.idr",
+      "start_line": 158,
+      "end_line": 212,
+      "sha256": "310721e9dbbb35f96565a979c1a8d7368244fef2cfd449277f0e64364dbd722c"
+    }
+  ],
+  "en/Negation": [
+    {
+      "spec": "src/PLFA/Part1/Negation.idr#constructive",
+      "source": "src/PLFA/Part1/Negation.idr",
+      "start_line": 8,
+      "end_line": 52,
+      "sha256": "ac913f384a00e7d8447a135aa0ca58ddc4a37ab6b081cdd07de3e6c1c0703a1b"
+    },
+    {
+      "spec": "src/PLFA/Part1/Negation.idr#strict-order",
+      "source": "src/PLFA/Part1/Negation.idr",
+      "start_line": 56,
+      "end_line": 75,
+      "sha256": "50544bc87ab5de1d4b6a85c68273bbb011a471c459212c8b05d26bcfe6d25f39"
+    },
+    {
+      "spec": "src/PLFA/Part1/Negation.idr#classical",
+      "source": "src/PLFA/Part1/Negation.idr",
+      "start_line": 79,
+      "end_line": 145,
+      "sha256": "c22406b427040381ca8261623d412ab949d3f7ca0f5c01942d99e1553a2b78a6"
+    },
+    {
+      "spec": "src/PLFA/Part1/Negation.idr#stability",
+      "source": "src/PLFA/Part1/Negation.idr",
+      "start_line": 149,
+      "end_line": 160,
+      "sha256": "d9393525be3b7d8a0397f93c916ff213052ec4d9e79f5396290120a69a1a5013"
+    }
+  ],
+  "en/Quantifiers": [
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#universals",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 8,
+      "end_line": 47,
+      "sha256": "f19b6f9928543373b911377ae60bbc5cb223a59b27cd6ab9e403b96b90019cf2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#existentials",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 51,
+      "end_line": 117,
+      "sha256": "06fa137625771aa43e3acc4b67d7954166c6be80002d6d9f1087de7110c71ba4"
+    },
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#parity-witnesses",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 121,
+      "end_line": 176,
+      "sha256": "b91f5cfd7d82f234bf21fe78c7ecfceffc93270fd4d0b5a9d71846b8c46fcd89"
+    },
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#negated-quantifiers",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 180,
+      "end_line": 186,
+      "sha256": "e4a1013db8ee8f079efbc3f5e65ced0130f7186ee2d5b27d32effeb88839eb7a"
+    },
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#canonical-isomorphism",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 190,
+      "end_line": 205,
+      "sha256": "5e5cf70a183f599c557aa9e5c6bf7c1c6946715977e4afc36118d8d931cc5add"
+    }
+  ],
+  "en/Decidable": [
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#boolean-evidence",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 8,
+      "end_line": 37,
+      "sha256": "0be80287fbfcf7ebd3f51a191e84f4b105fd4a8e393bd818b492249d52ac2e6b"
+    },
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#decisions",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 41,
+      "end_line": 99,
+      "sha256": "087c9c78622f8027928f54a1bf52b0907bb486902f4fbb0f4c682cbed44e98ca"
+    },
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#connectives",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 103,
+      "end_line": 180,
+      "sha256": "d139cf2472a68ac320375582fb138f6177f5a1158f65409aeb14bf51109761f2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#reflection",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 184,
+      "end_line": 209,
+      "sha256": "c16b3829934d59f89dc0a3fa89985241223def65621b285e7b28be7239fd8fd2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#binary-decisions",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 213,
+      "end_line": 248,
+      "sha256": "126b1830029c1e03059f3e97f31bf542678f832e5f84f8dac9f1ac37e93776cd"
+    }
+  ],
+  "en/Lists": [
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#append",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 8,
+      "end_line": 35,
+      "sha256": "0ebc329e9b8e94fba97c13afa8a9294cf0d950b98d5a89d0f03d855dfb6d5eca"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#reverse",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 39,
+      "end_line": 78,
+      "sha256": "286b32b6bc1badb60b5aa15fd071c49f12d55356ee3202360d781088a4568a94"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#map-fold",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 82,
+      "end_line": 131,
+      "sha256": "b0f78019ac69e69abdc03e11187501a387c1521b0ced123eb9e6be6551d6a225"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#trees",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 135,
+      "end_line": 153,
+      "sha256": "d8c1b0082a402edebdd0600f7792bed39806bd48f852dea2393dc32a0cf19805"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#monoids",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 157,
+      "end_line": 230,
+      "sha256": "4774d5b60f021322924e7fb2f91de125a90100dda722c335f23c6e42b1a844ed"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#predicates",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 234,
+      "end_line": 266,
+      "sha256": "72a02f1b598c437f7861d02df902fda348a9ab80a3c86b61d80d24c9783fbcc9"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#quantified-laws",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 270,
+      "end_line": 407,
+      "sha256": "7628e044820d5f4852715fb0cb4e6c32e8dca98e135a7e21ae07a36d129f740c"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#decidable-split",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 411,
+      "end_line": 458,
+      "sha256": "1e9f4359c321148fbd506bd1bfe56c74953fc8ce9c5aa6fa003791fc49aa3cb5"
+    }
+  ],
+  "en/Lambda": [
+    {
+      "spec": "src/PLFA/Part2/Typed.idr#types",
+      "source": "src/PLFA/Part2/Typed.idr",
+      "start_line": 9,
+      "end_line": 25,
+      "sha256": "65a06214b2593586d0730b6325ac47762f432570ed295a16a3cffb9dd58039a7"
+    },
+    {
+      "spec": "src/PLFA/Part2/Typed.idr#maps",
+      "source": "src/PLFA/Part2/Typed.idr",
+      "start_line": 29,
+      "end_line": 76,
+      "sha256": "9681426f7d0bfc9a95d8c7f6d9b4234815b8c8df7397ff7e61363e7bf3b992d2"
+    },
+    {
+      "spec": "src/PLFA/Part2/Typed.idr#typing",
+      "source": "src/PLFA/Part2/Typed.idr",
+      "start_line": 80,
+      "end_line": 91,
+      "sha256": "8fdd108a626b10e21ba6f5ad872959a7e66e02d90413e4abec318bb4b8b55179"
+    },
+    {
+      "spec": "src/PLFA/Part2/Lambda.idr#dynamics",
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "start_line": 8,
+      "end_line": 38,
+      "sha256": "7a4becaa2fe2587cbf3bfde8b9790dc5ff07ae06cd1e5498e82b5995261c9a23"
+    },
+    {
+      "spec": "src/PLFA/Part2/Lambda.idr#examples",
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "start_line": 42,
+      "end_line": 96,
+      "sha256": "c91042f377f9b3b6b073748a8b08a53e8c3e343fa63b0671fe0d52a22b1cf427"
+    },
+    {
+      "spec": "src/PLFA/Part2/Lambda.idr#multiplication",
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "start_line": 122,
+      "end_line": 134,
+      "sha256": "a23f7b851fc18047b366c1a2b23d20f9faaf1e04f6b881a15230bc0dfbff2067"
+    },
+    {
+      "spec": "src/PLFA/Part2/Lambda.idr#solutions",
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "start_line": 100,
+      "end_line": 118,
+      "sha256": "13e50abae47788bf08e9adefb72cbba78a30fddf054f34224b773905ad1a924d"
+    }
+  ],
+  "en/Properties": [
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#structural",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 8,
+      "end_line": 65,
+      "sha256": "085a82c5746bbced4039647e760bdc3af7160e04569dd6580728b8f44d5f773a"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#expansion",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 250,
+      "end_line": 260,
+      "sha256": "9b8235576cb216a5b7bf00353b6c8455f376c5aefe2b6383eaa6f52d1491f2d7"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#preservation",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 69,
+      "end_line": 83,
+      "sha256": "08c47dda642935a3d643a79677e46d4dcb109d4d02bfee50e4852ec8d0e6e9c9"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#progress",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 87,
+      "end_line": 136,
+      "sha256": "eadb35c7556f509068994641df7625e858d04250b679a5d51f89c46ed6ba8425"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#determinism",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 140,
+      "end_line": 159,
+      "sha256": "f8af41f281fd8dc14c6493b4d7c2df58ae15590dc8019ea7234613d86bd501bf"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#evaluator",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 163,
+      "end_line": 178,
+      "sha256": "72f29cd63d2233eaf2b2c65f6e9b72380b2ceab86dbf6bf369819a578b87a55e"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#computations",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 213,
+      "end_line": 246,
+      "sha256": "d6963d99bfb9f65326cee47e0d9b24ac93c9dd39680d0852a43efb5b47419e6b"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#solutions",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 182,
+      "end_line": 209,
+      "sha256": "64e26663790fc42698fd755d4f99fcaee5c47ae93c682c9e7ae93f538233a73d"
+    }
+  ],
+  "en/DeBruijn": [
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#intrinsic",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 8,
+      "end_line": 28,
+      "sha256": "ae3d2676354a779878bd808c88d7c3c5fc13a951ceb7adaa9306e0e439721e63"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#renaming",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 32,
+      "end_line": 49,
+      "sha256": "ae0b4687d051f65fb5d74b9b8d6a4bfe867191687942df796a30b903bffaf367"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#substitution",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 53,
+      "end_line": 79,
+      "sha256": "7dec361109657973564f0a5854269cc4bab12ebd69cb4b503fd17d972f42c86e"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#examples",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 186,
+      "end_line": 206,
+      "sha256": "e84a009cd4cedd74c20fa8cadc3cfc0087051159c2b8d6c5a4a7a9bdf5ced85b"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#dynamics",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 83,
+      "end_line": 165,
+      "sha256": "2c0ae6ce025d4bed2b52210fe1b8c5ebdd9df404af0f97165dab55460f5abead"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#correspondence",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 169,
+      "end_line": 182,
+      "sha256": "4892586acd3268f31785d0efeb25c614e39070eca644c477caef47a495126de6"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#erasure",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 231,
+      "end_line": 250,
+      "sha256": "5b0bfafe749706785f6bc637cfc037e545a32afa2b11853188a916a365b505f8"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#computations",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 254,
+      "end_line": 279,
+      "sha256": "e3bf61376d9a979c30edda025e6724e821b9268d282ee2a4f17b0a9b14d363cd"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#solutions",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 210,
+      "end_line": 227,
+      "sha256": "c37a595d9d5a7f64ee40e24dc7e33bd06d81cf66381231feeee65725ad63c59c"
+    }
+  ],
+  "en/More": [
+    {
+      "spec": "src/PLFA/Part2/More.idr#syntax",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 6,
+      "end_line": 40,
+      "sha256": "fae930d475c34dc3163082866c0079983e906345cc8249c4d86d619f640385cf"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#structural",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 44,
+      "end_line": 135,
+      "sha256": "20b46c297d207a227451748d6e33f20b2a0fd74ba2cef7fd6fd77b1735796456"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#dynamics",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 139,
+      "end_line": 202,
+      "sha256": "2466c9f40522beefab6238aa88c0c96070161202c142b75969e35d26d3ddc16b"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#examples",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 344,
+      "end_line": 362,
+      "sha256": "0029d80b125728ddf1a6715b37b973241a4b96ef39e2686a63a93f67b79f8b4d"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#computations",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 407,
+      "end_line": 442,
+      "sha256": "ec2dbf2eabd2135092fc2383c64fc11228a8b42a0ea989392dcc9b1c274b789b"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#progress",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 206,
+      "end_line": 316,
+      "sha256": "78b9506d4715f37ba9bc3a8f4f70feaee8bce0bd66dad8b59c033082e69e3d31"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#value-normal",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 390,
+      "end_line": 403,
+      "sha256": "40e322e85ad798f22558c31f47538b680a2fde37704a5d6d2e9cc16ee69a3fa5"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#empty-loop",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 446,
+      "end_line": 452,
+      "sha256": "7aa3c911e3a8168ade9274f4be8f4d3be7dbf463664f11975480772ea45f6d54"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#evaluation",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 320,
+      "end_line": 340,
+      "sha256": "1d1f2ac1fc7d75715b213b3fb011e0447dd6e9d62e41045964c1084438076161"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#solutions",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 366,
+      "end_line": 386,
+      "sha256": "33f3552b2f49b120e0d22bbffc6d98dfd33f6c45b09325fc78bd91c8fdde369b"
+    }
+  ],
+  "en/Bisimulation": [
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#relation",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 8,
+      "end_line": 46,
+      "sha256": "107171ca7031dede2712d293dcf3180a022fe9902822e68dd49851b8fb966aa5"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#examples",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 177,
+      "end_line": 191,
+      "sha256": "a5c396a8b536264044af28275f5730be0dbb5ed1e1d1000db4d20a2c99772379"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#compatibility",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 50,
+      "end_line": 98,
+      "sha256": "8e7e02179dfd5189d92e98836f5f0c0a418fd045e2b43bde090cb6cfe51b974a"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#forward",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 102,
+      "end_line": 122,
+      "sha256": "bb0ab48f15b9db308982d73378fef805c873c9945fa3af7f6576097f797c77df"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#backward",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 126,
+      "end_line": 147,
+      "sha256": "b3bd8ff2e7c4751158d2457bdd29d3656c4522fe870f35d25df0207390873539"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#traces",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 151,
+      "end_line": 173,
+      "sha256": "2380600ec8923bf0f31ce3055c79493d54ae387ec2efe4bcf6cea8ff05ec4d27"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#graph",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 223,
+      "end_line": 226,
+      "sha256": "78b09f3340f6332fb26fe7a0cd8ce050a3cbfbe4d636fc6e0af4d3c8682689b5"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#solutions",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 195,
+      "end_line": 219,
+      "sha256": "4079098876fb3c17014d6e834bc3dfa9aedbcd9d668f2c0783089f33c6e8d27f"
+    }
+  ],
+  "en/Inference": [
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#syntax",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 8,
+      "end_line": 22,
+      "sha256": "8ab49d9c5b560e44ad28988f861627b1b638a104f167e6b4dfe8ac95aea8ffec"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#judgements",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 26,
+      "end_line": 46,
+      "sha256": "dab5f5fa05f393d4b9e251a1c219eb7b428584e6b17e57796b0e888f5deb8995"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#examples",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 195,
+      "end_line": 233,
+      "sha256": "93b71f0d7f3ac8e2edfb07155d6427730ad59dd4ffe53ea8f63bbef485166f3f"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#equality",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 50,
+      "end_line": 94,
+      "sha256": "88bca6df4c55fbffb62bc92fd89599b5e873bd54b5becbc23ce2d2665faecc65"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#decision",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 98,
+      "end_line": 141,
+      "sha256": "5f1036ab20d0e1a494eef8d206f4026bee640f29992010426c73bf3d2297bb41"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#soundness",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 145,
+      "end_line": 191,
+      "sha256": "3e6acfe4b44b5c1f8248486babf69e47a1e84629bf160b1ac4e77a0e93c58323"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#completeness",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 270,
+      "end_line": 282,
+      "sha256": "1fff2a2b29c59df969ed54cdc9ea38def96915a0d385fdb05d3588e0c8d3626c"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#execution",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 286,
+      "end_line": 304,
+      "sha256": "b84b6429e5e9c4e4ffd10a019bb45b214bac52f7aa04d498943c2e76254f75b5"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#solutions",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 237,
+      "end_line": 266,
+      "sha256": "8c158e5abcd7b5b3e4ee6c5214b37e624f91fa1ab4886fde7edd9344cca364e7"
+    }
+  ],
+  "en/Untyped": [
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#syntax",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 9,
+      "end_line": 44,
+      "sha256": "5d0c37f16ae0e1b2d69aa6b5f007757dcd7c6da34227afa168a911e428d3f21d"
+    },
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#encodings",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 181,
+      "end_line": 232,
+      "sha256": "1ecc265b3851d8cd90edecf0637b657efd95d4b0822d6f1a8d386638da226142"
+    },
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#reduction",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 48,
+      "end_line": 82,
+      "sha256": "47ce01c174c3275ac5ae02b0c3fc32dc2d8af7dbb9b4cab1ff648bebb2f36991"
+    },
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#normalization",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 86,
+      "end_line": 177,
+      "sha256": "d1d21ec3ff14b6317eff656f5464e9f5575f9a999c63e479e4dca19505d1bb75"
+    },
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#examples",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 236,
+      "end_line": 309,
+      "sha256": "d279a11c399e7cb7f66de5faea2282fbd868332fbd1c73032c84dcc0f1c87352"
+    }
+  ],
+  "en/Confluence": [
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#parallel",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 8,
+      "end_line": 30,
+      "sha256": "2a7824c35da77d5ac6bbc92a43c2bfa8be22c8cd4b83791acbecf6af8732a7d2"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#preservation",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 34,
+      "end_line": 74,
+      "sha256": "4016c0c927f121ccec18a0f25f889e517fdb46b970bac297e9e0f9a0ac6c705b"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#triangle",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 78,
+      "end_line": 103,
+      "sha256": "412fccc4cb7f76a482da7b1aea3ea780790e35efa2f848da219ab26c88bc387c"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#correspondence",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 107,
+      "end_line": 131,
+      "sha256": "9e023389db67944b9a7361987297adb71c68ce645387346c7a423bcceb7ec9f0"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#confluence",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 135,
+      "end_line": 195,
+      "sha256": "85fc2cc0c5a443c766111c1c909ff408a31390f877bda032ef0ea6f2bfa17006"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#exercises",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 199,
+      "end_line": 220,
+      "sha256": "015afa29d477a2e8dd36ba821c65e0bcff340cd6198865110efce469cb9ce77f"
+    }
+  ],
+  "en/BigStep": [
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#evaluation",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 8,
+      "end_line": 26,
+      "sha256": "7adf27a84492a2ff7e76d0eef45e3bafab6d2f30ed104369c3cdd1f5e2847cd8"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#weak-small-step",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 30,
+      "end_line": 76,
+      "sha256": "e0067a832d76726d822686c07a42185161a9793f46d587dd8661ecf3f6e2d475"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#correspondence",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 80,
+      "end_line": 102,
+      "sha256": "810cb813abdb645b3507589f8b1b82a6e7f126a0a67da4057c4b68918d2ac8d8"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#closures",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 106,
+      "end_line": 204,
+      "sha256": "b86265cd695db84f4f83873cad47ccd618685518fdb8ae3fa16be7aca13526ba"
+    },
+    {
+      "spec": "src/PLFA/Part2/ClosureBounds.idr#bounded-evaluation",
+      "source": "src/PLFA/Part2/ClosureBounds.idr",
+      "start_line": 12,
+      "end_line": 39,
+      "sha256": "da9d136c381a125732ce3c2377bb6158d2798865ccf8110847236017b81bfd86"
+    },
+    {
+      "spec": "src/PLFA/Part2/ClosureBounds.idr#finite-derivation-bound",
+      "source": "src/PLFA/Part2/ClosureBounds.idr",
+      "start_line": 43,
+      "end_line": 68,
+      "sha256": "b6a820493d6b057b2e4afafe079fcaf1e6441ef65a14dfba5a46b5d772d9ef0b"
+    },
+    {
+      "spec": "src/PLFA/Part2/ClosureCorrespondence.idr#closure-values",
+      "source": "src/PLFA/Part2/ClosureCorrespondence.idr",
+      "start_line": 8,
+      "end_line": 20,
+      "sha256": "fbbf5d73ced8c0c0aeb73b2776a844e8f79f706b390f2924d748e7dd70e03837"
+    },
+    {
+      "spec": "src/PLFA/Part2/ClosureCorrespondence.idr#inverse",
+      "source": "src/PLFA/Part2/ClosureCorrespondence.idr",
+      "start_line": 24,
+      "end_line": 64,
+      "sha256": "b18f9e3077b4ada42ace1f3cec9846fbd3d2a1dda1f0a19bb8cfac42b5183302"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#fuel",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 208,
+      "end_line": 257,
+      "sha256": "2ee0d19f169a6838f8b58a8db0336c931d17b7c929fe366462d00d55e6f45bb9"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#examples",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 261,
+      "end_line": 296,
+      "sha256": "dbe7bcf020510536372e4327b516fb9300d9bc0cad418f1969af916f46078d18"
+    }
+  ],
+  "en/Denotational": [
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#information",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 14,
+      "end_line": 63,
+      "sha256": "ebbe1590d545794de7e6e8a8a8f375267d3adb6fac60826da5d81ae315ea0893"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#environments",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 67,
+      "end_line": 122,
+      "sha256": "de51e22d9264d6924fbe6f29491be06300fbd04ad6bbe7928a656c3ceea582eb"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#judgment",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 126,
+      "end_line": 159,
+      "sha256": "16aefe2548d3ce599fec714a8b3753ff2bb404583d785b0a25260b9fd712d83e"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#equality",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 186,
+      "end_line": 214,
+      "sha256": "399c6fb01d48fe7bf6b136628e3bcdc1253323bb0e204369090e0bceb34c2139"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#examples",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 218,
+      "end_line": 264,
+      "sha256": "e46de2e86209d0e25e44a840f1a91c06f7f7beaa89a4e1f142b2f0c60f5a571d"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#renaming",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 163,
+      "end_line": 182,
+      "sha256": "03ad4dfd31c98e69cf0fc3ee9d02dc3fe30eb130836ce1dffa1599a94f575543"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#membership",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 268,
+      "end_line": 338,
+      "sha256": "abdc7d3a4b68cfc5e628d5df7152dff648bbe32a542f3f13e3083478b64a5f6a"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#factorization",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 342,
+      "end_line": 420,
+      "sha256": "7163f0b18455220219994ca711e88f346afa431fe4582a62164c3044087d12ff"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#addition",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 473,
+      "end_line": 485,
+      "sha256": "4b838a23954a1640e8227dbd6ee7bd116f844bd7a8fdb6e4ab723c46ee6cdc8d"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#church-paths",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 424,
+      "end_line": 469,
+      "sha256": "a7cf94da91e3b5873fb7ac847d2aa08f85d68b4dd0644eee587e827671ee875a"
+    }
+  ],
+  "en/Compositional": [
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#lambda-equation",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 12,
+      "end_line": 52,
+      "sha256": "ab88ed25d0947b308a91eba201aec4f5d2e558a73c37573e435ca0f82c64562d"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#application-equation",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 56,
+      "end_line": 100,
+      "sha256": "74e7cd8a93a19e150d66fedfd00065ff4c0f9a141156e597d8dfeccc805780a3"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#congruence",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 104,
+      "end_line": 141,
+      "sha256": "8d7049c32c87b010ab42da0a85e609633355936db6a77aab3ead8448dc8fe5f8"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#contexts",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 145,
+      "end_line": 165,
+      "sha256": "73686be5527198798d53c1c5f070567c4438f88dfbe3f16dc764e1f680165bd3"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#structural",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 169,
+      "end_line": 180,
+      "sha256": "b8bcab2ec2029e85fff7b1e85f778a4f836ee278965c16cddc9deef13c369928"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#exercises",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 184,
+      "end_line": 202,
+      "sha256": "96cfcf7effeba5f111d160e31f4fa355e42f8a31850ebc4f1a5d9faabc4c3e22"
+    }
+  ],
+  "en/Soundness": [
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#substitution-preservation",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 10,
+      "end_line": 48,
+      "sha256": "8f0a3c4c3494bf572607555823a5406b63ae08600d66d06ef83b3d43d23beec9"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#preservation",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 52,
+      "end_line": 62,
+      "sha256": "4d192488c79f3a6d49e0530cab15217f6c3e6428ceffc0a74085f09064f4870a"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#renaming-reflection",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 66,
+      "end_line": 97,
+      "sha256": "ff9100d71c7993acee17c3009c2f9859f9101eac7a7facfeba37a819c4e1046e"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#finite-demand",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 101,
+      "end_line": 187,
+      "sha256": "3465350a9641b83b2360fd197c3c1257a3ea0a9e2537a0d3c6ef4fdf3f5d29df"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#reflection",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 191,
+      "end_line": 217,
+      "sha256": "06702b282e9a67f3bb387b73ede6d97e3842864844cf4a6330f96469bcccc229"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#soundness",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 221,
+      "end_line": 230,
+      "sha256": "77a5a7ab7e6c03c32afac8feac8ba3c00d0f88fb64a3918fd9752219c172f2e2"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#exercises",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 234,
+      "end_line": 247,
+      "sha256": "9473e0c8e62b6064f1414996cb5d5e03c8aeec23af753e1e1f62235ff8f14584"
+    }
+  ],
+  "en/Adequacy": [
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#observation",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 11,
+      "end_line": 17,
+      "sha256": "38f3194d8117bb63b8075d26e6f1e7ec11eb49b79160f69d302a2f811ad89d19"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#logical-relation",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 21,
+      "end_line": 60,
+      "sha256": "605f2b70faff2d647cf620f964ed27111f66b46043bc566c931222316cd087a0"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#fundamental",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 64,
+      "end_line": 101,
+      "sha256": "8171740de89809a316b9a2a66db1affb64c0cf9a842aa23f71634db8daeadb52"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#adequacy",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 105,
+      "end_line": 141,
+      "sha256": "f57761305cc6568bed9cd5f5ef2ee78ca1ea6ab61ec92d27f228c16ad4482e5f"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#closure-adequacy",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 145,
+      "end_line": 191,
+      "sha256": "aed830368d169f1328692f25a93873230d632974db662da933769160e02447e3"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#exercises",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 195,
+      "end_line": 222,
+      "sha256": "4db4c1d7ec4570ce8e024fb3640af8ab7852b409d979ac835844b07d1a3b4d26"
+    }
+  ],
+  "en/ContextualEquivalence": [
+    {
+      "spec": "src/PLFA/Part3/ContextualEquivalence.idr#observations",
+      "source": "src/PLFA/Part3/ContextualEquivalence.idr",
+      "start_line": 9,
+      "end_line": 23,
+      "sha256": "d8c290ae33fca35a55a868a285f9863c89694d60783bc0880e240bb3be9876af"
+    },
+    {
+      "spec": "src/PLFA/Part3/ContextualEquivalence.idr#examples",
+      "source": "src/PLFA/Part3/ContextualEquivalence.idr",
+      "start_line": 55,
+      "end_line": 81,
+      "sha256": "2d00f1d9a44d281a7fd61be212b64672ebd3a1645d6de3ce4cdc38f23e70a821"
+    },
+    {
+      "spec": "src/PLFA/Part3/ContextualEquivalence.idr#replacement",
+      "source": "src/PLFA/Part3/ContextualEquivalence.idr",
+      "start_line": 27,
+      "end_line": 51,
+      "sha256": "fe4d4e40d8b65855ea1eaeb9b78ae00b825c13b3e4bd64dd100f84f6d1afa5bb"
+    },
+    {
+      "spec": "src/PLFA/Part3/ContextualEquivalence.idr#exercises",
+      "source": "src/PLFA/Part3/ContextualEquivalence.idr",
+      "start_line": 85,
+      "end_line": 118,
+      "sha256": "013c80bcc70858037a69584cc3ec269be24a7075878574a0cacb9ec7b9d98e40"
+    }
+  ],
+  "en/Substitution": [
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#extensionality",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 8,
+      "end_line": 40,
+      "sha256": "8723bc9f788a3fa659616575669f55866de73a9163f53c9b68bbc4fc3e4a4ac0"
+    },
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#renaming",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 44,
+      "end_line": 71,
+      "sha256": "431a666d59296d408252193e5bfd478ad9c5615a69f43201df26d47b1c9f6ed5"
+    },
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#mixed-laws",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 75,
+      "end_line": 112,
+      "sha256": "98779800f5894862880de34930fb9d0b7c41212f4c409cf36f760704ac5f4784"
+    },
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#substitution-laws",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 116,
+      "end_line": 200,
+      "sha256": "882156acacf7bce916c40a5a0279107a9d8c3e825373b7dbb385d25feb9d3ddd"
+    },
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#exercises",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 204,
+      "end_line": 212,
+      "sha256": "844afc39afc0ce5493908455de47c719f31b0d4882af79526e7b3220d9c70803"
+    }
+  ],
+  "en/Acknowledgements": [],
+  "en/Fonts": [],
+  "en/IdrisPrimer": [
+    {
+      "spec": "src/PLFA/Extensions/IdrisPrimer.idr#definitions",
+      "source": "src/PLFA/Extensions/IdrisPrimer.idr",
+      "start_line": 8,
+      "end_line": 20,
+      "sha256": "e96a312f8e2b098a1d2f8b1f630435a9919edd78505be1af96a5f1cf3a0d7999"
+    },
+    {
+      "spec": "src/PLFA/Extensions/IdrisPrimer.idr#proofs",
+      "source": "src/PLFA/Extensions/IdrisPrimer.idr",
+      "start_line": 24,
+      "end_line": 35,
+      "sha256": "841885f13fc0c4bd3df07f1436a75f5b65c95a4798f12cd56349a3f16d7df868"
+    },
+    {
+      "spec": "src/PLFA/Extensions/IdrisPrimer.idr#exercises",
+      "source": "src/PLFA/Extensions/IdrisPrimer.idr",
+      "start_line": 39,
+      "end_line": 47,
+      "sha256": "e7c66501acbb7bb2bd1469acc1188ffb1c8ac0fce41b8868caccac3104598260"
+    }
+  ],
+  "en/QTT": [
+    {
+      "spec": "src/PLFA/Extensions/QTT.idr#erasure",
+      "source": "src/PLFA/Extensions/QTT.idr",
+      "start_line": 8,
+      "end_line": 20,
+      "sha256": "a2c9d97b4b7a03e430a91a0b0086bc6e72fff40e85725fe7e2b6c973cacf86e4"
+    },
+    {
+      "spec": "src/PLFA/Extensions/QTT.idr#linear",
+      "source": "src/PLFA/Extensions/QTT.idr",
+      "start_line": 24,
+      "end_line": 38,
+      "sha256": "128797a92f05fd5301836d6f1dcf38a971973385c727617391cf96449fa4c704"
+    },
+    {
+      "spec": "src/PLFA/Extensions/QTT.idr#exercises",
+      "source": "src/PLFA/Extensions/QTT.idr",
+      "start_line": 42,
+      "end_line": 48,
+      "sha256": "cc66d9d7fb3ac53c5de8d017142a12f872952f3e76ebcc65c21d1d0a439fbc74"
+    }
+  ],
+  "en/Trust": [
+    {
+      "spec": "src/PLFA/Extensions/Trust.idr#machine",
+      "source": "src/PLFA/Extensions/Trust.idr",
+      "start_line": 6,
+      "end_line": 22,
+      "sha256": "781b97693faf1efc471bece67ce2455510300f422ac6b5295ee286d2430501fa"
+    },
+    {
+      "spec": "src/PLFA/Extensions/Trust.idr#observations",
+      "source": "src/PLFA/Extensions/Trust.idr",
+      "start_line": 26,
+      "end_line": 42,
+      "sha256": "f860493d38db42d026ec0390b689b1b199cc65488b47bd43d2b5a6ac41eb465d"
+    },
+    {
+      "spec": "src/PLFA/Extensions/Trust.idr#exercises",
+      "source": "src/PLFA/Extensions/Trust.idr",
+      "start_line": 46,
+      "end_line": 53,
+      "sha256": "ed4ac2465ab1eb1353c1d722160bcdb649cb63855f442b1193228ea4153f1a50"
+    }
+  ],
+  "zh/Dedication": [],
+  "zh/Preface": [],
+  "zh/GettingStarted": [],
+  "zh/Naturals": [
+    {
+      "spec": "src/PLFA/Part1/Naturals.idr#arithmetic",
+      "source": "src/PLFA/Part1/Naturals.idr",
+      "start_line": 6,
+      "end_line": 25,
+      "sha256": "88da7837c47fe656f1ea0115c5c509e08439aa978b28648eaed2740511d3049c"
+    },
+    {
+      "spec": "src/PLFA/Part1/Naturals.idr#examples",
+      "source": "src/PLFA/Part1/Naturals.idr",
+      "start_line": 29,
+      "end_line": 47,
+      "sha256": "deba3157c2893f36c65156e493fd9d7d903cb0b87c20b58b653a8bcdb2661f9a"
+    },
+    {
+      "spec": "src/PLFA/Part1/Naturals.idr#binary",
+      "source": "src/PLFA/Part1/Naturals.idr",
+      "start_line": 51,
+      "end_line": 90,
+      "sha256": "40c1435a1104526982e78b776c47ec1579a4594f620965f3ac2b92afe7e28657"
+    }
+  ],
+  "zh/Induction": [
+    {
+      "spec": "src/PLFA/Part1/Induction.idr#addition",
+      "source": "src/PLFA/Part1/Induction.idr",
+      "start_line": 8,
+      "end_line": 37,
+      "sha256": "2e4879e1d8842c53998e1b061fcb5803a81ff27486ce5a758c19bb71f866d8b2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Induction.idr#multiplication",
+      "source": "src/PLFA/Part1/Induction.idr",
+      "start_line": 41,
+      "end_line": 83,
+      "sha256": "ebd0534efd2381a5d8e51bd5ec8eeb3407414687ce0219f58ea0758bd8216f26"
+    },
+    {
+      "spec": "src/PLFA/Part1/Induction.idr#powers-monus",
+      "source": "src/PLFA/Part1/Induction.idr",
+      "start_line": 87,
+      "end_line": 117,
+      "sha256": "5e6519583e9e28f30873d16dbc3ea2929e583706edc6c5f2a08ae2bc4841b4e8"
+    },
+    {
+      "spec": "src/PLFA/Part1/Induction.idr#binary-laws",
+      "source": "src/PLFA/Part1/Induction.idr",
+      "start_line": 121,
+      "end_line": 146,
+      "sha256": "3d090fc0ea3c79357148fb3b2cde120cf0fe675f59ae06e1cce84637c19d9dde"
+    }
+  ],
+  "zh/Relations": [
+    {
+      "spec": "src/PLFA/Part1/Relations.idr#order",
+      "source": "src/PLFA/Part1/Relations.idr",
+      "start_line": 8,
+      "end_line": 107,
+      "sha256": "75d75314e238f6ac613ec3c6fc8febf5558556e4fc59a04fad89d460420da33d"
+    },
+    {
+      "spec": "src/PLFA/Part1/Relations.idr#parity",
+      "source": "src/PLFA/Part1/Relations.idr",
+      "start_line": 111,
+      "end_line": 143,
+      "sha256": "25450c30dea68b74f2cd7623846457054239bfcd0bce4b359d64d8fc3ca40793"
+    },
+    {
+      "spec": "src/PLFA/Part1/Relations.idr#canonical",
+      "source": "src/PLFA/Part1/Relations.idr",
+      "start_line": 147,
+      "end_line": 215,
+      "sha256": "b1fb08d85b708a925fd8f482085152f6eb3ca805bf54a4f8a462fce75d7d8250"
+    }
+  ],
+  "zh/Equality": [
+    {
+      "spec": "src/PLFA/Part1/Equality.idr#equality",
+      "source": "src/PLFA/Part1/Equality.idr",
+      "start_line": 8,
+      "end_line": 30,
+      "sha256": "e600068653f56cb8c068dbb54c2d3b719b565930b2de1051b0b06af3276704ae"
+    },
+    {
+      "spec": "src/PLFA/Part1/Equality.idr#reasoning",
+      "source": "src/PLFA/Part1/Equality.idr",
+      "start_line": 34,
+      "end_line": 58,
+      "sha256": "7c8b8f43a986f1c722b736bc549c53c50fb7f3077f4c8e0f13417b35279aa176"
+    },
+    {
+      "spec": "src/PLFA/Part1/Equality.idr#leibniz",
+      "source": "src/PLFA/Part1/Equality.idr",
+      "start_line": 62,
+      "end_line": 84,
+      "sha256": "f97f15f4b3be201c7d8a0567e5b46922fc5387dbb0229b6e6342d812539c67a5"
+    }
+  ],
+  "zh/Isomorphism": [
+    {
+      "spec": "src/PLFA/Part1/Isomorphism.idr#maps",
+      "source": "src/PLFA/Part1/Isomorphism.idr",
+      "start_line": 8,
+      "end_line": 24,
+      "sha256": "c54326c018619632ccb9a4ec9726d7eaeabbde69f6a4417682a5780a1cbaf7d2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Isomorphism.idr#isomorphism",
+      "source": "src/PLFA/Part1/Isomorphism.idr",
+      "start_line": 28,
+      "end_line": 48,
+      "sha256": "3f37d8de1637d172932af5bbc7921b99e2598ade2284dc157f541745223930c6"
+    },
+    {
+      "spec": "src/PLFA/Part1/Isomorphism.idr#embedding",
+      "source": "src/PLFA/Part1/Isomorphism.idr",
+      "start_line": 52,
+      "end_line": 98,
+      "sha256": "b0695d504c2118d6c4a0bd774f1af0a92358250b2c2b70f9bf143a29eceeaf19"
+    }
+  ],
+  "zh/Connectives": [
+    {
+      "spec": "src/PLFA/Part1/Connectives.idr#products",
+      "source": "src/PLFA/Part1/Connectives.idr",
+      "start_line": 8,
+      "end_line": 34,
+      "sha256": "7a83fd80d49443a1af3ba532914746feb4b5c1274dcec8d61888666382fb720c"
+    },
+    {
+      "spec": "src/PLFA/Part1/Connectives.idr#sums",
+      "source": "src/PLFA/Part1/Connectives.idr",
+      "start_line": 38,
+      "end_line": 101,
+      "sha256": "06c92942407e68e40c41dbb5ad16ef9f13c1b0479579156074d2897cc8cc790e"
+    },
+    {
+      "spec": "src/PLFA/Part1/Connectives.idr#functions",
+      "source": "src/PLFA/Part1/Connectives.idr",
+      "start_line": 105,
+      "end_line": 154,
+      "sha256": "a83083b1ff4eadb0b4563fefa18a07231aa5f477b97436fa86ed2cd4cba11eff"
+    },
+    {
+      "spec": "src/PLFA/Part1/Connectives.idr#distribution",
+      "source": "src/PLFA/Part1/Connectives.idr",
+      "start_line": 158,
+      "end_line": 212,
+      "sha256": "310721e9dbbb35f96565a979c1a8d7368244fef2cfd449277f0e64364dbd722c"
+    }
+  ],
+  "zh/Negation": [
+    {
+      "spec": "src/PLFA/Part1/Negation.idr#constructive",
+      "source": "src/PLFA/Part1/Negation.idr",
+      "start_line": 8,
+      "end_line": 52,
+      "sha256": "ac913f384a00e7d8447a135aa0ca58ddc4a37ab6b081cdd07de3e6c1c0703a1b"
+    },
+    {
+      "spec": "src/PLFA/Part1/Negation.idr#strict-order",
+      "source": "src/PLFA/Part1/Negation.idr",
+      "start_line": 56,
+      "end_line": 75,
+      "sha256": "50544bc87ab5de1d4b6a85c68273bbb011a471c459212c8b05d26bcfe6d25f39"
+    },
+    {
+      "spec": "src/PLFA/Part1/Negation.idr#classical",
+      "source": "src/PLFA/Part1/Negation.idr",
+      "start_line": 79,
+      "end_line": 145,
+      "sha256": "c22406b427040381ca8261623d412ab949d3f7ca0f5c01942d99e1553a2b78a6"
+    },
+    {
+      "spec": "src/PLFA/Part1/Negation.idr#stability",
+      "source": "src/PLFA/Part1/Negation.idr",
+      "start_line": 149,
+      "end_line": 160,
+      "sha256": "d9393525be3b7d8a0397f93c916ff213052ec4d9e79f5396290120a69a1a5013"
+    }
+  ],
+  "zh/Quantifiers": [
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#universals",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 8,
+      "end_line": 47,
+      "sha256": "f19b6f9928543373b911377ae60bbc5cb223a59b27cd6ab9e403b96b90019cf2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#existentials",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 51,
+      "end_line": 117,
+      "sha256": "06fa137625771aa43e3acc4b67d7954166c6be80002d6d9f1087de7110c71ba4"
+    },
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#parity-witnesses",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 121,
+      "end_line": 176,
+      "sha256": "b91f5cfd7d82f234bf21fe78c7ecfceffc93270fd4d0b5a9d71846b8c46fcd89"
+    },
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#negated-quantifiers",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 180,
+      "end_line": 186,
+      "sha256": "e4a1013db8ee8f079efbc3f5e65ced0130f7186ee2d5b27d32effeb88839eb7a"
+    },
+    {
+      "spec": "src/PLFA/Part1/Quantifiers.idr#canonical-isomorphism",
+      "source": "src/PLFA/Part1/Quantifiers.idr",
+      "start_line": 190,
+      "end_line": 205,
+      "sha256": "5e5cf70a183f599c557aa9e5c6bf7c1c6946715977e4afc36118d8d931cc5add"
+    }
+  ],
+  "zh/Decidable": [
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#boolean-evidence",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 8,
+      "end_line": 37,
+      "sha256": "0be80287fbfcf7ebd3f51a191e84f4b105fd4a8e393bd818b492249d52ac2e6b"
+    },
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#decisions",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 41,
+      "end_line": 99,
+      "sha256": "087c9c78622f8027928f54a1bf52b0907bb486902f4fbb0f4c682cbed44e98ca"
+    },
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#connectives",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 103,
+      "end_line": 180,
+      "sha256": "d139cf2472a68ac320375582fb138f6177f5a1158f65409aeb14bf51109761f2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#reflection",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 184,
+      "end_line": 209,
+      "sha256": "c16b3829934d59f89dc0a3fa89985241223def65621b285e7b28be7239fd8fd2"
+    },
+    {
+      "spec": "src/PLFA/Part1/Decidable.idr#binary-decisions",
+      "source": "src/PLFA/Part1/Decidable.idr",
+      "start_line": 213,
+      "end_line": 248,
+      "sha256": "126b1830029c1e03059f3e97f31bf542678f832e5f84f8dac9f1ac37e93776cd"
+    }
+  ],
+  "zh/Lists": [
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#append",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 8,
+      "end_line": 35,
+      "sha256": "0ebc329e9b8e94fba97c13afa8a9294cf0d950b98d5a89d0f03d855dfb6d5eca"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#reverse",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 39,
+      "end_line": 78,
+      "sha256": "286b32b6bc1badb60b5aa15fd071c49f12d55356ee3202360d781088a4568a94"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#map-fold",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 82,
+      "end_line": 131,
+      "sha256": "b0f78019ac69e69abdc03e11187501a387c1521b0ced123eb9e6be6551d6a225"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#trees",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 135,
+      "end_line": 153,
+      "sha256": "d8c1b0082a402edebdd0600f7792bed39806bd48f852dea2393dc32a0cf19805"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#monoids",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 157,
+      "end_line": 230,
+      "sha256": "4774d5b60f021322924e7fb2f91de125a90100dda722c335f23c6e42b1a844ed"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#predicates",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 234,
+      "end_line": 266,
+      "sha256": "72a02f1b598c437f7861d02df902fda348a9ab80a3c86b61d80d24c9783fbcc9"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#quantified-laws",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 270,
+      "end_line": 407,
+      "sha256": "7628e044820d5f4852715fb0cb4e6c32e8dca98e135a7e21ae07a36d129f740c"
+    },
+    {
+      "spec": "src/PLFA/Part1/Lists.idr#decidable-split",
+      "source": "src/PLFA/Part1/Lists.idr",
+      "start_line": 411,
+      "end_line": 458,
+      "sha256": "1e9f4359c321148fbd506bd1bfe56c74953fc8ce9c5aa6fa003791fc49aa3cb5"
+    }
+  ],
+  "zh/Lambda": [
+    {
+      "spec": "src/PLFA/Part2/Typed.idr#types",
+      "source": "src/PLFA/Part2/Typed.idr",
+      "start_line": 9,
+      "end_line": 25,
+      "sha256": "65a06214b2593586d0730b6325ac47762f432570ed295a16a3cffb9dd58039a7"
+    },
+    {
+      "spec": "src/PLFA/Part2/Typed.idr#maps",
+      "source": "src/PLFA/Part2/Typed.idr",
+      "start_line": 29,
+      "end_line": 76,
+      "sha256": "9681426f7d0bfc9a95d8c7f6d9b4234815b8c8df7397ff7e61363e7bf3b992d2"
+    },
+    {
+      "spec": "src/PLFA/Part2/Typed.idr#typing",
+      "source": "src/PLFA/Part2/Typed.idr",
+      "start_line": 80,
+      "end_line": 91,
+      "sha256": "8fdd108a626b10e21ba6f5ad872959a7e66e02d90413e4abec318bb4b8b55179"
+    },
+    {
+      "spec": "src/PLFA/Part2/Lambda.idr#dynamics",
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "start_line": 8,
+      "end_line": 38,
+      "sha256": "7a4becaa2fe2587cbf3bfde8b9790dc5ff07ae06cd1e5498e82b5995261c9a23"
+    },
+    {
+      "spec": "src/PLFA/Part2/Lambda.idr#examples",
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "start_line": 42,
+      "end_line": 96,
+      "sha256": "c91042f377f9b3b6b073748a8b08a53e8c3e343fa63b0671fe0d52a22b1cf427"
+    },
+    {
+      "spec": "src/PLFA/Part2/Lambda.idr#multiplication",
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "start_line": 122,
+      "end_line": 134,
+      "sha256": "a23f7b851fc18047b366c1a2b23d20f9faaf1e04f6b881a15230bc0dfbff2067"
+    },
+    {
+      "spec": "src/PLFA/Part2/Lambda.idr#solutions",
+      "source": "src/PLFA/Part2/Lambda.idr",
+      "start_line": 100,
+      "end_line": 118,
+      "sha256": "13e50abae47788bf08e9adefb72cbba78a30fddf054f34224b773905ad1a924d"
+    }
+  ],
+  "zh/Properties": [
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#structural",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 8,
+      "end_line": 65,
+      "sha256": "085a82c5746bbced4039647e760bdc3af7160e04569dd6580728b8f44d5f773a"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#expansion",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 250,
+      "end_line": 260,
+      "sha256": "9b8235576cb216a5b7bf00353b6c8455f376c5aefe2b6383eaa6f52d1491f2d7"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#preservation",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 69,
+      "end_line": 83,
+      "sha256": "08c47dda642935a3d643a79677e46d4dcb109d4d02bfee50e4852ec8d0e6e9c9"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#progress",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 87,
+      "end_line": 136,
+      "sha256": "eadb35c7556f509068994641df7625e858d04250b679a5d51f89c46ed6ba8425"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#determinism",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 140,
+      "end_line": 159,
+      "sha256": "f8af41f281fd8dc14c6493b4d7c2df58ae15590dc8019ea7234613d86bd501bf"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#evaluator",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 163,
+      "end_line": 178,
+      "sha256": "72f29cd63d2233eaf2b2c65f6e9b72380b2ceab86dbf6bf369819a578b87a55e"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#computations",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 213,
+      "end_line": 246,
+      "sha256": "d6963d99bfb9f65326cee47e0d9b24ac93c9dd39680d0852a43efb5b47419e6b"
+    },
+    {
+      "spec": "src/PLFA/Part2/Properties.idr#solutions",
+      "source": "src/PLFA/Part2/Properties.idr",
+      "start_line": 182,
+      "end_line": 209,
+      "sha256": "64e26663790fc42698fd755d4f99fcaee5c47ae93c682c9e7ae93f538233a73d"
+    }
+  ],
+  "zh/DeBruijn": [
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#intrinsic",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 8,
+      "end_line": 28,
+      "sha256": "ae3d2676354a779878bd808c88d7c3c5fc13a951ceb7adaa9306e0e439721e63"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#renaming",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 32,
+      "end_line": 49,
+      "sha256": "ae0b4687d051f65fb5d74b9b8d6a4bfe867191687942df796a30b903bffaf367"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#substitution",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 53,
+      "end_line": 79,
+      "sha256": "7dec361109657973564f0a5854269cc4bab12ebd69cb4b503fd17d972f42c86e"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#examples",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 186,
+      "end_line": 206,
+      "sha256": "e84a009cd4cedd74c20fa8cadc3cfc0087051159c2b8d6c5a4a7a9bdf5ced85b"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#dynamics",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 83,
+      "end_line": 165,
+      "sha256": "2c0ae6ce025d4bed2b52210fe1b8c5ebdd9df404af0f97165dab55460f5abead"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#correspondence",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 169,
+      "end_line": 182,
+      "sha256": "4892586acd3268f31785d0efeb25c614e39070eca644c477caef47a495126de6"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#erasure",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 231,
+      "end_line": 250,
+      "sha256": "5b0bfafe749706785f6bc637cfc037e545a32afa2b11853188a916a365b505f8"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#computations",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 254,
+      "end_line": 279,
+      "sha256": "e3bf61376d9a979c30edda025e6724e821b9268d282ee2a4f17b0a9b14d363cd"
+    },
+    {
+      "spec": "src/PLFA/Part2/DeBruijn.idr#solutions",
+      "source": "src/PLFA/Part2/DeBruijn.idr",
+      "start_line": 210,
+      "end_line": 227,
+      "sha256": "c37a595d9d5a7f64ee40e24dc7e33bd06d81cf66381231feeee65725ad63c59c"
+    }
+  ],
+  "zh/More": [
+    {
+      "spec": "src/PLFA/Part2/More.idr#syntax",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 6,
+      "end_line": 40,
+      "sha256": "fae930d475c34dc3163082866c0079983e906345cc8249c4d86d619f640385cf"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#structural",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 44,
+      "end_line": 135,
+      "sha256": "20b46c297d207a227451748d6e33f20b2a0fd74ba2cef7fd6fd77b1735796456"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#dynamics",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 139,
+      "end_line": 202,
+      "sha256": "2466c9f40522beefab6238aa88c0c96070161202c142b75969e35d26d3ddc16b"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#examples",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 344,
+      "end_line": 362,
+      "sha256": "0029d80b125728ddf1a6715b37b973241a4b96ef39e2686a63a93f67b79f8b4d"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#computations",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 407,
+      "end_line": 442,
+      "sha256": "ec2dbf2eabd2135092fc2383c64fc11228a8b42a0ea989392dcc9b1c274b789b"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#progress",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 206,
+      "end_line": 316,
+      "sha256": "78b9506d4715f37ba9bc3a8f4f70feaee8bce0bd66dad8b59c033082e69e3d31"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#value-normal",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 390,
+      "end_line": 403,
+      "sha256": "40e322e85ad798f22558c31f47538b680a2fde37704a5d6d2e9cc16ee69a3fa5"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#empty-loop",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 446,
+      "end_line": 452,
+      "sha256": "7aa3c911e3a8168ade9274f4be8f4d3be7dbf463664f11975480772ea45f6d54"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#evaluation",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 320,
+      "end_line": 340,
+      "sha256": "1d1f2ac1fc7d75715b213b3fb011e0447dd6e9d62e41045964c1084438076161"
+    },
+    {
+      "spec": "src/PLFA/Part2/More.idr#solutions",
+      "source": "src/PLFA/Part2/More.idr",
+      "start_line": 366,
+      "end_line": 386,
+      "sha256": "33f3552b2f49b120e0d22bbffc6d98dfd33f6c45b09325fc78bd91c8fdde369b"
+    }
+  ],
+  "zh/Bisimulation": [
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#relation",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 8,
+      "end_line": 46,
+      "sha256": "107171ca7031dede2712d293dcf3180a022fe9902822e68dd49851b8fb966aa5"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#examples",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 177,
+      "end_line": 191,
+      "sha256": "a5c396a8b536264044af28275f5730be0dbb5ed1e1d1000db4d20a2c99772379"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#compatibility",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 50,
+      "end_line": 98,
+      "sha256": "8e7e02179dfd5189d92e98836f5f0c0a418fd045e2b43bde090cb6cfe51b974a"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#forward",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 102,
+      "end_line": 122,
+      "sha256": "bb0ab48f15b9db308982d73378fef805c873c9945fa3af7f6576097f797c77df"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#backward",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 126,
+      "end_line": 147,
+      "sha256": "b3bd8ff2e7c4751158d2457bdd29d3656c4522fe870f35d25df0207390873539"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#traces",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 151,
+      "end_line": 173,
+      "sha256": "2380600ec8923bf0f31ce3055c79493d54ae387ec2efe4bcf6cea8ff05ec4d27"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#graph",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 223,
+      "end_line": 226,
+      "sha256": "78b09f3340f6332fb26fe7a0cd8ce050a3cbfbe4d636fc6e0af4d3c8682689b5"
+    },
+    {
+      "spec": "src/PLFA/Part2/Bisimulation.idr#solutions",
+      "source": "src/PLFA/Part2/Bisimulation.idr",
+      "start_line": 195,
+      "end_line": 219,
+      "sha256": "4079098876fb3c17014d6e834bc3dfa9aedbcd9d668f2c0783089f33c6e8d27f"
+    }
+  ],
+  "zh/Inference": [
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#syntax",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 8,
+      "end_line": 22,
+      "sha256": "8ab49d9c5b560e44ad28988f861627b1b638a104f167e6b4dfe8ac95aea8ffec"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#judgements",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 26,
+      "end_line": 46,
+      "sha256": "dab5f5fa05f393d4b9e251a1c219eb7b428584e6b17e57796b0e888f5deb8995"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#examples",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 195,
+      "end_line": 233,
+      "sha256": "93b71f0d7f3ac8e2edfb07155d6427730ad59dd4ffe53ea8f63bbef485166f3f"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#equality",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 50,
+      "end_line": 94,
+      "sha256": "88bca6df4c55fbffb62bc92fd89599b5e873bd54b5becbc23ce2d2665faecc65"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#decision",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 98,
+      "end_line": 141,
+      "sha256": "5f1036ab20d0e1a494eef8d206f4026bee640f29992010426c73bf3d2297bb41"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#soundness",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 145,
+      "end_line": 191,
+      "sha256": "3e6acfe4b44b5c1f8248486babf69e47a1e84629bf160b1ac4e77a0e93c58323"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#completeness",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 270,
+      "end_line": 282,
+      "sha256": "1fff2a2b29c59df969ed54cdc9ea38def96915a0d385fdb05d3588e0c8d3626c"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#execution",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 286,
+      "end_line": 304,
+      "sha256": "b84b6429e5e9c4e4ffd10a019bb45b214bac52f7aa04d498943c2e76254f75b5"
+    },
+    {
+      "spec": "src/PLFA/Part2/Inference.idr#solutions",
+      "source": "src/PLFA/Part2/Inference.idr",
+      "start_line": 237,
+      "end_line": 266,
+      "sha256": "8c158e5abcd7b5b3e4ee6c5214b37e624f91fa1ab4886fde7edd9344cca364e7"
+    }
+  ],
+  "zh/Untyped": [
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#syntax",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 9,
+      "end_line": 44,
+      "sha256": "5d0c37f16ae0e1b2d69aa6b5f007757dcd7c6da34227afa168a911e428d3f21d"
+    },
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#encodings",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 181,
+      "end_line": 232,
+      "sha256": "1ecc265b3851d8cd90edecf0637b657efd95d4b0822d6f1a8d386638da226142"
+    },
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#reduction",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 48,
+      "end_line": 82,
+      "sha256": "47ce01c174c3275ac5ae02b0c3fc32dc2d8af7dbb9b4cab1ff648bebb2f36991"
+    },
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#normalization",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 86,
+      "end_line": 177,
+      "sha256": "d1d21ec3ff14b6317eff656f5464e9f5575f9a999c63e479e4dca19505d1bb75"
+    },
+    {
+      "spec": "src/PLFA/Part2/Untyped.idr#examples",
+      "source": "src/PLFA/Part2/Untyped.idr",
+      "start_line": 236,
+      "end_line": 309,
+      "sha256": "d279a11c399e7cb7f66de5faea2282fbd868332fbd1c73032c84dcc0f1c87352"
+    }
+  ],
+  "zh/Confluence": [
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#parallel",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 8,
+      "end_line": 30,
+      "sha256": "2a7824c35da77d5ac6bbc92a43c2bfa8be22c8cd4b83791acbecf6af8732a7d2"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#preservation",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 34,
+      "end_line": 74,
+      "sha256": "4016c0c927f121ccec18a0f25f889e517fdb46b970bac297e9e0f9a0ac6c705b"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#triangle",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 78,
+      "end_line": 103,
+      "sha256": "412fccc4cb7f76a482da7b1aea3ea780790e35efa2f848da219ab26c88bc387c"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#correspondence",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 107,
+      "end_line": 131,
+      "sha256": "9e023389db67944b9a7361987297adb71c68ce645387346c7a423bcceb7ec9f0"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#confluence",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 135,
+      "end_line": 195,
+      "sha256": "85fc2cc0c5a443c766111c1c909ff408a31390f877bda032ef0ea6f2bfa17006"
+    },
+    {
+      "spec": "src/PLFA/Part2/Confluence.idr#exercises",
+      "source": "src/PLFA/Part2/Confluence.idr",
+      "start_line": 199,
+      "end_line": 220,
+      "sha256": "015afa29d477a2e8dd36ba821c65e0bcff340cd6198865110efce469cb9ce77f"
+    }
+  ],
+  "zh/BigStep": [
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#evaluation",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 8,
+      "end_line": 26,
+      "sha256": "7adf27a84492a2ff7e76d0eef45e3bafab6d2f30ed104369c3cdd1f5e2847cd8"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#weak-small-step",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 30,
+      "end_line": 76,
+      "sha256": "e0067a832d76726d822686c07a42185161a9793f46d587dd8661ecf3f6e2d475"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#correspondence",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 80,
+      "end_line": 102,
+      "sha256": "810cb813abdb645b3507589f8b1b82a6e7f126a0a67da4057c4b68918d2ac8d8"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#closures",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 106,
+      "end_line": 204,
+      "sha256": "b86265cd695db84f4f83873cad47ccd618685518fdb8ae3fa16be7aca13526ba"
+    },
+    {
+      "spec": "src/PLFA/Part2/ClosureBounds.idr#bounded-evaluation",
+      "source": "src/PLFA/Part2/ClosureBounds.idr",
+      "start_line": 12,
+      "end_line": 39,
+      "sha256": "da9d136c381a125732ce3c2377bb6158d2798865ccf8110847236017b81bfd86"
+    },
+    {
+      "spec": "src/PLFA/Part2/ClosureBounds.idr#finite-derivation-bound",
+      "source": "src/PLFA/Part2/ClosureBounds.idr",
+      "start_line": 43,
+      "end_line": 68,
+      "sha256": "b6a820493d6b057b2e4afafe079fcaf1e6441ef65a14dfba5a46b5d772d9ef0b"
+    },
+    {
+      "spec": "src/PLFA/Part2/ClosureCorrespondence.idr#closure-values",
+      "source": "src/PLFA/Part2/ClosureCorrespondence.idr",
+      "start_line": 8,
+      "end_line": 20,
+      "sha256": "fbbf5d73ced8c0c0aeb73b2776a844e8f79f706b390f2924d748e7dd70e03837"
+    },
+    {
+      "spec": "src/PLFA/Part2/ClosureCorrespondence.idr#inverse",
+      "source": "src/PLFA/Part2/ClosureCorrespondence.idr",
+      "start_line": 24,
+      "end_line": 64,
+      "sha256": "b18f9e3077b4ada42ace1f3cec9846fbd3d2a1dda1f0a19bb8cfac42b5183302"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#fuel",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 208,
+      "end_line": 257,
+      "sha256": "2ee0d19f169a6838f8b58a8db0336c931d17b7c929fe366462d00d55e6f45bb9"
+    },
+    {
+      "spec": "src/PLFA/Part2/BigStep.idr#examples",
+      "source": "src/PLFA/Part2/BigStep.idr",
+      "start_line": 261,
+      "end_line": 296,
+      "sha256": "dbe7bcf020510536372e4327b516fb9300d9bc0cad418f1969af916f46078d18"
+    }
+  ],
+  "zh/Denotational": [
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#information",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 14,
+      "end_line": 63,
+      "sha256": "ebbe1590d545794de7e6e8a8a8f375267d3adb6fac60826da5d81ae315ea0893"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#environments",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 67,
+      "end_line": 122,
+      "sha256": "de51e22d9264d6924fbe6f29491be06300fbd04ad6bbe7928a656c3ceea582eb"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#judgment",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 126,
+      "end_line": 159,
+      "sha256": "16aefe2548d3ce599fec714a8b3753ff2bb404583d785b0a25260b9fd712d83e"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#equality",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 186,
+      "end_line": 214,
+      "sha256": "399c6fb01d48fe7bf6b136628e3bcdc1253323bb0e204369090e0bceb34c2139"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#examples",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 218,
+      "end_line": 264,
+      "sha256": "e46de2e86209d0e25e44a840f1a91c06f7f7beaa89a4e1f142b2f0c60f5a571d"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#renaming",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 163,
+      "end_line": 182,
+      "sha256": "03ad4dfd31c98e69cf0fc3ee9d02dc3fe30eb130836ce1dffa1599a94f575543"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#membership",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 268,
+      "end_line": 338,
+      "sha256": "abdc7d3a4b68cfc5e628d5df7152dff648bbe32a542f3f13e3083478b64a5f6a"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#factorization",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 342,
+      "end_line": 420,
+      "sha256": "7163f0b18455220219994ca711e88f346afa431fe4582a62164c3044087d12ff"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#addition",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 473,
+      "end_line": 485,
+      "sha256": "4b838a23954a1640e8227dbd6ee7bd116f844bd7a8fdb6e4ab723c46ee6cdc8d"
+    },
+    {
+      "spec": "src/PLFA/Part3/Denotational.idr#church-paths",
+      "source": "src/PLFA/Part3/Denotational.idr",
+      "start_line": 424,
+      "end_line": 469,
+      "sha256": "a7cf94da91e3b5873fb7ac847d2aa08f85d68b4dd0644eee587e827671ee875a"
+    }
+  ],
+  "zh/Compositional": [
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#lambda-equation",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 12,
+      "end_line": 52,
+      "sha256": "ab88ed25d0947b308a91eba201aec4f5d2e558a73c37573e435ca0f82c64562d"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#application-equation",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 56,
+      "end_line": 100,
+      "sha256": "74e7cd8a93a19e150d66fedfd00065ff4c0f9a141156e597d8dfeccc805780a3"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#congruence",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 104,
+      "end_line": 141,
+      "sha256": "8d7049c32c87b010ab42da0a85e609633355936db6a77aab3ead8448dc8fe5f8"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#contexts",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 145,
+      "end_line": 165,
+      "sha256": "73686be5527198798d53c1c5f070567c4438f88dfbe3f16dc764e1f680165bd3"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#structural",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 169,
+      "end_line": 180,
+      "sha256": "b8bcab2ec2029e85fff7b1e85f778a4f836ee278965c16cddc9deef13c369928"
+    },
+    {
+      "spec": "src/PLFA/Part3/Compositional.idr#exercises",
+      "source": "src/PLFA/Part3/Compositional.idr",
+      "start_line": 184,
+      "end_line": 202,
+      "sha256": "96cfcf7effeba5f111d160e31f4fa355e42f8a31850ebc4f1a5d9faabc4c3e22"
+    }
+  ],
+  "zh/Soundness": [
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#substitution-preservation",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 10,
+      "end_line": 48,
+      "sha256": "8f0a3c4c3494bf572607555823a5406b63ae08600d66d06ef83b3d43d23beec9"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#preservation",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 52,
+      "end_line": 62,
+      "sha256": "4d192488c79f3a6d49e0530cab15217f6c3e6428ceffc0a74085f09064f4870a"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#renaming-reflection",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 66,
+      "end_line": 97,
+      "sha256": "ff9100d71c7993acee17c3009c2f9859f9101eac7a7facfeba37a819c4e1046e"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#finite-demand",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 101,
+      "end_line": 187,
+      "sha256": "3465350a9641b83b2360fd197c3c1257a3ea0a9e2537a0d3c6ef4fdf3f5d29df"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#reflection",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 191,
+      "end_line": 217,
+      "sha256": "06702b282e9a67f3bb387b73ede6d97e3842864844cf4a6330f96469bcccc229"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#soundness",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 221,
+      "end_line": 230,
+      "sha256": "77a5a7ab7e6c03c32afac8feac8ba3c00d0f88fb64a3918fd9752219c172f2e2"
+    },
+    {
+      "spec": "src/PLFA/Part3/Soundness.idr#exercises",
+      "source": "src/PLFA/Part3/Soundness.idr",
+      "start_line": 234,
+      "end_line": 247,
+      "sha256": "9473e0c8e62b6064f1414996cb5d5e03c8aeec23af753e1e1f62235ff8f14584"
+    }
+  ],
+  "zh/Adequacy": [
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#observation",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 11,
+      "end_line": 17,
+      "sha256": "38f3194d8117bb63b8075d26e6f1e7ec11eb49b79160f69d302a2f811ad89d19"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#logical-relation",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 21,
+      "end_line": 60,
+      "sha256": "605f2b70faff2d647cf620f964ed27111f66b46043bc566c931222316cd087a0"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#fundamental",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 64,
+      "end_line": 101,
+      "sha256": "8171740de89809a316b9a2a66db1affb64c0cf9a842aa23f71634db8daeadb52"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#adequacy",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 105,
+      "end_line": 141,
+      "sha256": "f57761305cc6568bed9cd5f5ef2ee78ca1ea6ab61ec92d27f228c16ad4482e5f"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#closure-adequacy",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 145,
+      "end_line": 191,
+      "sha256": "aed830368d169f1328692f25a93873230d632974db662da933769160e02447e3"
+    },
+    {
+      "spec": "src/PLFA/Part3/Adequacy.idr#exercises",
+      "source": "src/PLFA/Part3/Adequacy.idr",
+      "start_line": 195,
+      "end_line": 222,
+      "sha256": "4db4c1d7ec4570ce8e024fb3640af8ab7852b409d979ac835844b07d1a3b4d26"
+    }
+  ],
+  "zh/ContextualEquivalence": [
+    {
+      "spec": "src/PLFA/Part3/ContextualEquivalence.idr#observations",
+      "source": "src/PLFA/Part3/ContextualEquivalence.idr",
+      "start_line": 9,
+      "end_line": 23,
+      "sha256": "d8c290ae33fca35a55a868a285f9863c89694d60783bc0880e240bb3be9876af"
+    },
+    {
+      "spec": "src/PLFA/Part3/ContextualEquivalence.idr#examples",
+      "source": "src/PLFA/Part3/ContextualEquivalence.idr",
+      "start_line": 55,
+      "end_line": 81,
+      "sha256": "2d00f1d9a44d281a7fd61be212b64672ebd3a1645d6de3ce4cdc38f23e70a821"
+    },
+    {
+      "spec": "src/PLFA/Part3/ContextualEquivalence.idr#replacement",
+      "source": "src/PLFA/Part3/ContextualEquivalence.idr",
+      "start_line": 27,
+      "end_line": 51,
+      "sha256": "fe4d4e40d8b65855ea1eaeb9b78ae00b825c13b3e4bd64dd100f84f6d1afa5bb"
+    },
+    {
+      "spec": "src/PLFA/Part3/ContextualEquivalence.idr#exercises",
+      "source": "src/PLFA/Part3/ContextualEquivalence.idr",
+      "start_line": 85,
+      "end_line": 118,
+      "sha256": "013c80bcc70858037a69584cc3ec269be24a7075878574a0cacb9ec7b9d98e40"
+    }
+  ],
+  "zh/Substitution": [
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#extensionality",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 8,
+      "end_line": 40,
+      "sha256": "8723bc9f788a3fa659616575669f55866de73a9163f53c9b68bbc4fc3e4a4ac0"
+    },
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#renaming",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 44,
+      "end_line": 71,
+      "sha256": "431a666d59296d408252193e5bfd478ad9c5615a69f43201df26d47b1c9f6ed5"
+    },
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#mixed-laws",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 75,
+      "end_line": 112,
+      "sha256": "98779800f5894862880de34930fb9d0b7c41212f4c409cf36f760704ac5f4784"
+    },
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#substitution-laws",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 116,
+      "end_line": 200,
+      "sha256": "882156acacf7bce916c40a5a0279107a9d8c3e825373b7dbb385d25feb9d3ddd"
+    },
+    {
+      "spec": "src/PLFA/Appendix/Substitution.idr#exercises",
+      "source": "src/PLFA/Appendix/Substitution.idr",
+      "start_line": 204,
+      "end_line": 212,
+      "sha256": "844afc39afc0ce5493908455de47c719f31b0d4882af79526e7b3220d9c70803"
+    }
+  ],
+  "zh/Acknowledgements": [],
+  "zh/Fonts": [],
+  "zh/IdrisPrimer": [
+    {
+      "spec": "src/PLFA/Extensions/IdrisPrimer.idr#definitions",
+      "source": "src/PLFA/Extensions/IdrisPrimer.idr",
+      "start_line": 8,
+      "end_line": 20,
+      "sha256": "e96a312f8e2b098a1d2f8b1f630435a9919edd78505be1af96a5f1cf3a0d7999"
+    },
+    {
+      "spec": "src/PLFA/Extensions/IdrisPrimer.idr#proofs",
+      "source": "src/PLFA/Extensions/IdrisPrimer.idr",
+      "start_line": 24,
+      "end_line": 35,
+      "sha256": "841885f13fc0c4bd3df07f1436a75f5b65c95a4798f12cd56349a3f16d7df868"
+    },
+    {
+      "spec": "src/PLFA/Extensions/IdrisPrimer.idr#exercises",
+      "source": "src/PLFA/Extensions/IdrisPrimer.idr",
+      "start_line": 39,
+      "end_line": 47,
+      "sha256": "e7c66501acbb7bb2bd1469acc1188ffb1c8ac0fce41b8868caccac3104598260"
+    }
+  ],
+  "zh/QTT": [
+    {
+      "spec": "src/PLFA/Extensions/QTT.idr#erasure",
+      "source": "src/PLFA/Extensions/QTT.idr",
+      "start_line": 8,
+      "end_line": 20,
+      "sha256": "a2c9d97b4b7a03e430a91a0b0086bc6e72fff40e85725fe7e2b6c973cacf86e4"
+    },
+    {
+      "spec": "src/PLFA/Extensions/QTT.idr#linear",
+      "source": "src/PLFA/Extensions/QTT.idr",
+      "start_line": 24,
+      "end_line": 38,
+      "sha256": "128797a92f05fd5301836d6f1dcf38a971973385c727617391cf96449fa4c704"
+    },
+    {
+      "spec": "src/PLFA/Extensions/QTT.idr#exercises",
+      "source": "src/PLFA/Extensions/QTT.idr",
+      "start_line": 42,
+      "end_line": 48,
+      "sha256": "cc66d9d7fb3ac53c5de8d017142a12f872952f3e76ebcc65c21d1d0a439fbc74"
+    }
+  ],
+  "zh/Trust": [
+    {
+      "spec": "src/PLFA/Extensions/Trust.idr#machine",
+      "source": "src/PLFA/Extensions/Trust.idr",
+      "start_line": 6,
+      "end_line": 22,
+      "sha256": "781b97693faf1efc471bece67ce2455510300f422ac6b5295ee286d2430501fa"
+    },
+    {
+      "spec": "src/PLFA/Extensions/Trust.idr#observations",
+      "source": "src/PLFA/Extensions/Trust.idr",
+      "start_line": 26,
+      "end_line": 42,
+      "sha256": "f860493d38db42d026ec0390b689b1b199cc65488b47bd43d2b5a6ac41eb465d"
+    },
+    {
+      "spec": "src/PLFA/Extensions/Trust.idr#exercises",
+      "source": "src/PLFA/Extensions/Trust.idr",
+      "start_line": 46,
+      "end_line": 53,
+      "sha256": "ed4ac2465ab1eb1353c1d722160bcdb649cb63855f442b1193228ea4153f1a50"
+    }
+  ]
+}

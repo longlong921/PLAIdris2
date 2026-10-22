@@ -1,0 +1,4 @@
+$ node tests/site-behavior.cjs
+PASS all paired chapter language targets and actual hashchange handlers
+
+exit_code=0

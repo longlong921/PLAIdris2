@@ -1,0 +1,53 @@
+{
+  "chapter": "Compositional",
+  "sources": ["src/PLFA/Part3/Compositional.idr"],
+  "upstream": "src/plfa/part3/Compositional.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "FunDen / funDown / lamEquation / lambdaInversion",
+      "scope": "Lambda meaning is equivalent in both directions to the value-recursive abstraction operator for every body, environment, and value. Downward closure is proved for FunDen (meaning body), including variance, transitivity, and distribution; no closure property for arbitrary predicates is asserted. Lambda inversion applies to every derivation of an arrow observation."
+    },
+    {
+      "name": "AppDen / applicationInversion / applicationBackward / appEquation",
+      "scope": "Application meaning is equivalent to either an observation below Bottom or an existential finite demand simultaneously supported by the function row and argument. Forward inversion handles all four join cases and arbitrary subsumption, using full mixed distribution."
+    },
+    {
+      "name": "varInv / varEquation",
+      "scope": "For every environment, variable, and observation, denotation of that variable is equivalent to the observation being below its environment assignment."
+    },
+    {
+      "name": "funCong / appDenCong / lamCong / appCong",
+      "scope": "The semantic operators preserve pointwise predicate equivalence. Lambda and both operands of application preserve semantic equality for arbitrary open terms."
+    },
+    {
+      "name": "Ctx / plug / compositionality",
+      "scope": "For all scope indices m and n, all l,r : Tm m, and every c : Ctx m n built from Hole, CLam, CAppLeft, and CAppRight, SemEq l r implies SemEq (plug c l) (plug c r). The hole scope explicitly includes variables bound around it; contexts are not restricted to closed or identity cases."
+    },
+    {
+      "name": "structural / structuralCorrect",
+      "scope": "For every scoped untyped term, a structural recursion using the three semantic operators yields a predicate pointwise equivalent to inductive Denote. This is a predicate-valued semantics, not a termination decision procedure or evaluator."
+    }
+  ],
+  "exercises": [
+    {"id": "1", "anchor": "exercise-1", "solution_symbol": "joinFunctionOutputs", "scope": "Combine arbitrary same-input arrow observations into a single row with joined output, using DJoin, DSub, and IDist."},
+    {"id": "2", "anchor": "exercise-2", "solution_symbol": "replaceUnderBinder", "scope": "Replace arbitrary semantically equal open terms in the explicit binding context lambda. ([hole] 0)."}
+  ],
+  "deviations": [
+    "Contexts use natural-number scope indices. CLam : Ctx m (S n) -> Ctx m n permits a general hole index while retaining scope correctness.",
+    "Semantic equations are composed by explicit pointwise functions instead of the upstream custom equational-reasoning syntax.",
+    "Two checked pedagogical exercises are added; the upstream chapter does not supply exercise statements at these locations."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part3/Compositional.idr",
+    "result": "pass",
+    "totality": "%default total; no holes, postulates, unsafe casts, or termination overrides",
+    "evidence": "evidence/denotation-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

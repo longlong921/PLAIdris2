@@ -1,0 +1,186 @@
+{
+  "checked_at": "2026-10-22T19:15:54.250790+00:00",
+  "status": "passed",
+  "results": [
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": 200,
+      "final_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "url": "https://github.com/idris-lang/Idris2/blob/v0.8.0/docs/source/faq/faq.rst",
+      "status": 200,
+      "final_url": "https://github.com/idris-lang/Idris2/blob/v0.8.0/docs/source/faq/faq.rst"
+    },
+    {
+      "url": "https://github.com/idris-lang/Idris2/blob/v0.8.0/docs/source/tutorial/multiplicities.rst",
+      "status": 200,
+      "final_url": "https://github.com/idris-lang/Idris2/blob/v0.8.0/docs/source/tutorial/multiplicities.rst"
+    },
+    {
+      "url": "https://github.com/idris-lang/Idris2/tree/v0.8.0/docs/source",
+      "status": 200,
+      "final_url": "https://github.com/idris-lang/Idris2/tree/v0.8.0/docs/source"
+    },
+    {
+      "url": "https://github.com/longlong921/PLAIdris2",
+      "status": 200,
+      "final_url": "https://github.com/longlong921/PLAIdris2"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/data/tableOfContents.yml",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/data/tableOfContents.yml"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/Bisimulation.lagda.md",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/Bisimulation.lagda.md"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/DeBruijn.lagda.md",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/DeBruijn.lagda.md"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/Inference.lagda.md",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/Inference.lagda.md"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/Lambda.lagda.md",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/Lambda.lagda.md"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/More.lagda.md",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/More.lagda.md"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/Properties.lagda.md",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part2/Properties.lagda.md"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part3/Compositional.lagda.md",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part3/Compositional.lagda.md"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part3/Denotational.lagda.md",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/blob/1c39b1e82caa4283274e64ba58c3bc3c9ab781eb/src/plfa/part3/Denotational.lagda.md"
+    },
+    {
+      "url": "https://github.com/plfa/plfa.github.io/graphs/contributors",
+      "status": 200,
+      "final_url": "https://github.com/plfa/plfa.github.io/graphs/contributors"
+    },
+    {
+      "url": "https://idris2.readthedocs.io/en/latest/faq/faq.html",
+      "status": 200,
+      "final_url": "https://idris2.readthedocs.io/en/latest/faq/faq.html"
+    },
+    {
+      "url": "https://idris2.readthedocs.io/en/latest/tutorial/index.html",
+      "status": 200,
+      "final_url": "https://idris2.readthedocs.io/en/latest/tutorial/index.html"
+    },
+    {
+      "url": "https://nix.dev/install-nix",
+      "status": 200,
+      "final_url": "https://nix.dev/install-nix"
+    },
+    {
+      "url": "https://plfa.github.io/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/"
+    },
+    {
+      "url": "https://plfa.github.io/Adequacy/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Adequacy/"
+    },
+    {
+      "url": "https://plfa.github.io/BigStep/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/BigStep/"
+    },
+    {
+      "url": "https://plfa.github.io/Confluence/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Confluence/"
+    },
+    {
+      "url": "https://plfa.github.io/Connectives/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Connectives/"
+    },
+    {
+      "url": "https://plfa.github.io/ContextualEquivalence/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/ContextualEquivalence/"
+    },
+    {
+      "url": "https://plfa.github.io/Decidable/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Decidable/"
+    },
+    {
+      "url": "https://plfa.github.io/Equality/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Equality/"
+    },
+    {
+      "url": "https://plfa.github.io/Induction/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Induction/"
+    },
+    {
+      "url": "https://plfa.github.io/Isomorphism/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Isomorphism/"
+    },
+    {
+      "url": "https://plfa.github.io/Lists/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Lists/"
+    },
+    {
+      "url": "https://plfa.github.io/Naturals/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Naturals/"
+    },
+    {
+      "url": "https://plfa.github.io/Negation/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Negation/"
+    },
+    {
+      "url": "https://plfa.github.io/Quantifiers/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Quantifiers/"
+    },
+    {
+      "url": "https://plfa.github.io/Relations/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Relations/"
+    },
+    {
+      "url": "https://plfa.github.io/Soundness/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Soundness/"
+    },
+    {
+      "url": "https://plfa.github.io/Substitution/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Substitution/"
+    },
+    {
+      "url": "https://plfa.github.io/Untyped/",
+      "status": 200,
+      "final_url": "https://plfa.github.io/Untyped/"
+    }
+  ]
+}

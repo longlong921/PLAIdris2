@@ -1,0 +1,158 @@
+{
+  "chapter": "Lists",
+  "sources": [
+    "src/PLFA/Part1/Lists.idr"
+  ],
+  "upstream": "src/plfa/part1/Lists.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "appendAssoc / appendRightNil / sizeAppend",
+      "scope": "Append associativity, right identity and length-additivity for every list over an arbitrary element type."
+    },
+    {
+      "name": "reverseAppend / reverseInvolutive / shuntCorrect / reversesAgree",
+      "scope": "Reverse/append distribution, reverse involution, the generalized accumulator invariant for every accumulator, and equality of optimized and direct reverse."
+    },
+    {
+      "name": "mapCompose / mapAppend / foldAppend / foldCons / mapAsFold / mapTree / foldTree / mapTreeAsFold",
+      "scope": "Generic map composition/distribution, fold fusion over append without monoid assumptions, constructor reconstruction, and list/tree map-as-fold laws with arbitrary payload types and functions."
+    },
+    {
+      "name": "MonoidLaw / additionMonoid / multiplicationMonoid / appendMonoid / foldMonoid / foldMonoidAppend / foldLeftInvariant / foldDirectionsAgree",
+      "scope": "Explicit associativity and both unit proofs for three monoids; generalized fold laws and equality of folding directions for any supplied monoid, without requiring commutativity."
+    },
+    {
+      "name": "sumDownFromTimes",
+      "scope": "For every natural n including zero, mul (sumList (downFrom n)) 2 = mul n (monus n 1), exactly the upstream division-free arithmetic-series claim."
+    },
+    {
+      "name": "All / Any / Member / firstZero / secondZero / threeAbsent",
+      "scope": "Proof-relevant indexed evidence for all elements, one selected position, and membership; examples retain duplicate zero positions and refute membership of three."
+    },
+    {
+      "name": "allAppendIso / anyAppendIff / notAnyIff",
+      "scope": "Full data Iso splitting All over append; logical equivalence locating Any in one part; logical equivalence of refuted Any and All of refutations."
+    },
+    {
+      "name": "allForall / allForallLeft / allForallPointwise / anyExistsIso",
+      "scope": "All corresponds to membership-indexed universal evidence with an evidence-tree inverse and a pointwise function inverse; Any has a full data Iso with an element/membership/predicate dependent package."
+    },
+    {
+      "name": "decAll / decAny / Merge / split",
+      "scope": "Given a total decision for the element predicate, decide All and Any and construct two lists with positive/negative All evidence plus a Merge proof accounting for the entire original list in order, including duplicates."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "L.1",
+      "solution_symbol": [
+        "appendAssoc",
+        "appendRightNil",
+        "sizeAppend"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.2",
+      "solution_symbol": [
+        "reverseAppend",
+        "reverseInvolutive"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.3",
+      "solution_symbol": [
+        "shuntCorrect",
+        "reversesAgree"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.4",
+      "solution_symbol": [
+        "mapCompose",
+        "mapAppend"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.5",
+      "solution_symbol": [
+        "productList",
+        "foldAppend",
+        "foldCons",
+        "mapAsFold",
+        "mapTree",
+        "foldTree",
+        "mapTreeAsFold"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.6",
+      "solution_symbol": [
+        "sumDownFromTimes",
+        "doubleAdd",
+        "sumDownFrom"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.7",
+      "solution_symbol": [
+        "foldMonoidAppend",
+        "foldLeftInvariant",
+        "foldDirectionsAgree"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.8",
+      "solution_symbol": [
+        "allAppendIso",
+        "anyAppendIff",
+        "notAnyIff"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.9",
+      "solution_symbol": [
+        "allForall",
+        "allForallLeft",
+        "allForallPointwise",
+        "anyExistsIso"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "L.10",
+      "solution_symbol": [
+        "decAll",
+        "decAny",
+        "split",
+        "mergeExample"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "Uses built-in Idris List with explicit tutorial append/map/fold implementations rather than redeclaring list syntax.",
+    "The upstream extensional Iso for negated Any is retained as Iff; the All/universal Iso is retained as Iff with an evidence-tree inverse and pointwise inverse, without a whole-function extensionality axiom. The Any/existential data Iso is fully proved.",
+    "Quadratic versus linear reverse traversal is an informal structural cost explanation, not a formally proved machine-cost theorem."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Lists.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}

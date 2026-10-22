@@ -1,0 +1,80 @@
+{
+  "chapter": "Lambda",
+  "sources": [
+    "src/PLFA/Part2/Typed.idr",
+    "src/PLFA/Part2/Lambda.idr"
+  ],
+  "upstream": "src/plfa/part2/Lambda.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Raw / HasType",
+      "scope": "Externally typed, intrinsically scoped simple lambda calculus with natural numbers, case, and general fixpoints; arbitrary finite scopes and context vectors. Scope does not imply typability."
+    },
+    {
+      "name": "rename / subst / instantiate",
+      "scope": "Capture-avoiding raw renaming and simultaneous substitution between arbitrary scopes, extended under lambda, successor-case, and fixpoint binders. Substitution itself accepts arbitrary open arguments."
+    },
+    {
+      "name": "Step / Steps",
+      "scope": "Weak left-to-right call-by-value reduction on all Raw n terms, including ill-typed terms, with value-restricted lambda and successor-case beta and unrestricted fixpoint unfolding; finite reflexive-transitive closure."
+    },
+    {
+      "name": "appendSteps / applicationSteps",
+      "scope": "Composition of arbitrary finite traces and lifting through the function position of application, at every scope."
+    },
+    {
+      "name": "numeralValue / numeralType / identityType / plusType / multiplyType / churchTwoType / constantType",
+      "scope": "General numeral value/typing proofs and actual derivations for identity, recursive addition/multiplication, Church two, and the constant function in arbitrary contexts."
+    },
+    {
+      "name": "identityTwo / nestedIdentity / zeroApplicationUntypable",
+      "scope": "Concrete one- and two-step CBV identity traces; impossibility of assigning any result type to closed zero-applied-to-zero."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "1",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "nestedIdentity"
+      ],
+      "scope": "Two-step nested-identity trace that uses AppR before outer Beta."
+    },
+    {
+      "id": "2",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "constant",
+        "constantType"
+      ],
+      "scope": "Encoding and typing of the constant function, retaining the older variable under a binder."
+    },
+    {
+      "id": "3",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "zeroApplicationUntypable"
+      ],
+      "scope": "No external typing of closed zero applied to zero, for any requested type."
+    }
+  ],
+  "deviations": [
+    "Named variables are replaced from the outset by Fin-scoped raw syntax and Vect contexts. Named shadowing is explained as de Bruijn positions; no string-name resolver is provided.",
+    "Typing remains external in Lambda and Properties, so ill-typed scoped terms remain representable and the preservation theorem is a separate proof.",
+    "Capture-avoiding substitution supports arbitrary open arguments rather than relying on closed replacements in the named presentation.",
+    "Pedagogical exercises are adapted to the scoped representation; not every alternative-presentation or Church-arithmetic exercise from upstream is reproduced."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part2/Lambda.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts, or termination overrides",
+    "evidence": "evidence/typed-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

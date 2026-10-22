@@ -1,0 +1,4 @@
+$ idris2 --source-dir src --check src/PLFA/Part3/Soundness.idr
+4/4: Building PLFA.Part3.Soundness (src/PLFA/Part3/Soundness.idr)
+
+exit_code=0

@@ -1,0 +1,83 @@
+warning: Git tree '/workspace/PLAIdris2' is dirty
+evaluating flake...
+checking flake output 'devShells'...
+checking derivation devShells.x86_64-linux.default...
+derivation evaluated to /nix/store/h48qk8w7sq73dv3l5svzvjdcflksjacz-nix-shell.drv
+checking derivation devShells.x86_64-linux.browser...
+derivation evaluated to /nix/store/v05k1dp476dkhw0xxrzspxwjxgqafb1v-nix-shell.drv
+checking flake output 'packages'...
+checking derivation packages.x86_64-linux.default...
+derivation evaluated to /nix/store/602559nk87p5y1qxqpsghcfk4xbpksfs-plaidris2-book-0.1.0.drv
+checking flake output 'checks'...
+checking derivation checks.x86_64-linux.book...
+derivation evaluated to /nix/store/602559nk87p5y1qxqpsghcfk4xbpksfs-plaidris2-book-0.1.0.drv
+running 1 flake checks...
+building '/nix/store/602559nk87p5y1qxqpsghcfk4xbpksfs-plaidris2-book-0.1.0.drv'...
+plaidris2-book> Running phase: unpackPhase
+plaidris2-book> unpacking source archive /nix/store/h97y2pmp16869fz5d7ck04m8liz6kd38-source
+plaidris2-book> source root is source
+plaidris2-book> Running phase: patchPhase
+plaidris2-book> Running phase: updateAutotoolsGnuConfigScriptsPhase
+plaidris2-book> Running phase: configurePhase
+plaidris2-book> no configure script, doing nothing
+plaidris2-book> Running phase: buildPhase
+plaidris2-book> PASS exact 30-entry upstream mapping; extensions remain separate
+plaidris2-book> PASS paired sections and source inclusions for 33 chapters
+plaidris2-book> PASS no proof holes or escape hatches in 32 reference modules
+plaidris2-book> RUN idris2 --version
+plaidris2-book> RUN idris2 --source-dir src --check src/Main.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Appendix/Substitution.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Extensions/IdrisPrimer.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Extensions/QTT.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Extensions/Trust.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Connectives.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Decidable.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Equality.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Induction.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Isomorphism.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Lists.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Naturals.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Negation.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Quantifiers.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part1/Relations.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/BigStep.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Bisimulation.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/ClosureBounds.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/ClosureCorrespondence.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Confluence.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/DeBruijn.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Inference.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Lambda.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/More.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Properties.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Typed.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part2/Untyped.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/Adequacy.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/Compositional.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/ContextualEquivalence.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/Denotational.idr
+plaidris2-book> RUN idris2 --source-dir src --check src/PLFA/Part3/Soundness.idr
+plaidris2-book> RUN idris2 --source-dir src --cg node -o examples src/Main.idr
+plaidris2-book> RUN node build/exec/examples
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/WrongArithmetic.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/FalseLogic.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/MissingCase.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/NonDecreasing.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/BadIndex.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/ErasedRuntime.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/LinearDuplication.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/IllTypedApplication.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/ArrowIsNotBottom.idr
+plaidris2-book> RUN idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/OmegaDoesNotReturn.idr
+plaidris2-book> Built 69 HTML pages from 33 paired chapters in /build/source/dist
+plaidris2-book> PASS 69 pages; 4151 local links/assets; chapter switches, fragments and source hashes
+plaidris2-book> RUN node tests/site-behavior.cjs
+plaidris2-book> PASS requested checks completed
+plaidris2-book> buildPhase completed in 37 seconds
+plaidris2-book> Running phase: installPhase
+plaidris2-book> Running phase: fixupPhase
+plaidris2-book> shrinking RPATHs of ELF executables and libraries in /nix/store/84bqn4irsigflgdvzw7nmay97s7xfhpa-plaidris2-book-0.1.0
+plaidris2-book> checking for references to /build/ in /nix/store/84bqn4irsigflgdvzw7nmay97s7xfhpa-plaidris2-book-0.1.0...
+plaidris2-book> patching script interpreter paths in /nix/store/84bqn4irsigflgdvzw7nmay97s7xfhpa-plaidris2-book-0.1.0
+warning: The check omitted these incompatible systems: aarch64-darwin, aarch64-linux, x86_64-darwin
+Use '--all-systems' to check all.

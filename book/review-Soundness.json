@@ -1,0 +1,36 @@
+{
+  "chapter": "Soundness",
+  "sources": ["src/PLFA/Part3/Soundness.idr"],
+  "upstream": "src/plfa/part3/Soundness.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {"name": "substPres / substitution", "scope": "For arbitrary source and destination scopes, environments, terms, values, and substitutions, pointwise semantic evidence for the substituted variables transports every Denote derivation through simultaneous substitution. The single-variable corollary has no value or normalization side condition."},
+    {"name": "renameReflect / renameShiftReflect", "scope": "Renaming reflects every semantic observation when the target environment composed with the renaming is pointwise below the source environment. No injectivity or function extensionality hypothesis is needed."},
+    {"name": "substReflect / substitutionReflect", "scope": "From any finite semantic derivation of a simultaneously substituted arbitrary term, construct a finite-information source environment, evidence that every substitution image supplies its demanded value, and a derivation for the original term. Application and join cases construct joined environments; the single-substitution corollary constructs the argument approximation rather than assuming it."},
+    {"name": "preserve / reflect", "scope": "Every full untyped beta Step preserves and reflects every Denote judgment in every environment, including AppLeft, AppRight, and UnderLam. No typing, closedness, evaluation strategy, or termination premise is added."},
+    {"name": "stepSoundness / soundness", "scope": "For arbitrary scoped terms and arbitrary endpoints, Step or finite Steps implies pointwise SemEq in every environment at every information value. Both directions are proved, not supplied as assumptions."}
+  ],
+  "exercises": [
+    {"id": "S1", "solution_symbol": "betaMeaning", "scope": "Semantic equivalence of every open beta redex and its capture-avoiding reduct."},
+    {"id": "S2", "solution_symbol": "ignoredArgumentMeaning", "scope": "Replacing an unused arbitrary argument, including divergent arguments, preserves the denotation of the identity result."},
+    {"id": "S3", "solution_symbol": "underLambdaMeaning", "scope": "Semantic equality for a beta contraction underneath an outer lambda, at arbitrary outer scope."}
+  ],
+  "deviations": [
+    "Intrinsically scoped Nat/Fin syntax replaces Agda's context syntax; environment equality and comparison are pointwise and do not use function extensionality.",
+    "substReflect structurally analyzes the source term and semantic derivation rather than threading a separate equality identifying the substituted term.",
+    "The name soundness covers arbitrary endpoints by iterating upstream reduce-equal; upstream reserves that name for its lambda-endpoint special case. This is not advertised as a result unavailable upstream."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 from the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part3/Soundness.idr",
+    "result": "pass; exit_code=0",
+    "evidence": "evidence/semantics-owner-check.json",
+    "log": "evidence/semantics-Soundness.log",
+    "totality": "%default total; complete coverage and termination checking; no holes or proof escapes",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

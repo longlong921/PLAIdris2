@@ -1,0 +1,99 @@
+{
+  "chapter": "BigStep",
+  "sources": [
+    "src/PLFA/Part2/BigStep.idr",
+    "src/PLFA/Part2/ClosureBounds.idr",
+    "src/PLFA/Part2/ClosureCorrespondence.idr"
+  ],
+  "upstream": "src/plfa/part2/BigStep.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Eval / evalValue / evalDeterministic",
+      "scope": "Substitution-based weak call-by-name semantics for every scope. Every finite successful derivation returns a lambda, and two derivations for the same input return the identical term. No universal convergence assertion."
+    },
+    {
+      "name": "HeadStep / HeadSteps / headDeterministic / headIsBeta / headsAreBetas",
+      "scope": "Deterministic weak call-by-name small steps and paths, with a proved inclusion into unrestricted full beta steps and paths."
+    },
+    {
+      "name": "evalToHeadSteps / headExpand / headStepsToEval / evalToSteps",
+      "scope": "Constructive equivalence between Eval to a specified lambda and weak head-step reachability of that lambda, plus the forward inclusion into full beta reachability."
+    },
+    {
+      "name": "Closure / Env / ClosEval / closDeterministic",
+      "scope": "Finite closure/environment trees and genuine lazy closure call-by-name evaluation. The argument retains its call-site environment and is not evaluated when stored. Successful closure results are unique."
+    },
+    {
+      "name": "reify / reifyEnv / reifyBeta / closToEval / closToSteps / closedClosToLambda",
+      "scope": "Total reification of arbitrary closures into closed syntax, environment-extension/substitution correspondence, and conversion of every closure evaluation into substitution evaluation and full beta paths. A closed successful closure run yields a beta path to a lambda."
+    },
+    {
+      "name": "BoundedEval / weakenBound / evalBound / forgetBound",
+      "scope": "A proof-height annotation on existing finite evaluation derivations. Every Eval derivation has some constructively produced bound; forgetting the bound recovers Eval. The bound is not a fixed restriction on the language."
+    },
+    {
+      "name": "ClosureValue / closValue / boundedToClos / evalToClos / closedEvalToClos",
+      "scope": "Reverse correspondence for every closure: Eval (reify input) value constructs a result closure, actual ClosEval input result evidence, and reify result = value. Mutual recursion decreases derivation bound or closure/environment structure. Closed-term specialization restores the bridge used by upstream closure-valued adequacy."
+    },
+    {
+      "name": "run / RunResult / headView",
+      "scope": "Total fuel evaluator for the weak strategy. Returned, Blocked and OutOfFuel all contain certified HeadSteps traces. Open neutral heads may contain arbitrary arguments; exhaustion does not prove divergence."
+    },
+    {
+      "name": "omegaNoEval / ignoreOmegaTerminates / lazyCaptureTerminates / closureLazyCapture",
+      "scope": "No finite weak Eval derivation exists for Omega, proved by recursion on the alleged derivation. Ignoring Omega and returning a lambda that captures Omega both have checked evaluations; the second also has an actual closure evaluation."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "BigStep-1",
+      "solution_symbol": [
+        "ignoreOmegaTerminates",
+        "lazyCaptureTerminates"
+      ]
+    },
+    {
+      "id": "BigStep-2",
+      "solution_symbol": [
+        "closureLazyCapture"
+      ]
+    },
+    {
+      "id": "BigStep-3",
+      "solution_symbol": [
+        "omegaNoEval",
+        "fuelIdentity",
+        "fuelOmega",
+        "fuelNeutral"
+      ]
+    }
+  ],
+  "deviations": [
+    "Closures use finite indexed list environments instead of functions from finite contexts. Both terms and their saved environments remain lazy.",
+    "A substitution-based presentation and its matching weak small-step relation are added before the closure presentation. Bidirectional reification theorems prove the connection; closure-valued adequacy is retained in Part3.",
+    "The reverse correspondence is split into ClosureBounds and ClosureCorrespondence for acyclic imports. Its natural-number bound is extracted from each supplied finite Eval derivation and is not a theorem restriction.",
+    "The total executable weak evaluator returns traces and distinguishes open neutrals from exhausted fuel; no fuel result is used alone as a divergence proof."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 from the pinned Nix environment",
+    "commands": [
+      ".cache/run idris2 --source-dir src --check src/PLFA/Part2/BigStep.idr",
+      ".cache/run idris2 --source-dir src --check src/PLFA/Part2/ClosureBounds.idr",
+      ".cache/run idris2 --source-dir src --check src/PLFA/Part2/ClosureCorrespondence.idr"
+    ],
+    "result": "pass; all commands exit_code=0",
+    "evidence": "evidence/untyped-owner-check.json",
+    "logs": [
+      "evidence/untyped-BigStep.log",
+      "evidence/untyped-ClosureBounds.log",
+      "evidence/untyped-ClosureCorrespondence.log"
+    ],
+    "totality": "%default total; complete coverage and termination checking; no holes, proof escapes, postulates or unchecked theorem fields",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

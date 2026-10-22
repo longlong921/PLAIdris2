@@ -1,0 +1,110 @@
+{
+  "chapter": "Quantifiers",
+  "sources": [
+    "src/PLFA/Part1/Quantifiers.idr"
+  ],
+  "upstream": "src/plfa/part1/Quantifiers.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "forallElim / forallProduct / forallProductRound / sumForall / forallTri / triRound",
+      "scope": "Dependent universal elimination; product and three-element correspondences as Iff with pointwise recovery; a global universal branch gives a pointwise sum, without claiming the converse."
+    },
+    {
+      "name": "existsElim / existsCurry / existsCurryRound / existsSum / existsProduct / existsTri",
+      "scope": "Dependent-pair elimination and curried equivalence; full data Iso for existential-over-sum and existential over Tri; only the justified implication from a shared product witness to separate witnesses."
+    },
+    {
+      "name": "evenWitness / oddWitness / witnessEven / witnessOdd / evenWitnessLeft / oddWitnessLeft / witnessEvenLeft / witnessOddLeft",
+      "scope": "Construct and consume arbitrary even/odd witnesses as multiples of two and successor multiples, with two on either multiplication side."
+    },
+    {
+      "name": "leWitness / witnessLE / leExists",
+      "scope": "For all m,n, LE m n iff there is a natural difference k with add k m = n; the forward direction constructs k."
+    },
+    {
+      "name": "notExists / existsNot",
+      "scope": "A refuted dependent existential iff a refutation for every witness; an existential counterexample refutes a dependent universal. No counterexample-extraction converse is asserted."
+    },
+    {
+      "name": "canonicalPairEqual / canonicalIso",
+      "scope": "Full Iso between all Nat and the dependent pair of raw Bin with Canonical proof. The binary-side inverse proves equality of the entire dependent pair using canonical proof uniqueness."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Q.1",
+      "solution_symbol": [
+        "forallProduct",
+        "forallProductRound",
+        "forallTri",
+        "triRound"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "Q.2",
+      "solution_symbol": [
+        "existsSum",
+        "existsTri",
+        "existsProduct"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "Q.3",
+      "solution_symbol": [
+        "evenWitness",
+        "oddWitness",
+        "witnessEven",
+        "witnessOdd",
+        "evenWitnessLeft",
+        "oddWitnessLeft",
+        "witnessEvenLeft",
+        "witnessOddLeft"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "Q.4",
+      "solution_symbol": [
+        "leExists",
+        "leWitness",
+        "witnessLE"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "Q.5",
+      "solution_symbol": [
+        "notExists",
+        "existsNot"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "Q.6",
+      "solution_symbol": [
+        "canonicalPairEqual",
+        "canonicalIso"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "Uses Idris DPair witness syntax instead of Agda Sigma/exists mixfix syntax.",
+    "Universal product/finite-domain, dependent currying, and negated-existential correspondences do not assert extensional equalities of function values. They retain two conversion directions and the stated pointwise laws without an axiom."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Quantifiers.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}

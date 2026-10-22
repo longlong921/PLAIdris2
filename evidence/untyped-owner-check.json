@@ -1,0 +1,145 @@
+{
+  "checked_at_utc": "2026-10-22T19:06:25.678839+00:00",
+  "compiler": "Idris2 0.8.0; pinned Nix",
+  "chapters": {
+    "Untyped": {
+      "compiler_exit_code": 0,
+      "source_sha256": {
+        "src/PLFA/Part2/Untyped.idr": "eec3ea7489a46ce7eb88237717b4b101ebd037d0b806cb195c6f6aa1e116aaf7"
+      },
+      "english_sha256": "22ded55fb5a6782d8cae260fcce847688f0cceddc6c17555c4de61cf9a98b164",
+      "chinese_sha256": "e580673437c32d7a1143ee7ba5227f99bbe003cbc119d5b001147829e4546013",
+      "anchors": [
+        "untyped",
+        "motivation",
+        "model",
+        "scope",
+        "substitution",
+        "examples",
+        "encodings",
+        "theorems",
+        "normalization",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_includes": [
+        "src/PLFA/Part2/Untyped.idr#syntax",
+        "src/PLFA/Part2/Untyped.idr#encodings",
+        "src/PLFA/Part2/Untyped.idr#reduction",
+        "src/PLFA/Part2/Untyped.idr#normalization",
+        "src/PLFA/Part2/Untyped.idr#examples"
+      ],
+      "bilingual_parity": "pass",
+      "source_region_resolution": "pass",
+      "total_source_audit": "pass"
+    },
+    "Confluence": {
+      "compiler_exit_code": 0,
+      "source_sha256": {
+        "src/PLFA/Part2/Confluence.idr": "213ac0b56206524b2e0a104c3da1d28acfaf7a2f892509e154a00ab248fedd06"
+      },
+      "english_sha256": "3a1e7f9244880f2ecb7cd19d4180a08f510d1759d83e3e4bb5aa36975bce1edc",
+      "chinese_sha256": "075b98508f3994d2e7d3906aae4626fba2d4a4eea741a65fe6a7894e3df612c7",
+      "anchors": [
+        "confluence",
+        "motivation",
+        "model",
+        "examples",
+        "theorems",
+        "substitution",
+        "triangle",
+        "correspondence",
+        "church-rosser",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_includes": [
+        "src/PLFA/Part2/Confluence.idr#parallel",
+        "src/PLFA/Part2/Confluence.idr#preservation",
+        "src/PLFA/Part2/Confluence.idr#triangle",
+        "src/PLFA/Part2/Confluence.idr#correspondence",
+        "src/PLFA/Part2/Confluence.idr#confluence",
+        "src/PLFA/Part2/Confluence.idr#exercises"
+      ],
+      "bilingual_parity": "pass",
+      "source_region_resolution": "pass",
+      "total_source_audit": "pass"
+    },
+    "BigStep": {
+      "compiler_exit_code": 0,
+      "source_sha256": {
+        "src/PLFA/Part2/BigStep.idr": "1dd44d4b3e26627baac3c956f3f07ce657be1bc7ff6f86d956c0ae22dce15099",
+        "src/PLFA/Part2/ClosureBounds.idr": "2a0242abaaeb112b5fc9cc53db797d0bb8aeefe0e42e8855a58ad4dc31d7c312",
+        "src/PLFA/Part2/ClosureCorrespondence.idr": "2ea5ceaa6d68cb3046e5303a926adc028a9f4462281fd71bc637e478ced80baf"
+      },
+      "english_sha256": "aef3ef2fe0ade305c1fabeaffa238fefd709ded239b01c398b6a831d02a0c76b",
+      "chinese_sha256": "777ff43d7e12918551862df2eef2f227fd2a17ea04e8516c22aa3c5fbfccc3ec",
+      "anchors": [
+        "big-step",
+        "motivation",
+        "model",
+        "examples",
+        "theorems",
+        "weak-small-step",
+        "correspondence",
+        "closures",
+        "closure-equivalence",
+        "fuel",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_includes": [
+        "src/PLFA/Part2/BigStep.idr#evaluation",
+        "src/PLFA/Part2/BigStep.idr#weak-small-step",
+        "src/PLFA/Part2/BigStep.idr#correspondence",
+        "src/PLFA/Part2/BigStep.idr#closures",
+        "src/PLFA/Part2/ClosureBounds.idr#bounded-evaluation",
+        "src/PLFA/Part2/ClosureBounds.idr#finite-derivation-bound",
+        "src/PLFA/Part2/ClosureCorrespondence.idr#closure-values",
+        "src/PLFA/Part2/ClosureCorrespondence.idr#inverse",
+        "src/PLFA/Part2/BigStep.idr#fuel",
+        "src/PLFA/Part2/BigStep.idr#examples"
+      ],
+      "bilingual_parity": "pass",
+      "source_region_resolution": "pass",
+      "total_source_audit": "pass"
+    },
+    "Substitution": {
+      "compiler_exit_code": 0,
+      "source_sha256": {
+        "src/PLFA/Appendix/Substitution.idr": "40cc9aca4d1ab862760f545d96ee7194f2fac49922060e6268f43db38e59a652"
+      },
+      "english_sha256": "f4f4451992a03020d8cb6864f1e77cf378257717feae0279578ce172dcc12c68",
+      "chinese_sha256": "0063440dd7269e1d4778350237bcfe0216210e5b018c08ea5c03ef59286aaf3e",
+      "anchors": [
+        "substitution",
+        "motivation",
+        "model",
+        "examples",
+        "theorems",
+        "renaming-laws",
+        "mixed-laws",
+        "substitution-laws",
+        "pitfalls",
+        "exercises",
+        "references"
+      ],
+      "source_includes": [
+        "src/PLFA/Appendix/Substitution.idr#extensionality",
+        "src/PLFA/Appendix/Substitution.idr#renaming",
+        "src/PLFA/Appendix/Substitution.idr#mixed-laws",
+        "src/PLFA/Appendix/Substitution.idr#substitution-laws",
+        "src/PLFA/Appendix/Substitution.idr#exercises"
+      ],
+      "bilingual_parity": "pass",
+      "source_region_resolution": "pass",
+      "total_source_audit": "pass"
+    }
+  },
+  "overall": "all six source modules compiled; four bilingual anchor/include lists matched",
+  "remaining_blockers": [],
+  "local_chapter_links": "pass"
+}

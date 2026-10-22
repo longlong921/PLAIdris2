@@ -1,0 +1,18 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/ArrowIsNotBottom.idr
+1/1: Building ArrowIsNotBottom (tests/negative/ArrowIsNotBottom.idr)
+Error: While processing right hand side of bad. When unifying:
+    Info Bottom Bottom
+and:
+    Info (Arrow Bottom Bottom) Bottom
+Mismatch between: Bottom and Arrow Bottom Bottom.
+
+ArrowIsNotBottom:5:7--5:11
+ 1 | module ArrowIsNotBottom
+ 2 | import PLFA.Part3.Denotational
+ 3 | %default total
+ 4 | bad : Info (Arrow Bottom Bottom) Bottom
+ 5 | bad = IBot
+           ^^^^
+
+
+exit_code=1

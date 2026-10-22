@@ -1,0 +1,99 @@
+{
+  "chapter": "Negation",
+  "sources": [
+    "src/PLFA/Part1/Negation.idr"
+  ],
+  "upstream": "src/plfa/part1/Negation.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Refutes / notElim / doubleNegIntro / tripleNegElim / contraposition / oneNotTwo / zeroNotSucc",
+      "scope": "Constructive negation as a function to Void, explosion from actual contradiction, double-negation introduction, triple-negation elimination, contraposition, and constructor-based natural inequality."
+    },
+    {
+      "name": "negationsPointwise / notSum / notSumRound",
+      "scope": "Refutations agree pointwise at each possible input; a refuted sum is logically equivalent to a pair of refutations. Whole-function equality is not asserted."
+    },
+    {
+      "name": "excludedMiddleIrrefutable",
+      "scope": "For any proposition a, double negation of Either a (Refutes a), without constructing excluded middle itself."
+    },
+    {
+      "name": "ExclusiveTri / exclusiveTrichotomy",
+      "scope": "For every pair of naturals, one ordering alternative with explicit refutations of both incompatible alternatives."
+    },
+    {
+      "name": "emToDne / dneToEm / emToPeirce / peirceToEm / emToImplication / implicationToEm / emToDeMorgan / deMorganToEm",
+      "scope": "All five polymorphic classical principles imply each other via explicit principle arguments and constructive functions. No unconditional inhabitant of a classical principle type is introduced."
+    },
+    {
+      "name": "negationStable / productStable",
+      "scope": "Every negation is stable under double-negation elimination; the product of two explicitly stable propositions is stable."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "G.1",
+      "solution_symbol": [
+        "contraposition",
+        "tripleNegElim"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "G.2",
+      "solution_symbol": [
+        "ltNotEqual",
+        "ltAsymmetric",
+        "exclusiveTrichotomy"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "G.3",
+      "solution_symbol": [
+        "notSum"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "G.4",
+      "solution_symbol": [
+        "emToDne",
+        "dneToEm",
+        "emToPeirce",
+        "peirceToEm",
+        "emToImplication",
+        "implicationToEm",
+        "emToDeMorgan",
+        "deMorganToEm"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "G.5",
+      "solution_symbol": [
+        "negationStable",
+        "productStable"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "Refutes avoids colliding with Idris numeric Neg.",
+    "Upstream assimilation equality for whole negation functions is replaced by negationsPointwise; notSum is an Iff without the extensionality-dependent Iso upgrade.",
+    "Classical principles appear solely as explicitly quantified premises, never as postulates."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Negation.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}

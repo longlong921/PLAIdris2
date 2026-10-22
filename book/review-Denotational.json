@@ -1,0 +1,72 @@
+{
+  "chapter": "Denotational",
+  "sources": ["src/PLFA/Part3/Denotational.idr"],
+  "upstream": "src/plfa/part3/Denotational.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Value / Info",
+      "scope": "Unbounded inductive finite information values Bottom, Arrow, Join. Full information preorder with bottom, join least-upper-bound rules, transitivity, contravariant domains, covariant codomains, and arrow-output distribution. No fuel bound or operational reachability occurs in these definitions."
+    },
+    {
+      "name": "infoRefl / joinMono / mixedDist",
+      "scope": "Reflexivity for every value, monotonicity of Join in both operands, and the general two-input/two-output arrow-distribution inequality, with no extra hypotheses."
+    },
+    {
+      "name": "Env / EnvLE / envEta",
+      "scope": "Finite-scope environments are Fin n -> Value for arbitrary n. Environment order and reconstruction equality are pointwise; no function extensionality is assumed."
+    },
+    {
+      "name": "Denote / applyLarger",
+      "scope": "Inductive finite-information semantics for all intrinsically scoped untyped terms, with variable, lambda, application, bottom, join, and downward closure. Application may use any argument observation above the demanded finite input."
+    },
+    {
+      "name": "envMono / upEnv / renamePres",
+      "scope": "Any derivation remains valid when its environment grows pointwise. Renaming between arbitrary scopes preserves every observation when each renamed variable receives at least its previous information."
+    },
+    {
+      "name": "DenEq / SemEq / denEqRefl / denEqSym / denEqTrans",
+      "scope": "Denotational equality is pointwise iff over every environment and every Value, with proved reflexivity, symmetry, and transitivity; this does not assert intensional equality of functions."
+    },
+    {
+      "name": "selfMeaning / identitySelf / churchTwoMeaning / omegaBottom",
+      "scope": "Checked derivations for genuine untyped self application, identity applied to itself, the two-edge Church path observation, and a nontrivial Bottom derivation of Omega. The last result does not alone assert divergence."
+    },
+    {
+      "name": "subInv / factorAcross / functionFactor",
+      "scope": "For every Info u v and every arrow leaf of u, construct a finite all-function selection included in v with a bounded joined domain and sufficient joined codomain. The proof handles transitivity by recursively factoring all selected rows, and handles IDist by selecting both rows. Factor is constructed evidence, not an assumed core theorem."
+    },
+    {
+      "name": "arrowInversion / arrowNotBottom",
+      "scope": "For every derivation Info (Arrow a b) (Arrow c d), construct Info c a and Info b d. No arrow is below Bottom, including Arrow Bottom Bottom."
+    },
+    {
+      "name": "churchMeaning / churchPlusMeaning",
+      "scope": "Every Church numeral k follows every supplied path vector of k+1 arbitrary information values. Church addition composes an arbitrary a-to-b and b-to-c pair of observations under the same function observation."
+    }
+  ],
+  "exercises": [
+    {"id": "1", "anchor": "exercise-1", "solution_symbol": ["joinCommute", "joinIdempotent"], "scope": "Arbitrary-value join commutativity and idempotence as information inequalities."},
+    {"id": "2", "anchor": "exercise-2", "solution_symbol": "churchPlusMeaning", "scope": "Non-bottom general Church addition observation, corresponding to upstream denot-plus exercise."},
+    {"id": "3", "anchor": "exercise-3", "solution_symbol": "churchMeaning", "scope": "Universal Church path theorem for every natural number and every matching path vector, corresponding to upstream denot-church exercise."}
+  ],
+  "deviations": [
+    "Agda context-indexed syntax is represented by Tm : Nat -> Type and Fin variables, sharing the Untyped module.",
+    "Environment reconstruction is stated pointwise rather than using upstream function extensionality.",
+    "Literal value membership and the all-function property are inductive Member and AllFuns evidence instead of function-valued predicates. The full generic factorization and arrow-order inversion theorems are retained.",
+    "Environment monotonicity is proved directly by induction on Denote; the generalized renaming theorem is also proved independently.",
+    "Semantic equivalence reasoning uses named composition functions instead of a separate equational-reasoning syntax."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part3/Denotational.idr",
+    "result": "pass",
+    "totality": "%default total; no holes, postulates, unsafe casts, or termination overrides",
+    "evidence": "evidence/denotation-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

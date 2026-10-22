@@ -1,0 +1,4 @@
+$ idris2 --source-dir src --check src/Main.idr
+23/23: Building Main (src/Main.idr)
+
+exit_code=0

@@ -1,0 +1,88 @@
+{
+  "chapter": "Bisimulation",
+  "sources": [
+    "src/PLFA/Part2/More.idr",
+    "src/PLFA/Part2/Bisimulation.idr"
+  ],
+  "upstream": "src/plfa/part2/Bisimulation.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Related / Fragment / compile",
+      "scope": "Nonidentity let-to-lambda-application translation for precisely the typed variable/lambda/application/let fragment in arbitrary contexts. The compiler constructs a target with a relation certificate from structural fragment evidence."
+    },
+    {
+      "name": "relatedFunctional / relatedFragment / compiledMatches",
+      "scope": "Related targets of a fixed source are equal; every related source belongs to the fragment; the compiler output equals every target certified by Related."
+    },
+    {
+      "name": "valueForward / valueBackward",
+      "scope": "Related terms are values in one direction exactly when they are values in the other; proof covers the relation fragment."
+    },
+    {
+      "name": "renameRelated / extendRelated / substRelated / instRelated",
+      "scope": "The relation is preserved by arbitrary common typed renamings and by two typed substitutions whose images are pointwise Related, including binder lifting and single substitution."
+    },
+    {
+      "name": "forward",
+      "scope": "Every weak CBV source step from a Related pair has exactly one matching target step to a related result. ForwardLeg is constructed by induction, not assumed."
+    },
+    {
+      "name": "backward",
+      "scope": "Every target step from a Related pair has exactly one matching source step to a related result, including target AppR/Beta corresponding to LetStep/LetBeta."
+    },
+    {
+      "name": "forwardMany / backwardMany",
+      "scope": "Every supplied finite trace on either side has a constructed matching trace and a relation at the endpoint; no whole-More-language or contextual-equivalence claim."
+    },
+    {
+      "name": "exampleStep / reverseExample / nestedCompilation",
+      "scope": "Concrete source let beta and target lambda beta match; nested lets are translated by the executable compiler with a certificate."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "1",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "nestedFragment",
+        "nestedCompilation"
+      ],
+      "scope": "Compile a nested let with a structurally constructed fragment certificate."
+    },
+    {
+      "id": "2",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "reverseExample"
+      ],
+      "scope": "Use reverse simulation to recover a source let step from target beta."
+    },
+    {
+      "id": "3",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "relatedFragment"
+      ],
+      "scope": "Inductively recover fragment membership from any translation certificate."
+    }
+  ],
+  "deviations": [
+    "The restricted lambda/let relation matches the upstream chapter scope; no unsupported coverage of other More constructors is claimed.",
+    "Implemented the upstream inverse-simulation exercise as a full theorem, and added both finite-trace directions.",
+    "An explicit Fragment datatype determines the compiler domain instead of a Boolean predicate/reflection interface.",
+    "The optional product-formulation bisimulation exercise is not implemented or claimed; More explains those encodings without asserting their general equivalence."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part2/Bisimulation.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts, or termination overrides",
+    "evidence": "evidence/typed-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

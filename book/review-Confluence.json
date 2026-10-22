@@ -1,0 +1,80 @@
+{
+  "chapter": "Confluence",
+  "sources": [
+    "src/PLFA/Part2/Confluence.idr"
+  ],
+  "upstream": "src/plfa/part2/Confluence.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Par / Pars / parRefl",
+      "scope": "Unrestricted parallel reduction and its finite reflexive-transitive closure, including parallel application, beta contraction and lambda bodies; structural reflexivity for every scoped term."
+    },
+    {
+      "name": "parRename / parSubst / parBeta",
+      "scope": "Parallel reduction preserved by arbitrary renaming and by simultaneous pointwise parallel-related substitutions, with the single-beta substitution corollary."
+    },
+    {
+      "name": "develop / parTriangle / parDiamond",
+      "scope": "Complete development of any source term; every parallel reduct further parallel-reduces to that development, yielding a genuine diamond without an assumption of termination."
+    },
+    {
+      "name": "stepPar / stepsPars / parSteps / parsSteps",
+      "scope": "Ordinary full beta finite reachability and parallel finite reachability are mutually constructively convertible. A parallel round is serialized into a finite ordinary path, not equated with one ordinary step."
+    },
+    {
+      "name": "strip / parsConfluent / confluence",
+      "scope": "For every scope and every pair of finite full beta paths from one source, construct a common reduct and both joining paths. No strategy restriction, typing premise or normalization premise."
+    },
+    {
+      "name": "Convertible / churchRosser",
+      "scope": "For every finite chain of forward/backward full beta edges, construct a common forward reduct of its endpoints."
+    },
+    {
+      "name": "normalPath / normalUnique",
+      "scope": "Two irreducible endpoints reachable from the same source are syntactically equal. Both reachability and normality premises are explicit; normal-form existence is not claimed."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Confluence-1",
+      "solution_symbol": [
+        "duplicateJoin"
+      ]
+    },
+    {
+      "id": "Confluence-2",
+      "solution_symbol": [
+        "duplicateOuterFirst",
+        "duplicateInnerFirst"
+      ]
+    },
+    {
+      "id": "Confluence-3",
+      "solution_symbol": [
+        "identityParallel"
+      ]
+    }
+  ],
+  "deviations": [
+    "The proof uses the same parallel-reduction/complete-development/strip construction with Fin scopes and pointwise substitution algebra.",
+    "Finite zigzag convertibility and reachable normal-form uniqueness are additional explicit corollaries; no deterministic restriction replaces full beta confluence."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 from the pinned Nix environment",
+    "commands": [
+      ".cache/run idris2 --source-dir src --check src/PLFA/Part2/Confluence.idr"
+    ],
+    "result": "pass; all commands exit_code=0",
+    "evidence": "evidence/untyped-owner-check.json",
+    "logs": [
+      "evidence/untyped-Confluence.log"
+    ],
+    "totality": "%default total; complete coverage and termination checking; no holes, proof escapes, postulates or unchecked theorem fields",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

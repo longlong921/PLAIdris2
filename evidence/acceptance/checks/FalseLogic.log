@@ -1,0 +1,31 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/FalseLogic.idr
+1/1: Building FalseLogic (tests/negative/FalseLogic.idr)
+Error: While processing right hand side of bad. Sorry, I can't find any elaboration which works. All errors:
+If Unit: When unifying:
+    Type
+and:
+    Void
+Mismatch between: Type and Void.
+
+FalseLogic:4:7--4:9
+ 1 | module FalseLogic
+ 2 | %default total
+ 3 | bad : Void
+ 4 | bad = ()
+           ^^
+
+If MkUnit: When unifying:
+    ()
+and:
+    Void
+Mismatch between: () and Void.
+
+FalseLogic:4:7--4:9
+ 1 | module FalseLogic
+ 2 | %default total
+ 3 | bad : Void
+ 4 | bad = ()
+           ^^
+
+
+exit_code=1

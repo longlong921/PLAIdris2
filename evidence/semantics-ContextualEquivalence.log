@@ -1,0 +1,4 @@
+$ idris2 --source-dir src --check src/PLFA/Part3/ContextualEquivalence.idr
+10/10: Building PLFA.Part3.ContextualEquivalence (src/PLFA/Part3/ContextualEquivalence.idr)
+
+exit_code=0

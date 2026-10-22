@@ -1,0 +1,95 @@
+{
+  "chapter": "Inference",
+  "sources": [
+    "src/PLFA/Part2/Typed.idr",
+    "src/PLFA/Part2/DeBruijn.idr",
+    "src/PLFA/Part2/Inference.idr"
+  ],
+  "upstream": "src/plfa/part2/Inference.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "SynthTerm / CheckTerm / Synth / Check",
+      "scope": "Two mutually defined scoped syntaxes and bidirectional judgements for functions, naturals, case, general fixpoints, annotations and mode switches, in arbitrary matching context vectors."
+    },
+    {
+      "name": "typeEqual / synthUnique",
+      "scope": "Decidable structural equality of simple types and uniqueness of synthesis for the same annotated/scoped term in the same context. No uniqueness or principal-type claim for raw terms."
+    },
+    {
+      "name": "synthesize",
+      "scope": "Total Dec (a : Ty ** Synth gamma t a) for every scoped synthesis input; every No branch constructs a refutation of all possible result types/derivations."
+    },
+    {
+      "name": "check",
+      "scope": "Total Dec (Check gamma t a) for every scoped checking input and expected type; rejected embeddings and applications use synthesis uniqueness to exclude alternative derivations."
+    },
+    {
+      "name": "synthSound / checkSound",
+      "scope": "Every bidirectional derivation yields an external HasType derivation for the annotation/mode-erased raw term."
+    },
+    {
+      "name": "elaborateSynth / elaborateCheck / synthErasure / checkErasure",
+      "scope": "Every successful derivation yields an intrinsic term with the same context/type, whose forgotten raw syntax equals direct erasure of the annotated input."
+    },
+    {
+      "name": "synthesizeComplete / checkComplete",
+      "scope": "Existence of a derivation of the queried bidirectional judgement implies the corresponding algorithm returns a Yes result. Completeness is relative to the annotated judgement, not arbitrary typability of erased raw input."
+    },
+    {
+      "name": "inferredTermCorrect / inferredComputed",
+      "scope": "The inferred/elaborated plus-two-two term equals the earlier intrinsic addition application; evaluation of that inferred term yields Just 4."
+    },
+    {
+      "name": "identityAt / badApplicationImpossible / annotationRejected / erasureStillTyped",
+      "scope": "Identity checks at any a->a; annotated zero application has no synthesis type; a wrong arrow annotation is rejected although its erased zero remains typable."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "1",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "identityAt"
+      ],
+      "scope": "Check identity at any requested simple type and in any context without contradicting synthesis uniqueness."
+    },
+    {
+      "id": "2",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "badApplicationImpossible",
+        "badRejected"
+      ],
+      "scope": "Refute all synthesis result types for applying annotated natural zero and check algorithmic rejection."
+    },
+    {
+      "id": "3",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "annotationRejected",
+        "erasureStillTyped"
+      ],
+      "scope": "Reject a wrong annotation while proving the erased program typable, delimiting completeness."
+    }
+  ],
+  "deviations": [
+    "Named lookup is replaced by Fin-scoped variables and a matching Vect context; input scope/name resolution is outside this interface, not an omitted type-error branch.",
+    "The checking procedure is named check rather than upstream inherit.",
+    "SyApp retains its domain type and ChEmbed its synthesized type as computational implicit arguments so No proofs can reconstruct existential type/derivation packages in Idris.",
+    "Elaboration factors through proved external soundness and the DeBruijn correspondence, with explicit erasure equations.",
+    "Optional inference extensions for products and the rest of More are not implemented or claimed; the complete core functions/naturals/case/fix bidirectional language is decided."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part2/Inference.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts, or termination overrides",
+    "evidence": "evidence/typed-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

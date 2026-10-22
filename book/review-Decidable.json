@@ -1,0 +1,110 @@
+{
+  "chapter": "Decidable",
+  "sources": [
+    "src/PLFA/Part1/Decidable.idr"
+  ],
+  "upstream": "src/plfa/part1/Decidable.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Truth / truthEquality / equalityTruth / leBool / boolToLE / leToBool",
+      "scope": "Truth interpretation of Boolean values and equivalence with equality to True; the recursive natural comparison is sound and complete for LE on all inputs."
+    },
+    {
+      "name": "decLE / decLT / decNatEq",
+      "scope": "Total positive/negative proof-producing decisions for natural non-strict order, strict order, and equality, without bounded search."
+    },
+    {
+      "name": "decBool / toWitness / fromWitness / reflectedLE",
+      "scope": "Decision erasure, witness recovery from its Boolean truth, truth forced by an existing witness, and agreement of erased decLE with leBool for all naturals."
+    },
+    {
+      "name": "decAnd / decOr / decNot / decImplies / decIff / andErasure / orErasure / notErasure / impliesErasure / iffErasure",
+      "scope": "Constructive decisions for five logical connectives from component decisions, and exact Boolean truth-table erasure laws for every supplied pair of decisions."
+    },
+    {
+      "name": "minus / safeMinus / safeMinusExample / FalseDecision / fromFalse / toFalse",
+      "scope": "Subtraction requiring LE evidence, reflected implicit precondition, checked 5-3=2, and both directions of negative-decision reflection."
+    },
+    {
+      "name": "decOne / decCanonical / canonicalDecisionExamples",
+      "scope": "Total decisions for leading-one and canonical predicates over all finite raw bitstrings, including leading-zero counterexamples."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "D.1",
+      "solution_symbol": [
+        "decLT",
+        "decNatEq"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "D.2",
+      "solution_symbol": [
+        "boolToLE",
+        "leToBool",
+        "reflectedLE"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "D.3",
+      "solution_symbol": [
+        "decAnd",
+        "decOr",
+        "decNot",
+        "decImplies",
+        "decIff"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "D.4",
+      "solution_symbol": [
+        "andErasure",
+        "orErasure",
+        "notErasure",
+        "impliesErasure",
+        "iffErasure"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "D.5",
+      "solution_symbol": [
+        "safeMinus",
+        "safeMinusExample",
+        "fromFalse",
+        "toFalse"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "D.6",
+      "solution_symbol": [
+        "decOne",
+        "decCanonical",
+        "canonicalDecisionExamples"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "Uses the standard Idris Dec datatype and implicit auto argument search instead of Agda instance arguments.",
+    "Duplicate Boolean-derived and decision-derived comparison wrappers are consolidated into leBool, decLE, their two evidence bridges, and the universal reflectedLE agreement theorem."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Decidable.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}

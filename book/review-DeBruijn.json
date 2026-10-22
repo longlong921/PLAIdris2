@@ -1,0 +1,87 @@
+{
+  "chapter": "DeBruijn",
+  "sources": [
+    "src/PLFA/Part2/Typed.idr",
+    "src/PLFA/Part2/DeBruijn.idr"
+  ],
+  "upstream": "src/plfa/part2/DeBruijn.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "Ref / Term / indexRef",
+      "scope": "Intrinsically typed syntax for the complete functions/naturals/case/fix language. Ref gamma a stores a Fin position whose lookup type is a; contexts and type indices are erased, positions and term constructors retained."
+    },
+    {
+      "name": "renameTerm / extendRen",
+      "scope": "Arbitrary type-respecting variable maps between context vectors extend under binders and structurally rename every intrinsic term without changing its result type."
+    },
+    {
+      "name": "substTerm / extendSub / instantiateTerm",
+      "scope": "General type-preserving simultaneous and single substitution on intrinsic terms; replacements weaken beneath lambda, natural-case, and fixpoint binders."
+    },
+    {
+      "name": "Step / progress / valueNormal",
+      "scope": "Intrinsic reduction preserves indexed context/type by construction; every closed term is a value or has a certified next step; any intrinsic value in any context has no outgoing step."
+    },
+    {
+      "name": "run / runNatural",
+      "scope": "Total fuelled intrinsic evaluator with finite reduction evidence and a value certificate or exhaustion; no normalization assumption."
+    },
+    {
+      "name": "elaborate / forget / forgetElaborate",
+      "scope": "Every external HasType derivation yields a same-context/same-type intrinsic term. For every derivation p of raw t, forgetting elaborate p equals t by structural proof."
+    },
+    {
+      "name": "add / multiplication / churchTwo / additionComputed / multiplicationComputed",
+      "scope": "Typed recursive arithmetic and Church two; actual evaluator calculations certify 2+2=4 and 3*2=6."
+    },
+    {
+      "name": "captureAvoidance / identityStep",
+      "scope": "Concrete substitution-under-lambda calculation preserving an outer reference and a typed one-step identity application."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "1",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "captureAvoidance"
+      ],
+      "scope": "Open substitution under a lambda shifts the replacement to avoid capture."
+    },
+    {
+      "id": "2",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "identityStep"
+      ],
+      "scope": "A certified CBV beta step for intrinsic identity on two."
+    },
+    {
+      "id": "3",
+      "anchor": "exercises",
+      "solution_symbol": [
+        "valueNormal"
+      ],
+      "scope": "General normality of values at arbitrary context and type."
+    }
+  ],
+  "deviations": [
+    "Contexts are Vect values shared with the external calculus; typed references use At : Fin n -> Ref gamma (index i gamma), with vz/vs helpers rather than a second inductive position representation.",
+    "The earlier Lambda chapter already uses scoped raw de Bruijn indices; this chapter introduces intrinsic typing and proves an explicit erasure/elaboration correspondence.",
+    "Runtime progress helpers are public export so the evaluator can normalize in dependent proofs in importing modules.",
+    "Fuel reports a trace and termination/exhaustion reason; exact upstream gas-index accounting and optional renaming/substitution algebra beyond the presented results are not claimed."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part2/DeBruijn.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts, or termination overrides",
+    "evidence": "evidence/typed-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "to be recorded by the primary editor"
+  },
+  "remaining_proof_work": []
+}

@@ -1,0 +1,366 @@
+{
+  "reference_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "reference_root": "/workspace/PLFA-upstream",
+  "review_date": "2026-10-22",
+  "purpose": "Substantive acceptance baseline derived independently from the frozen PLFA sources. Presence of a chapter file or a compiling module is not evidence that its theorem scope is met.",
+  "global_requirements": [
+    "Every claimed theorem must have an implementation with the stated hypotheses; passing the desired theorem as an argument or record field is not proving it.",
+    "All reference proof implementations must be total and free of holes, postulates, unsafe casts and termination overrides. Host-language totality only guarantees that a bounded evaluator or derivation transformer terminates; it does not imply normalization of the object language.",
+    "A switch from named terms to scoped de Bruijn terms is a legitimate representational adaptation if capture avoidance, context extension and open-term theorem scope remain explicit.",
+    "Use pointwise equality of maps or logical equivalence where upstream relies on function extensionality. Record a changed theorem statement explicitly rather than silently asserting intensional equality.",
+    "English and Chinese chapters must agree on theorem direction, hypotheses, quantification, evaluation strategy, exercise statements and checked solution symbols.",
+    "Distinguish an upstream proved theorem, an upstream exercise, an implemented adaptation and remaining proof work. More's prose covers extensions beyond the upstream formalized core.",
+    "A finite set of test cases, a finite fuel bound, a terminating sublanguage, or an identity-only relation does not replace a universally quantified operational or denotational theorem.",
+    "An alternative proof with the same semantics and final quantified theorem may replace the upstream proof route; unused intermediate lemmas need not be reproduced. Representation changes must be stated and any operational correspondence needed by the result must be proved.",
+    "Pin host-language claims to Idris2 0.8.0: its documented Type : Type implementation is not Agda's predicative universe hierarchy. Totality and absence of explicit proof escapes do not prove host consistency; keep this boundary explicit in both languages and metadata."
+  ],
+  "chapters": [
+    {
+      "chapter": "Naturals",
+      "upstream": "src/plfa/part1/Naturals.lagda.md",
+      "core_scope": [
+        "Inductive unbounded naturals, recursive addition, multiplication and truncated subtraction with worked definitional reductions.",
+        "Explain constructors, pattern matching and why recursion is structurally decreasing; exponentiation is a recommended exercise."
+      ],
+      "hypotheses_and_limits": [
+        "Monus truncates at zero; it is not integer subtraction.",
+        "Binary representation is an upstream stretch exercise and may be marked as a deviation, but arithmetic cannot be replaced by a few numeral equalities."
+      ]
+    },
+    {
+      "chapter": "Induction",
+      "upstream": "src/plfa/part1/Induction.lagda.md",
+      "core_scope": [
+        "Universal addition associativity, right identity, successor-on-right, commutativity and rearrangement proved by induction.",
+        "Worked induction and rewriting; substantive arithmetic exercises such as multiplication distributivity/associativity and monus laws with checked solutions."
+      ],
+      "hypotheses_and_limits": [
+        "Quantify over arbitrary naturals, not only fixed examples.",
+        "Do not assume associativity or commutativity as inputs to the theorem being advertised."
+      ]
+    },
+    {
+      "chapter": "Relations",
+      "upstream": "src/plfa/part1/Relations.lagda.md",
+      "core_scope": [
+        "Inductive non-strict order, inversion, reflexivity, transitivity, antisymmetry, totality and addition monotonicity.",
+        "Strict order and its relationship to non-strict order; mutually defined even/odd evidence and parity of addition."
+      ],
+      "hypotheses_and_limits": [
+        "Total order comparability is unrelated to total function checking.",
+        "Antisymmetry needs both order directions; monotonicity needs the relevant comparison evidence."
+      ]
+    },
+    {
+      "chapter": "Equality",
+      "upstream": "src/plfa/part1/Equality.lagda.md",
+      "core_scope": [
+        "Propositional equality elimination, symmetry, transitivity, unary/binary congruence, dependent transport and equational reasoning.",
+        "Worked rewriting through indexed propositions; Leibniz equality and conversions between Leibniz and propositional equality; explain the difference between Agda's universe levels and the pinned Idris2 0.8.0 Type : Type limitation."
+      ],
+      "hypotheses_and_limits": [
+        "Propositional equality is distinct from definitional reduction.",
+        "Function extensionality is not a consequence of pointwise equality in the intensional host theory."
+      ]
+    },
+    {
+      "chapter": "Isomorphism",
+      "upstream": "src/plfa/part1/Isomorphism.lagda.md",
+      "core_scope": [
+        "Isomorphisms carry maps both ways and both pointwise inverse laws; reflexivity, symmetry and composition.",
+        "Embeddings carry a retraction, with reflexivity and composition; distinguish embedding, logical equivalence and isomorphism.",
+        "Explain the upstream function-extensionality assumption and the adaptation's explicit policy."
+      ],
+      "hypotheses_and_limits": [
+        "Two arbitrary embeddings in opposite directions do not by themselves supply the particular inverse pair used in upstream embedding antisymmetry; compatible to/from maps are required.",
+        "Do not smuggle funext in through a record field or falsely claim arbitrary function equality from pointwise laws."
+      ]
+    },
+    {
+      "chapter": "Connectives",
+      "upstream": "src/plfa/part1/Connectives.lagda.md",
+      "core_scope": [
+        "Product, sum, unit, empty type and function introduction/elimination with eta/uniqueness where applicable.",
+        "Commutativity/associativity and identity maps, currying, distribution of functions over sums/products and product-over-sum isomorphism.",
+        "Explain the one-way embedding for (A × B) + C into (A + C) × (B + C)."
+      ],
+      "hypotheses_and_limits": [
+        "Do not claim the last embedding is an isomorphism for arbitrary A/B/C.",
+        "Function-space inverse laws may need pointwise formulations or explicit extensionality; forward/backward maps alone are not an isomorphism proof."
+      ]
+    },
+    {
+      "chapter": "Negation",
+      "upstream": "src/plfa/part1/Negation.lagda.md",
+      "core_scope": [
+        "Negation as implication to empty, contradiction elimination, double-negation introduction, triple-negation elimination and contraposition.",
+        "Constructive/classical distinction and irrefutability of excluded middle; meaningful De Morgan/order/classical-equivalence exercises."
+      ],
+      "hypotheses_and_limits": [
+        "General excluded middle and double-negation elimination are not constructive theorems.",
+        "Equality of arbitrary negation proofs is an extensionality-dependent upstream result; pointwise replacement must be identified."
+      ]
+    },
+    {
+      "chapter": "Quantifiers",
+      "upstream": "src/plfa/part1/Quantifiers.lagda.md",
+      "core_scope": [
+        "Dependent function universal quantification and dependent-pair existential quantification with elimination and dependent currying.",
+        "Distribution laws with correct direction; existential numeric witnesses for even/odd numbers and converse conversions.",
+        "Constructive equivalence between not-exists and for-all-not; explain why exists-not to not-for-all does not constructively reverse in general."
+      ],
+      "hypotheses_and_limits": [
+        "A witness pair must include evidence indexed by that same witness.",
+        "Function-valued isomorphism claims require the stated extensionality treatment."
+      ]
+    },
+    {
+      "chapter": "Decidable",
+      "upstream": "src/plfa/part1/Decidable.lagda.md",
+      "core_scope": [
+        "Separate boolean computation from evidence; prove comparison boolean reflection in both directions.",
+        "Dec proposition contains either evidence or a refutation; total natural order decision procedure and substantive equality/strict-order examples.",
+        "Decidability combinators for conjunction, disjunction, negation and implication; proof by reflection for evidence-constrained subtraction."
+      ],
+      "hypotheses_and_limits": [
+        "A false boolean or Nothing is not a proof that the proposition is uninhabited.",
+        "The negative branch must refute every hypothetical derivation, not only one guessed proof."
+      ]
+    },
+    {
+      "chapter": "Lists",
+      "upstream": "src/plfa/part1/Lists.lagda.md",
+      "core_scope": [
+        "Polymorphic append with associativity/identities and length law; reverse with accumulator implementation and proof of agreement.",
+        "Map and fold, monoid laws as explicit hypotheses and fold/append laws.",
+        "Indexed All and Any/membership, All over append, and decidability of All from decidability of its element predicate; meaningful reverse/map/Any exercises."
+      ],
+      "hypotheses_and_limits": [
+        "An arbitrary fold operation is not assumed associative; monoid results need the monoid laws.",
+        "Do not substitute a collection of sample list evaluations for structural proofs."
+      ]
+    },
+    {
+      "chapter": "Lambda",
+      "upstream": "src/plfa/part2/Lambda.lagda.md",
+      "core_scope": [
+        "PCF-like syntax including variables, abstraction/application, naturals, case and general recursion; contexts and external typing judgment.",
+        "Capture-aware substitution, values, left-to-right call-by-value small-step rules and reflexive-transitive closure.",
+        "Primitive and Church numeral/program examples, typing derivations and genuinely untypable examples."
+      ],
+      "hypotheses_and_limits": [
+        "Upstream's simple named substitution is justified for closed substituted terms; a scoped simultaneous substitution can validly generalize it.",
+        "Beta and successor-case rules require value arguments in this chapter; no reduction under lambda.",
+        "General recursion permits well-typed divergence."
+      ]
+    },
+    {
+      "chapter": "Properties",
+      "upstream": "src/plfa/part2/Properties.lagda.md",
+      "core_scope": [
+        "Values do not step; canonical forms, progress for closed well-typed terms and typing preservation under one-step reduction.",
+        "Renaming/weakening and substitution preservation with exact context hypotheses.",
+        "Determinism, well-typed terms never get stuck under finite reduction, and proof-producing fuel-bounded evaluation."
+      ],
+      "hypotheses_and_limits": [
+        "Progress cannot be asserted for arbitrary open terms without accounting for free variables.",
+        "Safety is not termination; fuel exhaustion is not proof of divergence.",
+        "Subject expansion is not generally valid."
+      ]
+    },
+    {
+      "chapter": "DeBruijn",
+      "upstream": "src/plfa/part2/DeBruijn.lagda.md",
+      "core_scope": [
+        "Intrinsically typed variables/terms indexed by context and object type, including naturals/case/fix.",
+        "Type-preserving renaming, simultaneous substitution, lifting under binders and single substitution.",
+        "CBV reduction preserving type by its indices, closed progress and proof-producing fuel-bounded evaluator; worked nontrivial binder/substitution examples."
+      ],
+      "hypotheses_and_limits": [
+        "Scoped raw syntax alone is not intrinsic typing; preserve the distinction from Lambda/Properties.",
+        "The host can check a total bounded evaluator even though object-language fixpoints diverge."
+      ]
+    },
+    {
+      "chapter": "More",
+      "upstream": "src/plfa/part2/More.lagda.md",
+      "core_scope": [
+        "Core formalization extends the earlier typed calculus with host primitive naturals/arithmetic, let binding, product introduction/projections and alternative product-case elimination.",
+        "Each formalized constructor needs typing, capture-avoiding renaming/substitution (including double substitution), values, CBV rules, progress, values-do-not-step and bounded evaluation.",
+        "The chapter's explanatory scope also includes sums, unit and alternative unit elimination, empty type and lists; these must be taught or explicitly recorded as unfinished/deviating, rather than silently dropped.",
+        "Explain let-to-lambda and product-eliminator translations with worked programs; upstream additional extensions are exercises, not all already-proved upstream theorems."
+      ],
+      "hypotheses_and_limits": [
+        "A lone pair data type or a refl projection example does not preserve this chapter.",
+        "Product case substitutes two components in the specified binding order.",
+        "Primitive arithmetic is object-language syntax with operational rules, not only host calculations hidden outside the calculus."
+      ]
+    },
+    {
+      "chapter": "Bisimulation",
+      "upstream": "src/plfa/part2/Bisimulation.lagda.md",
+      "core_scope": [
+        "A structural source/target simulation relation translating let bindings to lambda applications over variables, lambdas, applications and lets. Upstream imports More but deliberately restricts this relation to the lambda/let fragment (upstream lines 148-175); a separate intrinsic fragment is an admissible adaptation.",
+        "Value compatibility, renaming compatibility and simultaneous/single substitution compatibility.",
+        "For every related source/target pair and every source step, construct a matching target step and a related residual (the simulation square).",
+        "The inverse simulation/value direction and product translations are upstream exercises; if the adaptation calls the result full bisimulation, prove both directions or state the forward-only scope explicitly."
+      ],
+      "hypotheses_and_limits": [
+        "The relation must actually contain translated let forms, not only identical terms.",
+        "A step argument must be consumed in proving the square; a supplied simulation field is only an assumption.",
+        "Do not equate simulation of a terminating evaluator with preservation of arbitrary source steps."
+      ]
+    },
+    {
+      "chapter": "Inference",
+      "upstream": "src/plfa/part2/Inference.lagda.md",
+      "core_scope": [
+        "Bidirectional synthesizing/checking syntax and typing judgments for natural numbers/functions/case/fix, with annotations and switching.",
+        "Decidable type equality, lookup evidence and refutation, uniqueness of synthesized types.",
+        "Total synthesize : context -> term+ -> Dec (exists type, derivation) and inherit : context -> term- -> type -> Dec derivation, including complete negative branches.",
+        "Erase successful derivations into intrinsically typed de Bruijn terms, and demonstrate accepted and rejected programs."
+      ],
+      "hypotheses_and_limits": [
+        "A Maybe type or boolean checker with only successful examples is insufficient.",
+        "Uniqueness applies to synthesized types under the chosen annotated syntax; arbitrary Curry-style lambda terms need not have a unique type.",
+        "Proof-carrying decisions give soundness and completeness for these bidirectional judgments, not unannotated principal-type inference for all lambda terms.",
+        "Scoped Fin variables with a matching context vector may replace named lookup; this removes name-resolution errors before the interface and must be disclosed rather than presented as deciding arbitrary textual input."
+      ]
+    },
+    {
+      "chapter": "Untyped",
+      "upstream": "src/plfa/part2/Untyped.lagda.md",
+      "core_scope": [
+        "All intrinsically scoped untyped lambda terms, capture-avoiding rename/substitute, and full beta reduction under lambda and in both application operands.",
+        "Neutral and normal forms, progress as either a step or normal evidence, finite reduction closure and congruence for all constructors.",
+        "Fuel-bounded normalization attempts with reduction evidence; Church encodings and self-application/fixpoint examples, with genuine object divergence retained."
+      ],
+      "hypotheses_and_limits": [
+        "Untyped does not mean simply typed terms with one ground type and typed arrows.",
+        "Full beta reduction has no value side condition and is not deterministic.",
+        "Do not claim every term normalizes because the host normalizer uses structurally decreasing fuel."
+      ]
+    },
+    {
+      "chapter": "Confluence",
+      "upstream": "src/plfa/part2/Confluence.lagda.md",
+      "core_scope": [
+        "Parallel beta reduction for arbitrary scoped terms, including simultaneous reduction of beta body/argument; embedding ordinary steps into parallel reduction and serializing parallel steps into beta multi-steps.",
+        "Renaming and simultaneous-substitution compatibility of parallel reduction; complete development and triangle/diamond property.",
+        "Strip and parallel-closure confluence, then full Church-Rosser joining: any two finite full-beta paths from the same arbitrary term have a common finite reduct."
+      ],
+      "hypotheses_and_limits": [
+        "No typing, normalization, closedness, strategy determinism or fuel hypothesis may be added to the central confluence statement.",
+        "Ordinary one-step full beta reduction is not diamond; only the parallel relation is used for that property.",
+        "Joining only reflexive paths, only deterministic weak steps or a finite sample is not the upstream theorem."
+      ]
+    },
+    {
+      "chapter": "BigStep",
+      "upstream": "src/plfa/part2/BigStep.lagda.md",
+      "core_scope": [
+        "Closures pairing scoped terms with closure environments; weak call-by-name variable/lambda/application evaluation with unevaluated argument closures.",
+        "Determinism of finite big-step derivations.",
+        "A closure/environment to closed-term substitution relation and a proof that every terminating closure evaluation corresponds to finite full-beta reduction; closed evaluation reaches a lambda.",
+        "Explain that the reverse beta-to-call-by-name existence implication is deferred to Adequacy upstream."
+      ],
+      "hypotheses_and_limits": [
+        "No evaluation under lambda and no strict argument evaluation.",
+        "Big-step failure to have a finite derivation is not an executable divergence detector.",
+        "Environment lookup must evaluate the stored closure in its stored environment.",
+        "Termination here means reaching a lambda (weak head form), not full beta normalization."
+      ]
+    },
+    {
+      "chapter": "Denotational",
+      "upstream": "src/plfa/part3/Denotational.lagda.md",
+      "core_scope": [
+        "Finite information values Bottom, Arrow and Join and the full information preorder: bottom, join introduction/elimination, transitivity, contravariant arrow domain/covariant codomain and arrow/join distribution.",
+        "Environment-indexed inductive denotation with variable/application/lambda/bottom/join/downward-closure rules; nontrivial self-application and Church numeral examples.",
+        "Denotations as predicates on all finite environments and values; extensional equality as pointwise iff, renaming preservation and environment monotonicity.",
+        "Semantic inversion properties required downstream must be proved here or in a clearly linked later module; a direct operator-based proof may validly avoid unused upstream generic function-order-inversion lemmas."
+      ],
+      "hypotheses_and_limits": [
+        "Bottom information is available for every term and does not imply termination.",
+        "Join is not syntactic equality or an arbitrary union without the preorder laws.",
+        "Do not replace finite-information semantics by operational reachability and then call adequacy immediate.",
+        "No global bound on Value size or term depth is permitted."
+      ]
+    },
+    {
+      "chapter": "Compositional",
+      "upstream": "src/plfa/part3/Compositional.lagda.md",
+      "core_scope": [
+        "Semantic operators for abstraction and application with bidirectional equivalence to the inductive denotation; variable inversion and lambda inversion.",
+        "Congruence of semantic operators under pointwise denotational equivalence.",
+        "Typed-by-scope one-hole contexts under lambda and in either application operand, plugging, and preservation of denotational equality by every context.",
+        "A structural functional presentation of semantics and proof of equivalence with the relational presentation."
+      ],
+      "hypotheses_and_limits": [
+        "Contexts must include binding cases and both application positions; identity-only or closed-context-only congruence is insufficient.",
+        "Application equivalence must account for joins/subsumption, not just the direct DApp constructor.",
+        "Do not assume the needed lambda inversion property as an external parameter."
+      ]
+    },
+    {
+      "chapter": "Soundness",
+      "upstream": "src/plfa/part3/Soundness.lagda.md",
+      "core_scope": [
+        "Simultaneous and single substitution preserve denotations under a denotationally related substitution/environment.",
+        "Renaming reflection and finite-demand substitution reflection: a denotation of substituted syntax yields a finite source environment with related substitution and original-term denotation.",
+        "Preservation and reflection for every full-beta step including steps under lambda and both operands.",
+        "Arbitrary finite beta reduction implies pointwise denotational equality in every finite environment and at every information value."
+      ],
+      "hypotheses_and_limits": [
+        "One inclusion only is not denotational equality.",
+        "No normalization/termination/closedness assumption belongs in reduction soundness.",
+        "Do not assume substitution reflection in lieu of proving it; this is a central hard lemma."
+      ]
+    },
+    {
+      "chapter": "Adequacy",
+      "upstream": "src/plfa/part3/Adequacy.lagda.md",
+      "core_scope": [
+        "A logical relation between finite information and closures, with an explicit above-function/non-bottom demand guard and environment relation.",
+        "Closure of the logical relation under information approximation and joins, and the fundamental lemma deriving the relation from any denotation derivation.",
+        "A closed term denoting a function approximant terminates by weak call-by-name; denotational equivalence with a lambda implies finite beta reduction to some lambda.",
+        "Combining soundness/adequacy and BigStep gives equivalence between existence of a closed full-beta path to a lambda and existence of a call-by-name closure evaluation."
+      ],
+      "hypotheses_and_limits": [
+        "Closedness is essential to the final operational consequence; open terms require related environments.",
+        "Bottom denotation alone gives no termination witness.",
+        "The final lambda need not have the same syntactic body as the lambda used in a denotational-equivalence hypothesis.",
+        "Do not redefine the logical relation to contain the desired theorem as an unexplained field or restrict its quantification to pre-evaluated arguments.",
+        "A logical relation on substituted closed terms is an admissible alternative to the upstream closure relation when the same weak call-by-name observations are proved and the representation change is explicit."
+      ]
+    },
+    {
+      "chapter": "ContextualEquivalence",
+      "upstream": "src/plfa/part3/ContextualEquivalence.lagda.md",
+      "core_scope": [
+        "Termination means existence of finite full-beta reduction to a lambda, and contextual equivalence quantifies over every scope-correct closing one-hole context.",
+        "Denotational equivalence implies equal termination observations in each such context, using compositionality, soundness and adequacy.",
+        "The two directions of termination observation are supplied symmetrically; nontrivial contextual-equivalence examples must use the proved theorem."
+      ],
+      "hypotheses_and_limits": [
+        "This is denotational equality implies contextual equivalence, not a proved converse/full-abstraction theorem.",
+        "Quantifying only over the identity context or contexts that assume the result is insufficient.",
+        "Observation is weak-head termination, not equality of returned syntax and not total normalization."
+      ]
+    },
+    {
+      "chapter": "Substitution",
+      "upstream": "src/plfa/part2/Substitution.lagda.md",
+      "core_scope": [
+        "Scoped substitution algebra: identity, shift, cons/extension and sequential composition with head/tail/eta/identity/associativity and term-action laws.",
+        "Pointwise congruence for renamings/substitutions, rename as substitution, lifting compatibility, identity and composition on arbitrary open terms.",
+        "Substitution composition and the beta commutation/substitution lemma needed by parallel reduction and closure semantics, including passage under binders."
+      ],
+      "hypotheses_and_limits": [
+        "A law for only a closed term or a single identity substitution does not establish the general algebra.",
+        "Theorems involving maps should state pointwise equality rather than assume function extensionality.",
+        "The beta substitution lemma must account for the shifted argument under extended scope."
+      ]
+    }
+  ]
+}

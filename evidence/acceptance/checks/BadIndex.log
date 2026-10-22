@@ -1,0 +1,33 @@
+$ idris2 --source-dir tests/negative --build-dir build/negative --check tests/negative/BadIndex.idr
+1/1: Building BadIndex (tests/negative/BadIndex.idr)
+Error: While processing right hand side of bad. Sorry, I can't find any elaboration which works. All errors:
+If Data.Fin.Equality.FZ: When unifying:
+    Pointwise FZ FZ
+and:
+    Fin 0
+Mismatch between: Pointwise FZ FZ and Fin 0.
+
+BadIndex:5:7--5:9
+ 1 | module BadIndex
+ 2 | import Data.Fin
+ 3 | %default total
+ 4 | bad : Fin 0
+ 5 | bad = FZ
+           ^^
+
+If Data.Fin.FZ: When unifying:
+    Fin (S ?k)
+and:
+    Fin 0
+Mismatch between: S ?k and 0.
+
+BadIndex:5:7--5:9
+ 1 | module BadIndex
+ 2 | import Data.Fin
+ 3 | %default total
+ 4 | bad : Fin 0
+ 5 | bad = FZ
+           ^^
+
+
+exit_code=1

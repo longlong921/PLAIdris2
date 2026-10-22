@@ -1,0 +1,108 @@
+{
+  "chapter": "Relations",
+  "sources": [
+    "src/PLFA/Part1/Relations.idr"
+  ],
+  "upstream": "src/plfa/part1/Relations.lagda.md",
+  "upstream_commit": "1c39b1e82caa4283274e64ba58c3bc3c9ab781eb",
+  "license": "CC BY 4.0; Philip Wadler, Wen Kokke, Jeremy G. Siek",
+  "core_claims": [
+    {
+      "name": "LE / lePred / leZero / leRefl / leTrans / leAntisym / leTotal",
+      "scope": "Unbounded inductive natural non-strict ordering, inversion, zero characterization, reflexivity, transitivity, antisymmetry, and comparability for every pair of naturals."
+    },
+    {
+      "name": "addMono / mulMono",
+      "scope": "Both addition and multiplication are monotone in both arguments under independent LE premises, for arbitrary naturals."
+    },
+    {
+      "name": "LT / ltTrans / ltToLe / ltIrreflexive / ltAddMono / trichotomy",
+      "scope": "Strict order is LE(S m,n), with transitivity, conversion to non-strict order, irreflexivity, strict two-argument addition monotonicity, and trichotomy."
+    },
+    {
+      "name": "Even / Odd / evenPlusEven / oddPlusEven / evenPlusOdd / oddPlusOdd",
+      "scope": "Mutually inductive parity evidence and all four parity-of-addition combinations, proved by mutual structural recursion."
+    },
+    {
+      "name": "One / Canonical / canonicalInc / canonicalTo",
+      "scope": "Leading-one and canonical raw binary predicates; increment preserves canonicality; every natural encoding is canonical."
+    },
+    {
+      "name": "onePositive / toDoublePositive / toDouble / oneRoundTrip / canonicalRoundTrip",
+      "scope": "Leading-one evidence implies positive value. Encoding doubling commutes with appending zero under a positive-value premise. Encoding a decoded canonical bitstring returns that bitstring."
+    },
+    {
+      "name": "oneUnique / canonicalUnique",
+      "scope": "For any fixed raw bitstring, any two One proofs are equal and any two Canonical proofs are equal; no general proof irrelevance is assumed."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "R.1",
+      "solution_symbol": [
+        "leTrans",
+        "leAntisym"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "R.2",
+      "solution_symbol": [
+        "addMono",
+        "mulMono"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "R.3",
+      "solution_symbol": [
+        "ltTrans",
+        "ltIrreflexive",
+        "ltAddMono"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "R.4",
+      "solution_symbol": [
+        "evenPlusOdd",
+        "oddPlusOdd"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "R.5",
+      "solution_symbol": [
+        "One",
+        "Canonical",
+        "canonicalInc",
+        "canonicalTo",
+        "canonicalRoundTrip"
+      ],
+      "anchor": "exercises"
+    },
+    {
+      "id": "R.6",
+      "solution_symbol": [
+        "oneUnique",
+        "canonicalUnique"
+      ],
+      "anchor": "exercises"
+    }
+  ],
+  "deviations": [
+    "LT is represented definitionally as LE(S m,n), instead of a separate but equivalent inductive strict-order datatype. The successor/non-strict correspondence is therefore definitional.",
+    "Multiple presentation variants of totality and transitivity are consolidated into single general proofs."
+  ],
+  "checked": true,
+  "verification": {
+    "compiler": "Idris2 0.8.0 via the pinned Nix environment",
+    "command": ".cache/run idris2 --source-dir src --check src/PLFA/Part1/Relations.idr",
+    "result": "pass",
+    "totality": "%default total; no proof holes, postulates, unsafe casts or termination overrides",
+    "evidence": "evidence/part1-owner-check.json",
+    "bilingual_anchors_and_includes": "matched",
+    "independent_acceptance": "Recorded separately by the primary editor and independent reviewer"
+  },
+  "remaining_proof_work": []
+}
